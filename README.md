@@ -1,4 +1,4 @@
-# UndergradResearch
+# Facial Recognition Research
 
 ## To Do
 
