@@ -169,7 +169,7 @@ def process_csv():
             row[NOTES_COLUMN] = notes
             writer.writerow(row)
             time.sleep(SLEEP_BETWEEN)
-    print(f"✅ Finished! Results saved to {OUTPUT_FILE}")
+    print(f"Finished! Results saved to {OUTPUT_FILE}")
 
 def main():
     parser = argparse.ArgumentParser(description="Clean and normalize website URLs to their homepage.")
