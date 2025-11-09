@@ -2,21 +2,22 @@
 # -*- coding: utf-8 -*-
 
 """
-Wayback Snapshot Downloader + Same-Day Subpage Crawl.
+Wayback Snapshot Downloader + Latest-in-Range Subpage Crawl
 
 Behavior:
-- Finds ONLY the single MOST-RECENT snapshot in [start_date, end_date] (status 200).
-- Downloads that homepage snapshot.
-- Then crawls same-day subpages (same host, same YYYYMMDD) via CDX (HTML only),
-  picking the latest capture per original on that day, de-duplicated.
-- Saves to:
-    <out_dir>/<domain>/<YYYY-MM-DD>/<HHMMSS>.<ext>                 (homepage)
-    <out_dir>/<domain>/<YYYY-MM-DD>/<path>/.../file.<ext>          (subpages)
+- Finds ONLY the single MOST-RECENT snapshot of the homepage URL in [start_date, end_date] (status 200).
+- Downloads that homepage snapshot as: <out_dir>/<domain>/<START>_to_<END>/index.<ext>
+- Then finds, for the same host, the LATEST capture (status 200, HTML/XHTML) for EACH DISTINCT subpage
+  within the SAME date range (not constrained to homepage date), using sort=reverse + collapse=original.
+- Saves subpages under hierarchical paths (no extra date folders), e.g.:
+    <out_dir>/<domain>/<START>_to_<END>/ab/what-we-offer/index.html
+- Writes a JSON manifest with raw + human timestamps:
+    <out_dir>/<domain>/<START>_to_<END>/_captures.json
 
 Usage (no extra flags needed):
   python3 snapshot_downloader.py \
       --url "https://www.advanced-biometrics.com/ab/" \
-      --start-date 2025-03-10 --end-date 2025-04-20 \
+      --start-date 2024-11-30 --end-date 2025-04-20 \
       --out-dir ./snapshots --verbose
 """
 
@@ -31,7 +32,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from typing import Optional, Tuple, List
+from typing import Optional, Tuple, List, Dict, Any
 from urllib.parse import urlparse, unquote
 
 try:
@@ -48,17 +49,24 @@ except Exception as e:
 
 
 # ===== Tunables (no CLI flags needed) =====
-UA = "SOC4994-Wayback-Downloader/1.3 (+https://example.edu; email=student@vt.edu)"
+UA = "SOC4994-Wayback-Downloader/1.5 (email=lakshyajain@vt.edu)"
 CDX_BASE = "https://web.archive.org/cdx/search/cdx"
 RAW_FMT = "https://web.archive.org/web/{timestamp}id_/{original}"   # raw passthrough
-HUMAN_FMT = "https://web.archive.org/web/{timestamp}/{original}"    # rewritten HTML (not used for downloads)
-SUBPAGE_MIME_FILTERS = ("mimetype:text/html", "mimetype:application/xhtml+xml")
+HUMAN_FMT = "https://web.archive.org/web/{timestamp}/{original}"    # not used for downloads
 MAX_SUBPAGES = 300  # change here if you want more/less pages
 # =========================================
 
 
 def parse_date(d: str) -> dt.date:
     return dt.datetime.strptime(d, "%Y-%m-%d").date()
+
+
+def humanize_ts(ts: str) -> str:
+    """Convert Wayback ts 'YYYYMMDDhhmmss' -> 'YYYY-MM-DD HH:MM:SS'."""
+    try:
+        return dt.datetime.strptime(ts, "%Y%m%d%H%M%S").strftime("%Y-%m-%d %H:%M:%S")
+    except Exception:
+        return ts
 
 
 def is_empty_notes(val) -> bool:
@@ -90,27 +98,26 @@ def _safe_part(s: str) -> str:
 
 def path_from_original(original: str) -> str:
     """
-    Build a hierarchical relative path for saving a subpage HTML:
+    Build a hierarchical relative path:
     - /a/b/c.html -> a/b/c.html
     - /a/b/       -> a/b/index.html
+    - /           -> index.html
     - ?q=...      -> index.<hash>.html
-    - includes short hash suffix for query strings to avoid collisions
+    - Adds short hash suffix for query strings to avoid collisions.
     """
     u = urlparse(original)
     p = u.path or "/"
     q = u.query
 
-    # ensure we have a filename
     if p.endswith("/"):
         rel = p[1:] + "index"  # drop leading slash
     else:
-        rel = p[1:]  # drop leading slash; may be 'a/b/file.ext' or 'a'
+        rel = p[1:]  # may be 'a/b/file.ext' or 'a'
         if rel == "":
             rel = "index"
 
     # ensure extension
     if not os.path.splitext(rel)[1]:
-        # no extension -> treat as html
         rel = rel + ".html"
 
     # add query hash suffix if needed
@@ -119,10 +126,8 @@ def path_from_original(original: str) -> str:
         base, ext = os.path.splitext(rel)
         rel = f"{base}__q{h}{ext}"
 
-    # sanitize each segment
     parts = [_safe_part(seg) for seg in rel.split("/")]
-    rel_safe = "/".join(parts)
-    return rel_safe
+    return "/".join(parts)
 
 
 class PoliteRequester:
@@ -250,48 +255,52 @@ def safe_ext_from_content_type(ct: Optional[str]) -> str:
     return ".bin"
 
 
-def download_snapshot_homepage(preq: PoliteRequester, ts: str, original: str, day_dir: Path,
-                               verbose=False) -> Optional[Path]:
+def download_snapshot_homepage(preq: PoliteRequester, ts: str, original: str, range_dir: Path,
+                               verbose=False) -> Tuple[Optional[Path], Optional[str]]:
     """
-    Download the homepage snapshot to:
-        <day_dir>/<HHMMSS>.<ext>
+    Download the homepage snapshot as:
+        <range_dir>/index.<ext>
+    Return (fpath, content_type).
     """
     url = RAW_FMT.format(timestamp=ts, original=original)
-    hhmmss = f"{ts[8:10]}{ts[10:12]}{ts[12:14]}" if len(ts) >= 14 else "000000"
+    fpath = range_dir / "index.html"  # default; may change if content-type says otherwise
+    range_dir.mkdir(parents=True, exist_ok=True)
+
     try:
         resp = preq.get(url, allow_redirects=True, stream=True)
         if resp.status_code != 200:
             if verbose:
                 print(f"[GET] {url} -> HTTP {resp.status_code}")
-            return None
+            return None, None
 
         ct = resp.headers.get("Content-Type")
         ext = safe_ext_from_content_type(ct)
+        if ext and fpath.suffix != ext:
+            fpath = fpath.with_suffix(ext)
 
-        day_dir.mkdir(parents=True, exist_ok=True)
-        fpath = day_dir / f"{hhmmss}{ext}"
         with open(fpath, "wb") as f:
             for chunk in resp.iter_content(chunk_size=65536):
                 if chunk:
                     f.write(chunk)
         if verbose:
             print(f"[SAVE] homepage: {fpath}")
-        return fpath
+        return fpath, (ct.split(";")[0].strip() if ct else None)
 
     except requests.RequestException as e:
         if verbose:
             print(f"[GET] Error {url}: {e}")
-        return None
+        return None, None
 
 
-def download_snapshot_subpage(preq: PoliteRequester, ts: str, original: str, day_dir: Path,
-                              verbose=False) -> Optional[Path]:
+def download_snapshot_subpage(preq: PoliteRequester, ts: str, original: str, range_dir: Path,
+                              verbose=False) -> Tuple[Optional[Path], Optional[str]]:
     """
-    Download one subpage's raw HTML to hierarchical path under <day_dir>.
+    Download one subpage's raw HTML under <range_dir> (hierarchical path).
+    Return (fpath, content_type).
     """
     url = RAW_FMT.format(timestamp=ts, original=original)
     rel = path_from_original(original)
-    fpath = day_dir / rel
+    fpath = range_dir / rel
     fpath.parent.mkdir(parents=True, exist_ok=True)
 
     try:
@@ -299,14 +308,12 @@ def download_snapshot_subpage(preq: PoliteRequester, ts: str, original: str, day
         if resp.status_code != 200:
             if verbose:
                 print(f"[GET] {url} -> HTTP {resp.status_code}")
-            return None
+            return None, None
 
-        # force .html if content type says html/xhtml, else derive
         ct = resp.headers.get("Content-Type")
         ext = safe_ext_from_content_type(ct)
         base, _ext = os.path.splitext(fpath.name)
         if ext and ext != _ext:
-            # adjust extension to actual content-type
             fpath = fpath.with_name(base + ext)
 
         with open(fpath, "wb") as f:
@@ -315,112 +322,133 @@ def download_snapshot_subpage(preq: PoliteRequester, ts: str, original: str, day
                     f.write(chunk)
         if verbose:
             print(f"[SAVE] subpage: {fpath}")
-        return fpath
+        return fpath, (ct.split(";")[0].strip() if ct else None)
 
     except requests.RequestException as e:
         if verbose:
             print(f"[GET] Error {url}: {e}")
-        return None
+        return None, None
 
 
-def crawl_same_day_subpages(preq: PoliteRequester, original_home: str, ts_home: str,
-                            day_dir: Path, verbose=False) -> int:
+def list_latest_html_subpages_in_range(preq: PoliteRequester, original_home: str,
+                                       start_date: dt.date, end_date: dt.date,
+                                       verbose=False) -> List[Tuple[str, str, str]]:
     """
-    Query CDX for same-day (YYYYMMDD) captures for the same host, HTML only.
-    For each DISTINCT original URL, pick the latest capture that day (sort=reverse, collapse=original).
-    Returns count of successfully downloaded subpages.
+    For the given host, within [start_date, end_date], return up to MAX_SUBPAGES tuples:
+      (timestamp, original, mimetype)
+    where each 'original' is distinct and timestamp is the LATEST capture in the range
+    for that original. HTML-only filtering done client-side (OR logic).
     """
-    ymd = ts_home[:8]
     host = domain_from_url(original_home)
-    # We use url=host/* and matchType=host to get same host paths (no foreign domains).
-    params = {
-        "url": f"{host}/*",
-        "from": ymd,
-        "to": ymd,
-        "output": "json",
-        "filter": "statuscode:200",
-        "fl": "timestamp,original,mimetype",
-        "sort": "reverse",
-        "collapse": "original",
-        "limit": str(MAX_SUBPAGES + 5),  # a little headroom; we'll trim ourselves
-        "matchType": "host",
-        "gzip": "false",
-    }
-
-    # add MIME filters (HTML only)
-    # CDX supports multiple 'filter' params
-    filters = ["statuscode:200"] + [f for f in SUBPAGE_MIME_FILTERS]
-    # requests will handle list -> repeated keys
-    params_list = []
-    for k, v in params.items():
-        if k != "filter":
-            params_list.append((k, v))
-    for f in filters:
-        params_list.append(("filter", f))
+    params = [
+        ("url", f"{host}/*"),
+        ("from", start_date.strftime("%Y%m%d")),
+        ("to", end_date.strftime("%Y%m%d")),
+        ("output", "json"),
+        ("fl", "timestamp,original,mimetype"),
+        ("sort", "reverse"),
+        ("collapse", "original"),
+        ("matchType", "host"),
+        ("gzip", "false"),
+        ("filter", "statuscode:200"),
+        ("limit", str(MAX_SUBPAGES + 50)),
+    ]
 
     try:
-        r = preq.get(CDX_BASE, params=params_list, allow_redirects=True)
+        r = preq.get(CDX_BASE, params=params, allow_redirects=True)
         r.raise_for_status()
         data = r.json()
     except Exception as e:
         if verbose:
-            print(f"[CDX] Subpage listing error for {host} on {ymd}: {e}")
-        return 0
+            print(f"[CDX] Subpage listing error for host={host} in range: {e}")
+        return []
 
+    results: List[Tuple[str, str, str]] = []
     if not data or len(data) < 2:
         if verbose:
-            print(f"[CDX] No same-day subpages for {host} on {ymd}")
-        return 0
+            print(f"[CDX] No subpages for host={host} in range.")
+        return results
 
     home_norm = normalize_original_for_compare(original_home)
-    downloaded = 0
-    seen = set()
 
     for row in data[1:]:
-        if len(row) < 2:
+        if len(row) < 3:
             continue
-        ts, original = row[0], row[1]
+        ts, original, mimetype = row[0], row[1], (row[2] or "").lower()
+        # HTML-only (OR) filter here:
+        if not (mimetype.startswith("text/html") or mimetype == "application/xhtml+xml"):
+            continue
+        # skip homepage itself if it appears
         if normalize_original_for_compare(original) == home_norm:
-            # skip the homepage itself (we already saved it)
             continue
-        if original in seen:
-            continue
-        seen.add(original)
 
-        # Save only up to MAX_SUBPAGES
-        if downloaded >= MAX_SUBPAGES:
+        results.append((ts, original, mimetype))
+        if len(results) >= MAX_SUBPAGES:
             break
 
-        ok_path = download_snapshot_subpage(preq, ts, original, day_dir, verbose=verbose)
-        if ok_path is not None:
-            downloaded += 1
-
     if verbose:
-        print(f"[CDX] Subpages saved: {downloaded} (host={host}, date={ymd})")
-    return downloaded
+        print(f"[CDX] Latest-in-range subpages gathered: {len(results)} (host={host})")
+    return results
 
 
 def process_url_latest_in_range(preq: PoliteRequester, url: str, start_date: dt.date, end_date: dt.date,
                                 base_out_dir: Path, verbose=False) -> bool:
     """
-    Find and download ONLY the single most-recent snapshot within [start_date, end_date],
-    then crawl same-day subpages.
+    Download the single most-recent homepage in [start_date, end_date] and the latest capture for each
+    distinct subpage within the same range. Everything goes under one range folder:
+        <out_dir>/<domain>/<START>_to_<END>/
+    Also write a manifest with timestamps and paths.
     """
     snap = latest_snapshot_in_range(preq, url, start_date, end_date, verbose=verbose)
     if not snap:
+        if verbose:
+            print("[main] No homepage snapshot in range; skipping subpages.")
         return False
-    ts, original = snap
+
+    ts_home, original_home = snap
     dom = domain_from_url(url)
-    ymd_dir = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}" if len(ts) >= 8 else "unknown-date"
-    day_dir = base_out_dir / dom / ymd_dir
+    range_dir = base_out_dir / dom / f"{start_date.isoformat()}_to_{end_date.isoformat()}"
 
-    # 1) homepage
-    home_ok = download_snapshot_homepage(preq, ts, original, day_dir, verbose=verbose)
+    # homepage
+    home_path, home_ct = download_snapshot_homepage(preq, ts_home, original_home, range_dir, verbose=verbose)
 
-    # 2) same-day subpages (HTML only)
-    _ = crawl_same_day_subpages(preq, original, ts, day_dir, verbose=verbose)
+    # subpages
+    subpages = list_latest_html_subpages_in_range(preq, original_home, start_date, end_date, verbose=verbose)
+    subpage_records: List[Dict[str, Any]] = []
+    downloaded = 0
+    for ts, original, mimetype in subpages:
+        sp_path, sp_ct = download_snapshot_subpage(preq, ts, original, range_dir, verbose=verbose)
+        if sp_path is not None:
+            downloaded += 1
+            subpage_records.append({
+                "original": original,
+                "timestamp": ts,
+                "timestamp_human": humanize_ts(ts),
+                "saved_path": str(sp_path.relative_to(range_dir).as_posix()),
+                "content_type": (sp_ct or mimetype or "")
+            })
 
-    return home_ok is not None
+    # manifest
+    manifest: Dict[str, Any] = {
+        "range": {
+            "start_date": start_date.isoformat(),
+            "end_date": end_date.isoformat()
+        },
+        "homepage": {
+            "original": original_home,
+            "timestamp": ts_home,
+            "timestamp_human": humanize_ts(ts_home),
+            "saved_path": (str(home_path.relative_to(range_dir).as_posix()) if home_path else None),
+            "content_type": (home_ct or "")
+        },
+        "subpages": subpage_records
+    }
+    (range_dir / "_captures.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+
+    if verbose:
+        print(f"[main] Subpages saved: {downloaded}")
+
+    return home_path is not None
 
 
 def batch_process_csv(input_csv: Path, output_csv: Path, start_date: dt.date, end_date: dt.date,
@@ -471,7 +499,7 @@ def batch_process_csv(input_csv: Path, output_csv: Path, start_date: dt.date, en
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Download the most-recent Wayback snapshot in a date range and same-day subpages (HTML) for cleaned links with empty link_clean_notes.")
+    ap = argparse.ArgumentParser(description="Download the most-recent homepage snapshot and latest-in-range HTML subpages into a single range folder with a JSON manifest.")
     ap.add_argument("--input", type=Path, help="Input CSV (must have columns: clean_link, link_clean_notes).")
     ap.add_argument("--output", type=Path, help="Output CSV path (will be created/overwritten).")
     ap.add_argument("--url", type=str, help="Test a single URL (bypass CSV).")
