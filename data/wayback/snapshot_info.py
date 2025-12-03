@@ -2,9 +2,9 @@ import pandas as pd
 import random
 import requests
 import time
+from datetime import datetime
 
 DATASET_PATH = "../vendors/facial_recognition_vendors.csv"
-DATASET_PATH = "./test.csv"
 URL_COLUMN = "clean_link"
 NOTES_COLUMN = "link_clean_notes"
 OUTPUT_CSV = "./fr_vendors_snapshot_info.csv"
@@ -25,6 +25,15 @@ def clean_url(url):
         url = "https://" + url
     return url.strip()
 
+def format_date(ts):
+    """Convert Wayback timestamp YYYYMMDDhhmmss → YYYY-MM-DD."""
+    if ts is None:
+        return None
+    try:
+        return datetime.strptime(ts, "%Y%m%d%H%M%S").strftime("%Y-%m-%d")
+    except:
+        return None
+
 def get_snapshot_info(url, retries=5):
     """Fetch snapshot info from the Wayback Machine with retry/backoff."""
     base = "https://web.archive.org/cdx/search/cdx"
@@ -33,6 +42,7 @@ def get_snapshot_info(url, retries=5):
     for attempt in range(retries):
         try:
             r = requests.get(base, params=params, timeout=20)
+
             if r.status_code == 429:
                 wait = (2 ** attempt) + random.uniform(0, 2)
                 print(f"Rate limit hit. Waiting {wait:.1f}s before retry...")
@@ -46,7 +56,11 @@ def get_snapshot_info(url, retries=5):
                 return 0, None, None
 
             timestamps = [row[1] for row in data[1:]]
-            return len(timestamps), min(timestamps), max(timestamps)
+
+            first_ts = format_date(min(timestamps))
+            last_ts = format_date(max(timestamps))
+
+            return len(timestamps), first_ts, last_ts
 
         except Exception as e:
             print(f"{url}: {e} (attempt {attempt+1}/{retries})")
@@ -93,8 +107,7 @@ for idx, row in all_rows.iterrows():
             base_record["processed_link"] = None
 
     else:
-        # Not processed — leave processed_link as None
-        pass
+        pass  # Not processed — leave processed_link as None
 
     results.append(base_record)
 
@@ -111,7 +124,6 @@ for idx, row in all_rows.iterrows():
 
     # Safe randomized delay between requests
     time.sleep(random.uniform(1.0, 2.2))
-
 
 # === Final save ===
 out_df = pd.DataFrame(results)
