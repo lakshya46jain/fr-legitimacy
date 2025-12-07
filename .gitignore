@@ -6,4 +6,7 @@ Icon?
 
 # Website Snapshots
 data/wayback/snapshots/
+
+# Others
 __pycache__/
+snapshot_texts*
