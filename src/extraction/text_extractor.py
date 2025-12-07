@@ -22,7 +22,7 @@ from functools import partial
 from tqdm import tqdm
 from langdetect import detect, LangDetectException
 
-from html_cleaning_utils import clean_html_text
+from src.extraction.html_cleaning_utils import clean_html_text
 
 
 # -------------------------------------------------------
