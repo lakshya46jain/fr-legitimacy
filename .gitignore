@@ -7,6 +7,11 @@ Icon?
 # Website Snapshots
 data/wayback/snapshots/
 
+# Large Files
+snapshot_texts*
+bertopic_model
+topic_over_time.csv
+topics.csv
+
 # Others
 __pycache__/
-snapshot_texts*
