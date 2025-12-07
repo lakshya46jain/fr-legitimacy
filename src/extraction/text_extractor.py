@@ -80,6 +80,7 @@ FR_KEYWORDS = [
     "compliance", "regulation", "ethical ai",
 ]
 
+
 def contains_fr_keywords(text: str) -> bool:
     """Return True if text contains any FR keyword."""
     t = text.lower()
@@ -98,28 +99,36 @@ def detect_language(text: str) -> str:
 
 
 # -------------------------------------------------------
-# GLOBAL CLEANING STATISTICS
-# -------------------------------------------------------
-stats = {
-    "total_files": 0,
-    "parsed_ok": 0,
-    "removed_short": 0,
-    "removed_non_english": 0,
-    "removed_no_keywords": 0,
-    "kept_final": 0,
-}
-
-
-# -------------------------------------------------------
 # WORKER FUNCTION
 # -------------------------------------------------------
 def process_html_file(snapshot_root, relpath):
-    global stats
-    stats["total_files"] += 1
+    """
+    Process a single HTML file and return:
+      {
+        "record": {...} OR None,
+        "stats": {
+            "total_files": 1,
+            "parsed_ok": 0/1,
+            "removed_short": 0/1,
+            "removed_non_english": 0/1,
+            "removed_no_keywords": 0/1,
+            "kept_final": 0/1,
+        }
+      }
+    """
+    local_stats = {
+        "total_files": 1,
+        "parsed_ok": 0,
+        "removed_short": 0,
+        "removed_non_english": 0,
+        "removed_no_keywords": 0,
+        "kept_final": 0,
+    }
 
     parts = relpath.split(os.sep)
     if len(parts) < 3:
-        return None
+        # Still count the file, but nothing parsed
+        return {"record": None, "stats": local_stats}
 
     company = parts[0]
     decade = parts[1]
@@ -132,28 +141,28 @@ def process_html_file(snapshot_root, relpath):
 
         # Clean HTML text using your enhanced utilities
         cleaned = clean_html_text(html)
-        stats["parsed_ok"] += 1
+        local_stats["parsed_ok"] = 1
 
         # Rule 1: Remove very short pages
         if len(cleaned.split()) < 30:
-            stats["removed_short"] += 1
-            return None
+            local_stats["removed_short"] = 1
+            return {"record": None, "stats": local_stats}
 
         # Rule 2: Language filter
         lang = detect_language(cleaned)
         if lang != "en":
-            stats["removed_non_english"] += 1
-            return None
+            local_stats["removed_non_english"] = 1
+            return {"record": None, "stats": local_stats}
 
         # Rule 3: Facial-recognition relevance filter
         if not contains_fr_keywords(cleaned):
-            stats["removed_no_keywords"] += 1
-            return None
+            local_stats["removed_no_keywords"] = 1
+            return {"record": None, "stats": local_stats}
 
         # Passed all filters!
-        stats["kept_final"] += 1
+        local_stats["kept_final"] = 1
 
-        return {
+        record = {
             "company": company,
             "decade": decade,
             "path": relpath,
@@ -161,9 +170,11 @@ def process_html_file(snapshot_root, relpath):
             "text": cleaned,
         }
 
+        return {"record": record, "stats": local_stats}
+
     except Exception:
-        # Skip unreadable files
-        return None
+        # Could not parse/clean; parsed_ok stays 0
+        return {"record": None, "stats": local_stats}
 
 
 # -------------------------------------------------------
@@ -193,14 +204,35 @@ if __name__ == "__main__":
 
     print(f"Starting multiprocessing extraction using {num_workers} workers...\n")
 
-    results = []
+    # Aggregate results + stats
+    all_records = []
+    agg_stats = {
+        "total_files": 0,
+        "parsed_ok": 0,
+        "removed_short": 0,
+        "removed_non_english": 0,
+        "removed_no_keywords": 0,
+        "kept_final": 0,
+    }
+
     with Pool(num_workers) as pool:
-        for record in tqdm(pool.imap_unordered(worker, html_files), total=total):
-            if record is not None:
-                results.append(record)
+        for result in tqdm(pool.imap_unordered(worker, html_files), total=total):
+            if result is None:
+                continue
+
+            rec = result["record"]
+            s = result["stats"]
+
+            # Aggregate stats
+            for k in agg_stats.keys():
+                agg_stats[k] += s.get(k, 0)
+
+            # Collect kept records
+            if rec is not None:
+                all_records.append(rec)
 
     # Create DataFrame
-    df = pd.DataFrame(results)
+    df = pd.DataFrame(all_records)
 
     # Duplicate removal (important for snapshot archives)
     before_dedup = len(df)
@@ -211,31 +243,31 @@ if __name__ == "__main__":
     # Save cleaned dataset
     df.to_csv(OUTPUT_FILE, index=False)
 
-    # Update stats
-    stats["duplicates_removed"] = duplicates_removed
+    # Add duplicates_removed to stats
+    agg_stats["duplicates_removed"] = duplicates_removed
 
     # Save machine-readable stats CSV
-    pd.DataFrame([stats]).to_csv(STATS_FILE, index=False)
-
+    pd.DataFrame([agg_stats]).to_csv(STATS_FILE, index=False)
 
     # -------------------------------------------------------
     # BUILD HUMAN-READABLE TXT REPORT
     # -------------------------------------------------------
     total_final = len(df)
-    kept_pct = (total_final / stats["total_files"]) * 100 if stats["total_files"] else 0
+    total_files = agg_stats["total_files"]
+    kept_pct = (total_final / total_files) * 100 if total_files else 0.0
 
     report = [
-        "---------------------------------------------",
-        "        FACIAL RECOGNITION DATA CLEANING REPORT",
-        "---------------------------------------------",
+        "------------------------------------------------------------------",
+        "             FACIAL RECOGNITION DATA CLEANING REPORT",
+        "------------------------------------------------------------------",
         "",
-        f"Total HTML files scanned       : {stats['total_files']}",
-        f"Successfully parsed            : {stats['parsed_ok']}",
+        f"Total HTML files scanned       : {total_files}",
+        f"Successfully parsed            : {agg_stats['parsed_ok']}",
         "",
         "REMOVED DURING CLEANING:",
-        f"  - Too short (<30 words)      : {stats['removed_short']}",
-        f"  - Non-English                : {stats['removed_non_english']}",
-        f"  - No FR-related keywords     : {stats['removed_no_keywords']}",
+        f"  - Too short (<30 words)      : {agg_stats['removed_short']}",
+        f"  - Non-English                : {agg_stats['removed_non_english']}",
+        f"  - No FR-related keywords     : {agg_stats['removed_no_keywords']}",
         "",
         f"Duplicates removed             : {duplicates_removed}",
         "",
@@ -261,10 +293,10 @@ if __name__ == "__main__":
             report.append(f"  - {dec:10s}: {count}")
         report.append("")
 
-    report.append("---------------------------------------------")
-    report.append("This report is automatically generated by text_extractor.py")
+    report.append("------------------------------------------------------------------")
+    report.append("   This report is automatically generated by text_extractor.py")
     report.append("Save this file for reproducibility and your SOC 4994 final report.")
-    report.append("---------------------------------------------")
+    report.append("------------------------------------------------------------------")
 
     # Save TXT report
     with open(TXT_FILE, "w") as f:
