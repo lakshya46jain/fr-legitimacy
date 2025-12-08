@@ -1,11 +1,25 @@
-bertopic
-tqdm
-sentence-transformers
-numpy
-pandas
-scikit-learn
-umap-learn
-hdbscan
-plotly
-beautifulsoup4
-lxml
+# Core NLP + Topic Modeling
+bertopic>=0.15.0
+sentence-transformers>=2.2.2
+
+# ML + Vectorization
+scikit-learn>=1.2.2
+numpy>=1.22.0
+pandas>=1.5.0
+
+# Dimensionality Reduction + Clustering
+umap-learn>=0.5.3
+hdbscan>=0.8.33
+
+# Visualization
+plotly>=5.0.0
+
+# Progress Bars
+tqdm>=4.64.0
+
+# HTML Parsing / Cleaning
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Logging / Utilities
+python-dateutil>=2.8.2
