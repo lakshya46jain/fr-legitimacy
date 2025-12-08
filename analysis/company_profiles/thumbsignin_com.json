@@ -1,17 +1,22 @@
 {
   "company": "thumbsignin.com",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 14,
-    "0": 14
+    "0": 14,
+    "-1": 14
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.6129032258064516,
+    "framing_surveillance": 0.0080645161290322,
+    "framing_market": 0.3790322580645161,
+    "num_docs": 28
+  },
   "topic_timeline": {
     "20": {
       "-1": 14,

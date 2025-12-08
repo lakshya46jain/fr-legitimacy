@@ -1,21 +1,23 @@
 {
   "company": "www.addistechsolution.com",
   "dominant_topics": [
-    0,
-    -1
+    0
   ],
   "topic_counts": {
-    "0": 21,
-    "-1": 1
+    "0": 22
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.0144927536231884,
+    "framing_surveillance": 0.9565217391304348,
+    "framing_market": 0.0289855072463768,
+    "num_docs": 22
+  },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 21
+      "0": 22
     }
   },
   "sample_docs": [

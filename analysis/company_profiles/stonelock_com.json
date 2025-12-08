@@ -1,16 +1,23 @@
 {
   "company": "stonelock.com",
   "dominant_topics": [
-    -1
+    0
   ],
   "topic_counts": {
-    "-1": 8
+    "0": 8
   },
-  "topic_descriptions": {},
-  "framing_scores": null,
+  "topic_descriptions": {
+    "0": "access, data, security, time, information"
+  },
+  "framing_scores": {
+    "framing_ethical": 0.2352941176470588,
+    "framing_surveillance": 0.0,
+    "framing_market": 0.7647058823529411,
+    "num_docs": 8
+  },
   "topic_timeline": {
     "20": {
-      "-1": 8
+      "0": 8
     }
   },
   "sample_docs": [

@@ -1,21 +1,23 @@
 {
   "company": "uqudo.com",
   "dominant_topics": [
-    0,
-    -1
+    0
   ],
   "topic_counts": {
-    "0": 3,
-    "-1": 2
+    "0": 5
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.032520325203252,
+    "framing_surveillance": 0.0,
+    "framing_market": 0.967479674796748,
+    "num_docs": 5
+  },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 3
+      "0": 5
     }
   },
   "sample_docs": [

@@ -1,24 +1,29 @@
 {
   "company": "www.stengg.com",
   "dominant_topics": [
-    0,
     -1,
+    0,
     1
   ],
   "topic_counts": {
-    "0": 22,
-    "-1": 8,
+    "-1": 19,
+    "0": 11,
     "1": 1
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use",
+    "0": "access, data, security, time, information",
     "1": "module, students, year, level, grade"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.4014598540145985,
+    "framing_surveillance": 0.1678832116788321,
+    "framing_market": 0.4306569343065693,
+    "num_docs": 31
+  },
   "topic_timeline": {
     "20": {
-      "-1": 8,
-      "0": 22,
+      "-1": 19,
+      "0": 11,
       "1": 1
     }
   },

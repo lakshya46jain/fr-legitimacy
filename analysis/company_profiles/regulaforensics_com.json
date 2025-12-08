@@ -1,18 +1,26 @@
 {
   "company": "regulaforensics.com",
   "dominant_topics": [
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "0": 86
+    "0": 84,
+    "-1": 2
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.26,
+    "framing_surveillance": 0.66,
+    "framing_market": 0.08,
+    "num_docs": 86
+  },
   "topic_timeline": {
     "20": {
-      "0": 86
+      "-1": 2,
+      "0": 84
     }
   },
   "sample_docs": [

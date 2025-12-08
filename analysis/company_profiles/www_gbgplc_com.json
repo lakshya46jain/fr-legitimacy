@@ -2,20 +2,29 @@
   "company": "www.gbgplc.com",
   "dominant_topics": [
     0,
-    -1
+    -1,
+    1
   ],
   "topic_counts": {
-    "0": 148,
-    "-1": 41
+    "0": 163,
+    "-1": 25,
+    "1": 1
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information",
+    "1": "module, students, year, level, grade"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.6835217132659132,
+    "framing_surveillance": 0.0220107079119571,
+    "framing_market": 0.2944675788221297,
+    "num_docs": 189
+  },
   "topic_timeline": {
     "20": {
-      "-1": 41,
-      "0": 148
+      "-1": 25,
+      "0": 163,
+      "1": 1
     }
   },
   "sample_docs": [

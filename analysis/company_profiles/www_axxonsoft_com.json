@@ -1,21 +1,26 @@
 {
   "company": "www.axxonsoft.com",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 18,
-    "0": 1
+    "0": 13,
+    "-1": 6
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.0689655172413793,
+    "framing_surveillance": 0.2068965517241379,
+    "framing_market": 0.7241379310344828,
+    "num_docs": 19
+  },
   "topic_timeline": {
     "20": {
-      "-1": 18,
-      "0": 1
+      "-1": 6,
+      "0": 13
     }
   },
   "sample_docs": [

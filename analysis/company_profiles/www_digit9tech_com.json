@@ -1,21 +1,21 @@
 {
   "company": "www.digit9tech.com",
   "dominant_topics": [
-    -1,
-    0
+    -1
   ],
   "topic_counts": {
-    "-1": 10,
-    "0": 1
+    "-1": 11
   },
-  "topic_descriptions": {
-    "0": "access, security, data, time, use"
+  "topic_descriptions": {},
+  "framing_scores": {
+    "framing_ethical": 0.1956521739130435,
+    "framing_surveillance": 0.2391304347826087,
+    "framing_market": 0.5652173913043478,
+    "num_docs": 11
   },
-  "framing_scores": null,
   "topic_timeline": {
     "20": {
-      "-1": 10,
-      "0": 1
+      "-1": 11
     }
   },
   "sample_docs": [

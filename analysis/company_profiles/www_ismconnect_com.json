@@ -1,21 +1,26 @@
 {
   "company": "www.ismconnect.com",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 10,
-    "0": 8
+    "0": 9,
+    "-1": 9
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.3478260869565217,
+    "framing_surveillance": 0.1739130434782608,
+    "framing_market": 0.4782608695652174,
+    "num_docs": 18
+  },
   "topic_timeline": {
     "20": {
-      "-1": 10,
-      "0": 8
+      "-1": 9,
+      "0": 9
     }
   },
   "sample_docs": [

@@ -2,20 +2,24 @@
   "company": "www.konami.com",
   "dominant_topics": [
     3,
-    0
+    -1
   ],
   "topic_counts": {
     "3": 31,
-    "0": 1
+    "-1": 1
   },
   "topic_descriptions": {
-    "3": "deck, attacked, zombie, turn, trap",
-    "0": "access, security, data, time, use"
+    "3": "deck, attacked, zombie, turn, trap"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.019047619047619,
+    "framing_surveillance": 0.019047619047619,
+    "framing_market": 0.961904761904762,
+    "num_docs": 32
+  },
   "topic_timeline": {
     "20": {
-      "0": 1,
+      "-1": 1,
       "3": 31
     }
   },

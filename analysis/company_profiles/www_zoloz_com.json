@@ -1,21 +1,26 @@
 {
   "company": "www.zoloz.com",
   "dominant_topics": [
-    0,
-    -1
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 8,
-    "-1": 2
+    "-1": 8,
+    "0": 2
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.5454545454545454,
+    "framing_surveillance": 0.0,
+    "framing_market": 0.4545454545454545,
+    "num_docs": 10
+  },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 8
+      "-1": 8,
+      "0": 2
     }
   },
   "sample_docs": [

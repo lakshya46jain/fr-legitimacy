@@ -1,18 +1,23 @@
 {
   "company": "www.hzailysm.com",
   "dominant_topics": [
-    4
+    2
   ],
   "topic_counts": {
-    "4": 4
+    "2": 4
   },
   "topic_descriptions": {
-    "4": "uv, printer, printers, printing, transparency"
+    "2": "uv, printer, transparency, printers, printing"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.25,
+    "framing_surveillance": 0.0,
+    "framing_market": 0.75,
+    "num_docs": 4
+  },
   "topic_timeline": {
     "20": {
-      "4": 4
+      "2": 4
     }
   },
   "sample_docs": [

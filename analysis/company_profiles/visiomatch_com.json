@@ -1,21 +1,26 @@
 {
   "company": "visiomatch.com",
   "dominant_topics": [
-    0,
-    -1
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 26,
-    "-1": 2
+    "-1": 17,
+    "0": 11
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.218397997496871,
+    "framing_surveillance": 0.0037546933667083,
+    "framing_market": 0.7778473091364205,
+    "num_docs": 28
+  },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 26
+      "-1": 17,
+      "0": 11
     }
   },
   "sample_docs": [

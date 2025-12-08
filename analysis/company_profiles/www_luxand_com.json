@@ -1,18 +1,26 @@
 {
   "company": "www.luxand.com",
   "dominant_topics": [
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "0": 15
+    "0": 14,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.5588235294117647,
+    "framing_surveillance": 0.4235294117647059,
+    "framing_market": 0.0176470588235294,
+    "num_docs": 15
+  },
   "topic_timeline": {
     "20": {
-      "0": 15
+      "-1": 1,
+      "0": 14
     }
   },
   "sample_docs": [

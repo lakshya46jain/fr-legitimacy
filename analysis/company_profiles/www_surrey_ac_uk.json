@@ -6,20 +6,25 @@
     0
   ],
   "topic_counts": {
-    "1": 129,
-    "-1": 19,
-    "0": 3
+    "1": 125,
+    "-1": 22,
+    "0": 4
   },
   "topic_descriptions": {
     "1": "module, students, year, level, grade",
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.92548435171386,
+    "framing_surveillance": 0.0715350223546944,
+    "framing_market": 0.0029806259314456,
+    "num_docs": 151
+  },
   "topic_timeline": {
     "20": {
-      "-1": 19,
-      "0": 3,
-      "1": 129
+      "-1": 22,
+      "0": 4,
+      "1": 125
     }
   },
   "sample_docs": [

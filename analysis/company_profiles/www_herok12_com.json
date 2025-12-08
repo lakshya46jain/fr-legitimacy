@@ -1,18 +1,23 @@
 {
   "company": "www.herok12.com",
   "dominant_topics": [
-    7
+    6
   ],
   "topic_counts": {
-    "7": 23
+    "6": 23
   },
   "topic_descriptions": {
-    "7": "hero, school, students, student, behavior"
+    "6": "hero, school, students, student, behavior"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.5915492957746479,
+    "framing_surveillance": 0.0845070422535211,
+    "framing_market": 0.323943661971831,
+    "num_docs": 23
+  },
   "topic_timeline": {
     "20": {
-      "7": 23
+      "6": 23
     }
   },
   "sample_docs": [

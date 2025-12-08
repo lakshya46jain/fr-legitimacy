@@ -1,21 +1,26 @@
 {
   "company": "www.activewitness.com",
   "dominant_topics": [
-    0,
-    -1
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 6,
-    "-1": 4
+    "-1": 5,
+    "0": 5
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.7083333333333334,
+    "framing_surveillance": 0.1666666666666666,
+    "framing_market": 0.125,
+    "num_docs": 10
+  },
   "topic_timeline": {
     "20": {
-      "-1": 4,
-      "0": 6
+      "-1": 5,
+      "0": 5
     }
   },
   "sample_docs": [

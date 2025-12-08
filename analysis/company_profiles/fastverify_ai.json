@@ -1,21 +1,26 @@
 {
   "company": "fastverify.ai",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 19,
-    "0": 15
+    "0": 29,
+    "-1": 5
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.5032851511169514,
+    "framing_surveillance": 0.0249671484888304,
+    "framing_market": 0.4717477003942181,
+    "num_docs": 34
+  },
   "topic_timeline": {
     "20": {
-      "-1": 19,
-      "0": 15
+      "-1": 5,
+      "0": 29
     }
   },
   "sample_docs": [

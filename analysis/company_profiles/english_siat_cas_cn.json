@@ -1,25 +1,30 @@
 {
   "company": "english.siat.cas.cn",
   "dominant_topics": [
-    0,
+    7,
     -1,
     1
   ],
   "topic_counts": {
-    "0": 17,
+    "7": 17,
     "-1": 8,
     "1": 6
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use",
+    "7": "wang, zheng, lei, biomedical, liu",
     "1": "module, students, year, level, grade"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 1.0,
+    "framing_surveillance": 0.0,
+    "framing_market": 0.0,
+    "num_docs": 31
+  },
   "topic_timeline": {
     "20": {
       "-1": 8,
-      "0": 17,
-      "1": 6
+      "1": 6,
+      "7": 17
     }
   },
   "sample_docs": [

@@ -1,21 +1,26 @@
 {
   "company": "www.trac-tech.co.za",
   "dominant_topics": [
-    0,
-    -1
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 15,
-    "-1": 2
+    "-1": 9,
+    "0": 8
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.0,
+    "framing_surveillance": 0.0,
+    "framing_market": 0.0,
+    "num_docs": 17
+  },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 15
+      "-1": 9,
+      "0": 8
     }
   },
   "sample_docs": [

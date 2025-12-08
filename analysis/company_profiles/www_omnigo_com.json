@@ -2,20 +2,29 @@
   "company": "www.omnigo.com",
   "dominant_topics": [
     0,
-    -1
+    -1,
+    6
   ],
   "topic_counts": {
-    "0": 115,
-    "-1": 38
+    "0": 123,
+    "-1": 29,
+    "6": 1
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information",
+    "6": "hero, school, students, student, behavior"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.3094425483503982,
+    "framing_surveillance": 0.5062571103526735,
+    "framing_market": 0.1843003412969283,
+    "num_docs": 153
+  },
   "topic_timeline": {
     "20": {
-      "-1": 38,
-      "0": 115
+      "-1": 29,
+      "0": 123,
+      "6": 1
     }
   },
   "sample_docs": [

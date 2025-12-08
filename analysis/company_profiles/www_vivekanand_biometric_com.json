@@ -1,18 +1,26 @@
 {
   "company": "www.vivekanand-biometric.com",
   "dominant_topics": [
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "0": 8
+    "0": 7,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.8125,
+    "framing_surveillance": 0.0,
+    "framing_market": 0.1875,
+    "num_docs": 8
+  },
   "topic_timeline": {
     "20": {
-      "0": 8
+      "-1": 1,
+      "0": 7
     }
   },
   "sample_docs": [

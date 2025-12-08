@@ -2,20 +2,29 @@
   "company": "www.imperial.ac.uk",
   "dominant_topics": [
     0,
+    7,
     -1
   ],
   "topic_counts": {
-    "0": 13,
-    "-1": 7
+    "0": 11,
+    "7": 5,
+    "-1": 4
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information",
+    "7": "wang, zheng, lei, biomedical, liu"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.5952380952380952,
+    "framing_surveillance": 0.1666666666666666,
+    "framing_market": 0.238095238095238,
+    "num_docs": 20
+  },
   "topic_timeline": {
     "20": {
-      "-1": 7,
-      "0": 13
+      "-1": 4,
+      "0": 11,
+      "7": 5
     }
   },
   "sample_docs": [

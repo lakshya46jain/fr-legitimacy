@@ -1,25 +1,26 @@
 {
   "company": "pixlab.io",
   "dominant_topics": [
-    2,
     0,
     -1
   ],
   "topic_counts": {
-    "2": 37,
-    "0": 6,
-    "-1": 1
+    "0": 42,
+    "-1": 2
   },
   "topic_descriptions": {
-    "2": "identity card, pixlab, api, card, driver license",
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.3637992831541218,
+    "framing_surveillance": 0.007168458781362,
+    "framing_market": 0.6290322580645161,
+    "num_docs": 44
+  },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 6,
-      "2": 37
+      "-1": 2,
+      "0": 42
     }
   },
   "sample_docs": [

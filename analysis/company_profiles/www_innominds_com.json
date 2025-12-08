@@ -1,21 +1,26 @@
 {
   "company": "www.innominds.com",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 66,
-    "0": 44
+    "0": 60,
+    "-1": 50
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.2350364963503649,
+    "framing_surveillance": 0.0014598540145985,
+    "framing_market": 0.7635036496350365,
+    "num_docs": 110
+  },
   "topic_timeline": {
     "20": {
-      "-1": 66,
-      "0": 44
+      "-1": 50,
+      "0": 60
     }
   },
   "sample_docs": [

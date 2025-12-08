@@ -1,21 +1,23 @@
 {
   "company": "kloudspot.ai",
   "dominant_topics": [
-    0,
-    -1
+    0
   ],
   "topic_counts": {
-    "0": 91,
-    "-1": 1
+    "0": 92
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.3293650793650793,
+    "framing_surveillance": 0.376984126984127,
+    "framing_market": 0.2936507936507936,
+    "num_docs": 92
+  },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 91
+      "0": 92
     }
   },
   "sample_docs": [

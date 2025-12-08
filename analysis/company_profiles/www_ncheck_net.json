@@ -1,18 +1,26 @@
 {
   "company": "www.ncheck.net",
   "dominant_topics": [
+    -1,
     0
   ],
   "topic_counts": {
-    "0": 15
+    "-1": 14,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.1578947368421052,
+    "framing_surveillance": 0.1052631578947368,
+    "framing_market": 0.7368421052631579,
+    "num_docs": 15
+  },
   "topic_timeline": {
     "20": {
-      "0": 15
+      "-1": 14,
+      "0": 1
     }
   },
   "sample_docs": [

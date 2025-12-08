@@ -1,18 +1,26 @@
 {
   "company": "zeroeyes.com",
   "dominant_topics": [
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "0": 30
+    "0": 29,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.0410958904109589,
+    "framing_surveillance": 0.9269406392694064,
+    "framing_market": 0.0319634703196347,
+    "num_docs": 30
+  },
   "topic_timeline": {
     "20": {
-      "0": 30
+      "-1": 1,
+      "0": 29
     }
   },
   "sample_docs": [

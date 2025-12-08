@@ -1,21 +1,26 @@
 {
   "company": "www.enablex.io",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 9,
-    "0": 9
+    "0": 10,
+    "-1": 8
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.6751968503937008,
+    "framing_surveillance": 0.0236220472440944,
+    "framing_market": 0.3011811023622047,
+    "num_docs": 18
+  },
   "topic_timeline": {
     "20": {
-      "-1": 9,
-      "0": 9
+      "-1": 8,
+      "0": 10
     }
   },
   "sample_docs": [

@@ -7,7 +7,12 @@
     "-1": 13
   },
   "topic_descriptions": {},
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.4331550802139037,
+    "framing_surveillance": 0.0,
+    "framing_market": 0.5668449197860963,
+    "num_docs": 13
+  },
   "topic_timeline": {
     "20": {
       "-1": 13

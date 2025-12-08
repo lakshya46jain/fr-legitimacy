@@ -1,21 +1,21 @@
 {
   "company": "en.deepblueai.com",
   "dominant_topics": [
-    0,
     -1
   ],
   "topic_counts": {
-    "0": 18,
-    "-1": 11
+    "-1": 29
   },
-  "topic_descriptions": {
-    "0": "access, security, data, time, use"
+  "topic_descriptions": {},
+  "framing_scores": {
+    "framing_ethical": 0.1333333333333333,
+    "framing_surveillance": 0.4666666666666667,
+    "framing_market": 0.4,
+    "num_docs": 29
   },
-  "framing_scores": null,
   "topic_timeline": {
     "20": {
-      "-1": 11,
-      "0": 18
+      "-1": 29
     }
   },
   "sample_docs": [

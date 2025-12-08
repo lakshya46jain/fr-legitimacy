@@ -1,21 +1,26 @@
 {
   "company": "www.infrrd.ai",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 39,
-    "0": 25
+    "0": 48,
+    "-1": 16
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.3826086956521739,
+    "framing_surveillance": 0.0130434782608695,
+    "framing_market": 0.6043478260869565,
+    "num_docs": 64
+  },
   "topic_timeline": {
     "20": {
-      "-1": 39,
-      "0": 25
+      "-1": 16,
+      "0": 48
     }
   },
   "sample_docs": [

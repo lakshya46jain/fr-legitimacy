@@ -1,21 +1,21 @@
 {
   "company": "verify365.app",
   "dominant_topics": [
-    -1,
-    0
+    -1
   ],
   "topic_counts": {
-    "-1": 2,
-    "0": 1
+    "-1": 3
   },
-  "topic_descriptions": {
-    "0": "access, security, data, time, use"
+  "topic_descriptions": {},
+  "framing_scores": {
+    "framing_ethical": 0.5517241379310345,
+    "framing_surveillance": 0.0459770114942528,
+    "framing_market": 0.4022988505747126,
+    "num_docs": 3
   },
-  "framing_scores": null,
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 1
+      "-1": 3
     }
   },
   "sample_docs": [

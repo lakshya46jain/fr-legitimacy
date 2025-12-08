@@ -5,17 +5,22 @@
     0
   ],
   "topic_counts": {
-    "-1": 8,
-    "0": 6
+    "-1": 7,
+    "0": 7
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.4615384615384615,
+    "framing_surveillance": 0.1538461538461538,
+    "framing_market": 0.3846153846153846,
+    "num_docs": 14
+  },
   "topic_timeline": {
     "20": {
-      "-1": 8,
-      "0": 6
+      "-1": 7,
+      "0": 7
     }
   },
   "sample_docs": [

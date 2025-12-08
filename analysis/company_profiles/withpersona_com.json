@@ -1,21 +1,26 @@
 {
   "company": "withpersona.com",
   "dominant_topics": [
-    0,
-    -1
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 44,
-    "-1": 43
+    "-1": 45,
+    "0": 42
   },
   "topic_descriptions": {
-    "0": "access, security, data, time, use"
+    "0": "access, data, security, time, information"
   },
-  "framing_scores": null,
+  "framing_scores": {
+    "framing_ethical": 0.4173553719008264,
+    "framing_surveillance": 0.0438016528925619,
+    "framing_market": 0.5388429752066116,
+    "num_docs": 87
+  },
   "topic_timeline": {
     "20": {
-      "-1": 43,
-      "0": 44
+      "-1": 45,
+      "0": 42
     }
   },
   "sample_docs": [
