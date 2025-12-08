@@ -1,0 +1,21 @@
+{
+  "company": "haystackid.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "BIG ENOUGH TO MATTER. SMALL ENOUGH TO CARE. HaystackID is a specialized eDiscovery services firm that helps corporations and law firms find, listen, and learn from data when they face complex, data-intensive investigations and litigation. With an earned reputation for mobilizing industry-leading computer forensics, eDiscovery, and attorney document review experts, HaystackID's Forensics First, Early Case Insight, and ReviewRight services accelerate and deliver quality outcomes at a fair and predictable price. HELPING YOU SOLVE KEY eDISCOVERY CHALLENGES We can augment and complement your current resources to provide more discovery power. Increasing Types of Data We can help you deal with all types of data. We ensure data security with a combination of experts, certifications, and best practices. Increasing Volumes of Data We can help you address data volume challenges with experts and advanced technologies. We can help you address budgetary constraints with economical and efficient offerings. SUPPORTING LEGAL DEPARTMENTS AND LAW FIRMS THROUGHOUT THE WORLD Serving more than 500 of the world's leading corporations and law firms from North American and European locations, HaystackID's combination of expertise and executional excellence coupled with a culture of white glove customer service make it the alternative legal services provider that is big enough to matter but small enough to care. U.S. Government Printing Office Massachusetts Institute of Technology (MIT) The Harford Financial Services Group REQUEST A DISCUSSION OR DEMONSTRATION One of our computer forensics, eDiscovery, or legal review experts would be delighted to share with you how HaystackID may help you solve critical data and legal discovery challenges. WHAT CUSTOMERS ARE SAYING ABOUT H AYSTACKID [Early Case Insight] Envision Discovery [now HaystackID] has been our preferred eDiscovery service provider for several years. They have handled everything from onsite forensic collections at Duke to data processing, hosting in Relativity and project management on many of our cases. We have found that Envision offers superior service and technical expertise at a very competitive rate. They have been very helpful in working with our outside counsel, and their team of experts are some of the best in the industry. We have been extremely happy with Envision and consider them a valuable partner and an extension of our in-house legal team. [ReviewRight] Inspired Review's focus on capturing metrics and testing reviewer aptitude ensures that the right people are assigned to each project time after time. [ReviewRight] Inspired Review was able to staff a project in 24 hours with 60 construction litigators to review 58,000 construction files with a 10-day deadline. They finished the review five days early. It was a remarkable deliverable and why I look to Inspired Review for all my document review support. [Forensics First] HaystackID's Mobile Device Integrator allows users to review and produce data extracted from mobile devices in Relativity. A recently added feature, message level de-duplication, allows for a time variance window when flagging duplicates. De-duplication can be performed across multiple devices and extraction types, including iChats harvested from computers."
+  ]
+}

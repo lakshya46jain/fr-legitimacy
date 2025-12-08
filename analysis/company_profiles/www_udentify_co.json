@@ -1,0 +1,21 @@
+{
+  "company": "www.udentify.co",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Optımıze The Brıck and Mortars Operatıons Optimize The Brick and Mortars Operations Measure Every Step of Customers for Better Shopper Experience. Get Rid of Unnecessary Cost and Speed Up Sales. Real Time In-Store Monitoring System for Brick and Mortars Computer Vision Technology Identify Customers' Age, Gender and Analyze Shopping Behaviour for Retail Businesses Design The Best Shopper Experience for Each Store Separately Reduce Rental and Operational Cost while Increasing Profitability Monitor Every Transaction with The Same Dashboard in Real Time Go Beyond Traditional Traffic Counting How Does It Work ? Customers' Age and Gender Actionable Insight from %100 of Customers Behaviour Effectiveness of Retail Businesses What gets measured gets managed. Follow the Retail 4.0 Transformation"
+  ]
+}

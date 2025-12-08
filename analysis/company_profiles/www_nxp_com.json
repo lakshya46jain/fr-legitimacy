@@ -1,0 +1,21 @@
+{
+  "company": "www.nxp.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Wireless Insulin Pump from Insulet - Use Case å'布日期 : 20 June 2012 Insulet creates a wireless, tubing-free insulin pump that's easy to use, helps to increase patient compliance and improves the overall quality of life for Type 1 diabetes patients. NXP designed a MCU with integrated wireless technology, based on ultra-low-power S08 core architecture that meets Insulet's market requirement to design a small, incredibly power-efficient insulin management system that helps to free patients from traditional medical tubes. i.MX Family Comparison Table Medical Applications User Guide"
+  ]
+}

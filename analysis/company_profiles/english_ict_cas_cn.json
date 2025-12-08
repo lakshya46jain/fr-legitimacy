@@ -1,0 +1,21 @@
+{
+  "company": "english.ict.cas.cn",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "To adapt to the development trend of network technology and the requirements of our country, the Network Technology Research Center is devoted to the research on the basic theories and key technologies of the new-generation Internet. The research work in the field of new-generation Internet concentrates on the mobile Internet and the trusted Internet. For the mobile Internet, the task is to carry out research and experiments of the architectures, key core technologies, and important application technologies of the mobile Internet through analyzing the service modes and application needs of the mobile Internet system, to develop key equipments and systems with autonomous intellectual property rights, to construct integrated service platform of novel mobile Internet that can be operated in a big way, and to participate in the drawing up of related standards; For the trusted Internet, the task is to carry out research on trusted protocols and architectures of the new-generation Internet, on basic theories and key technologies for the control of network supervision/analysis/optimization, on P2P computation and content distribution systems, on access control and trustworthiness management, etc., so as to provide technology support for the new–generation maintainable, manageable, and highly-trusted Internet and service systems, through the breakthrough of key technologies and system development. Besides, the Center's research work on sensor network closely follows the important application needs of our country, and sticks to the development pattern of combining basic theory research with application research. The Center's research work, guided by the country's important application demands and from the perspective of computer science and technology, is to study the basic science problems and key technologies for wireless sensor network and transform the research achievements into the application of practical systems in the fields such as information acquisition, information processing, information transfer, information management, etc. The research focuses on the new-generation sensor network architecture, node-embedded system and SoC, core network protocols and network management, and the basic key technologies such as blending with the new-generation Internet as well as system application technologies including such important applications oriented to environment supervision, coal mine security supervision, intelligent traffic and remote medical treatment. Address :No.6 Kexueyuan South Road Zhongguancun,Haidian District Beijing,China Postcode :100190 Tel : (8610)62601166 Email : office@ict.ac.cn"
+  ]
+}

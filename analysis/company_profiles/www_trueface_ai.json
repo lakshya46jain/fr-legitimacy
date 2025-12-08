@@ -1,0 +1,28 @@
+{
+  "company": "www.trueface.ai",
+  "dominant_topics": [
+    -1,
+    0
+  ],
+  "topic_counts": {
+    "-1": 17,
+    "0": 5
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 17,
+      "0": 5
+    }
+  },
+  "sample_docs": [
+    "Flexible Deployments Match Your Needs Trueface has developed a suite of SDK's and a dockerized container solution that harness the powers of machine learning and artificial intelligence to transform your camera data into actionable intelligence. Facial recognition, object detection and spoof mitigation technologies are all easily deployable on your infrastructure, creating safer and smarter environments for your customers, employees, guests and more. Built in the USA Trueface. For a safer and smarter world.",
+    "Flexible Deployments Match Your Needs BigBear.ai's Trueface has developed a suite of SDK's and a dockerized container solution that harness the powers of machine learning and artificial intelligence to transform your camera data into actionable intelligence. Facial recognition, object detection and spoof mitigation technologies are all easily deployable on your infrastructure, creating safer and smarter environments for your customers, employees, guests and more. Built in the USA Trueface. For a safer and smarter world.",
+    "Transform your camera data into actionable information Trueface has developed a suite of SDK's and a dockerized container solution that harness the powers of machine learning and artificial intelligence to transform your camera data into actionable intelligence. Facial recognition, weapon detection and age verification technologies are all easily deployable on your infrastructure, creating safer and smarter environments for your customers, employees, guests and more. Built in the USA Trueface. For a safer and smarter world.",
+    "Field Control Analytics has improved security on construction sites by deploying Trueface's facial recognition as second- factor authentication for access control. Combined with an RFID badge, a facial match of the badge holder to their photo on file ensures the worker's identity at entry points. Trueface engineers collaborated with the FCA team to integrate the Trueface Python SDK and Mobile iOS SDK into FCA's ForceCount application Added industrial cameras to turnstiles and integrated the RFID reader Live at construction site in Las Vegas Improved Job Site Security What are the results of achieving tighter security at the job site via two-factor authentication with face recognition? Secure the job site - adds another layer of security on top of industry-standard access control practices to create a more secure environment. Adding facial recognition as a secondary authentication eliminates the possibility of a person gaining access to the job site by borrowing or stealing an RFID card. Increased Safety - By certifying the identities of those onsite and thereby knowing if their certifications / compliance training are accurate and up to date, job site safety is increased as the risk of workplace accident and injury decreases. Field Control Analytics is a leading SaaS access control firm providing the construction industry with the tools to increase productivity and job site efficiencies, enabling projects to be completed on time and under-budget. Labor data & analytics Workforce screening / background checks Time and attendance reporting Ready to secure your world?",
+    "...to make environments safer and smarter for all through the responsible use of computer vision. As a team of artificial intelligence and machine learning experts holding multiple patents in the field, this mission has driven us to develop robust computer vision solutions that make our clients' environments safer and smarter. We strive to deliver technology that performs equally well across all ethnicities and genders. Trueface can perform 1 to 1 face recognition template comparisons in under 200 ns. When deployed at scale, every nanosecond counts toward providing a frictionless end-user experience or a faster decision advantage for our partners. Computer vision is a powerful tool, and at Trueface we are committed to ensuring that EVERYONE benefits from this technology. That's why we publish reports on our own algorithm's bias and give away some of our trade secrets without anyone asking. We believe a rising tide (of knowledge) raises all ships. We have developed the knowledge of deploying our SDKs , RESTful APIs and no-code solutions in almost every environment: air-gapped, on-premise (cloud and self-hosted). While we are proudly built and headquartered in the United States, our partners span the globe and represent over ten different industries. BigBear.ai acquires Pangiam Trueface"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "company": "securiport.com",
+  "dominant_topics": [
+    -1
+  ],
+  "topic_counts": {
+    "-1": 1
+  },
+  "topic_descriptions": {},
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 1
+    }
+  },
+  "sample_docs": [
+    "Immigration Control Systems Advanced automation for fast document processing and background security checks Advanced automation for fast document processing and background security checks Biometric Technology Multi-modal biometrics uncover false and double identity cases by fingerprint, iris and face recognition Multi-modal biometrics uncover false and double identity cases by fingerprint, iris and face recognition Data Mining and Analytical Tools Automated profiling tools for the identification of persons of interest Data Mining and Analytical Tools Automated profiling tools for the identification of persons of interest"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "company": "ayonix.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Products Software products Face Detection SDK Face Matcher Software Face Recognition SDK Video Analytics Hardware products RFID-Access Control Surveillance System System Products CCTV System Face Surveillance System Software products Face Detection SDK Face Matcher Software Face Recognition SDK Video Analytics Hardware products RFID-Access Control Surveillance System System Products CCTV System Face Surveillance System Solutions Security Solutions Facial Access Control Healthcare&Hospitals Security Solutions Facial Access Control Healthcare&Hospitals Company Why Ayonix? Company Outline Our Activities News&Announcements Office Location Contact us Partners Apply for partnership Partner Login Distributors Support Customer area Helpdesk Download Area 08 November 2009 Aimetis Partnership 08 November 2009 Facematcher release 08 November 2009 Interview with Asmag Newsmagazine 14 July 2009 TES introduced in A&S INTERNATIONAL"
+  ]
+}

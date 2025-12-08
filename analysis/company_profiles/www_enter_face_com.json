@@ -1,0 +1,21 @@
+{
+  "company": "www.enter-face.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Geometrica LLC is the team of mathematicians and engineers, having huge experience in biometrics. We produce powerful scanners and software for 3D face recognition. Our products are used as a security key for access control systems, check points and time management control systems. If you need to implement brand new and fastest 3D biometric systems – we are ready to offer our help. Just Contact Us , we'll do the rest."
+  ]
+}

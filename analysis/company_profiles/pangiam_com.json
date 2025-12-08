@@ -1,0 +1,19 @@
+{
+  "company": "pangiam.com",
+  "dominant_topics": [
+    -1
+  ],
+  "topic_counts": {
+    "-1": 1
+  },
+  "topic_descriptions": {},
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 1
+    }
+  },
+  "sample_docs": [
+    "BigBear.ai Completes Pangiam Acquisition, Establishing Leading Position in Vision AI for the Combined Company Security Experts. Technologists. Innovators. Problem Solvers. Pangiam, a BigBear.ai Company, was founded by a team of customs and security professionals with decades of collective senior-level executive experience. Through innovation, emerging technologies and the power of data, we solve the security, facilitation and operational challenges you face today — to get your world moving. Visionary Expertise on Your Side. We Understand Your Vision We Innovate for What's Possible We Play Well with Others We Make it Easy We Have Specialized Expertise and Insight Solutions for Real-World Operational Challenges Revolutionize your operations through emerging technologies, cloud-based applications and data-driven solutions. Streamline security through facial recognition technologies Apply Artificial Intelligence (AI)/Machine Learning (ML) for improved threat detection and response Add capabilities to existing infrastructure Deliver frictionless, personalized customer experiences Increase operational resilience and continuity \"Future proof†operations and facilitate quick technology adoption with open architecture systems that will accommodate tomorrow's innovation Easily comply with government regulations Deploy \"at the edge†solutions for less strain on the network Modular. Device/Vendor Agnostic. Easy to Deploy. BigBear.ai's Pangiam products are device and vendor agnostic so they integrate easily with other systems and solutions and can be customized to fit any environment – enabling you to maximize the ROI of your existing infrastructure. Offers quick and convenient mobile app enrollment. Takes real-time photos for biometric identity verification. Pangiam ® Trueface ™ Performs one of the fastest one-to-many (1:N) facial matches with real-time photos, delivering safe and efficient identity verification. Integrates all of the third-party systems associated with a specific operational process to make it seamless and more efficient, whether that means facilitating curb-to-gate operations or the flow of people arriving at venues or secured facilities. Pangiam ® Threat Detection Combines Pangiam technologies with leading AI and computer vision technologies to transform airport security operations by looking for threats concealed within baggage and other shipments at airports. About Us Leadership Team Join Us Contact Us News / Resources Our Products & Services Pangiam Trueface Pangiam veriScan Pangiam Project DARTMOUTH Pangiam Beacon Pangiam Bridge Pangiam Meridian Consulting Services Pangiam Labs CPU and GPU support Dependency free, packaged as a static library Language bindings for Python, Java (Android) and Node.js Built-in lightweight models perfect for resource-constrained environments High precision models for maximum accuracy Able to operate completely offline Face recognition (1:1 and 1:N face matching) Face extraction and landmark detection Written in C++, our Trueface software development kit, also known as an SDK or devkit, offers a collection of software development tools in one installable package. These tools have been optimized for speed and scalability and to support performance-critical applications. For more technical specs, visit our Trueface website designed for developers. Docker container exposing a REST API Available in CPU and GPU-accelerated versions Able to interface with any language through HTTP calls Deployable on premises or on your cloud infrastructure (1:1 and 1:N face matching) Face extraction and landmark detection For more technical specs, visit our Trueface website designed for developers."
+  ]
+}

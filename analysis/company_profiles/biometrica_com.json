@@ -1,0 +1,21 @@
+{
+  "company": "biometrica.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "19": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Biometrica Systems, Inc. supplies surveillance solutions for the worldwide gaming industry. Visual Casino, our flagship product, uses advanced Facial Recognition Technology and Image Database Methodologies to provide fast and efficient identification capabilities to casinos throughout the world. The company also is engaged in advanced Image Management Systems and B iometric solutions ."
+  ]
+}

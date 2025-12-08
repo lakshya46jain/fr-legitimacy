@@ -1,0 +1,21 @@
+{
+  "company": "www.payxpert.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Merchant services » Merchant accounts » Payment Methods » Payment gateway · Security · Support · Management · Technical specifications · Special features » payXpert Payment Page » payXpert E-wallet » payXpert E-ticketing » Fraud Prevention » Payment gateway · Security · Support · Management · Technical specifications · Special features » payXpert Payment Page Market Solutions » Low risk activities » High risk activities » Low risk activities » High risk activities About payXpert » Company profile » An experienced and dynamic team » The strength of a group » Career opportunities » Contacts » An experienced and dynamic team » The strength of a group Resources center » Most Frequently asked questions » E-commerce » News » Faq: Our Services » Faq: Integration » Support » Our brochures » Added value from the group » Most Frequently asked questions » Faq: Our Services » Added value from the group Welcome to pay Xpert Your Xpert payment solutions • We offer innovative solutions to optimize our clients revenues and to minimize risk . • We are committed to bringing our expertise to our clients a nd improve the performance of our solutions together . • We look for adapted solutions within the market and give our clients the very best prices . • New banking relationships in various countries, for low or high risk activities with conditions adapted to your business . • To work in a secure environment. • Advanced and flexible payment features. • Easy integration to your platform. payXpert opens Merchant account for: High risk activities and low risk activities. In various countries for better geographic coverage. With major card types and payment methods accepted in multiple currencies to maximize your sales. more ... • Support 24/7 • Powerful real–time reporting systems . • User friendly and real–time internet management tool. • Advanced statistics. • Accounting. • Technical specifications . • Rapid and simple integration thanks to a well documented integration process. API, PHP, SOAP, Java, XML more ... Your safe partner for a profitable future • PCI Level 1 • Security code verification: - AVS (Address Verification Service) - Card Verification Value (Security code, CVV, CVC and CVV2) • Pre authorization. • 3D secure processing. • Powerful Anti–Fraud screening services. more ... More than powerful payment solutions • e–Wallet • Outpayment card scheme linked to e–wallet • Online registration and acceptance process follow up • Virtual Terminal /MOTO • IVR (Automated IVR processing (phone 2 bank) more ..."
+  ]
+}

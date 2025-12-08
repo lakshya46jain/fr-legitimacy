@@ -1,0 +1,23 @@
+{
+  "company": "face4systems.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 3
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 3
+    }
+  },
+  "sample_docs": [
+    "Ever wanted to understand how facial recognition works? This is the event for you! Face4 Systems Inc. is a leading face recognition solutions company that delivers face-based surveillance solutions for enhanced security at public entry and checkpoint locations. Topics Covered: Why face recognition? How does it work? How good is it? Applications: today and future Privacy implications A Live Demo System will be in place allowing you to see FR in action and to test your curiosity! Register on Eventbrite Ever wanted to understand how facial recognition works? This is the event for you! Face4 Systems Inc. is a leading face recognition solutions company that delivers face-based surveillance solutions for enhanced security at public entry and checkpoint locations. How does it work? How good is it? Applications: today and future A Live Demo System will be in place allowing you to see FR in action and to test your curiosity!",
+    "Products Face4 Lookout System FLS Face4 Recognition System FRS Face4 VIS-Pro ware Face4 Image Capture Camera Systems Face4 Lookout System FLS Face4 Recognition System FRS Face4 Image Capture Camera Systems Face4 Systems Inc. is a leading face recognition solutions company with a focus on face based non-cooperative surveillance. Face4 Systems designs, develops, deploys and supports these face recognition security products, services and solutions and other related products and services for government and private organizations around the world. Products Face4 Lookout System FLS Face4 Recognition System FRS Face4 VIS-Pro ware Face4 Image Capture Camera Systems Face4 Lookout System FLS Face4 Recognition System FRS Face4 Image Capture Camera Systems Solutions Border Security Transportation Security Human Resource Screening Solutions Human Resource Screening Solutions",
+    "Biometric seamless travel system from Face4 and Entrust tested by Canadian Govenment The Government of Canada has selected and successfully tested a seamless travel solution utilizing facial recognition from Ottawa-based Face4 Systems. Read More Biometric seamless travel system from Face4 and Entrust tested by Canadian Govenment The Government of Canada has selected and successfully tested a seamless travel solution utilizing facial recognition from Ottawa-based Face4 Systems."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "company": "www.synesis.one",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Payments and transparency are two of the biggest issues for people who want to earn money for providing raw data, data labeling, and data annotation services for big, centralized companies. Micro-tasks don't pay much, and companies often force minimum earnings for withdrawals, not to mention the fees associated with cashing out. Additionally, companies can often reject your work for no reason, and even worse, may use the data even after rejecting your work. Decentralized crowdsourcing platform that runs on smart contracts rather than a centralized entity is our solution. At Synesis One, we aspire to build the largest web3 community that can crowdsource the most diverse and high quality data sets to power AI applications. Decentralized crowdwork will help democratize AI and return power and ownership to the people who contribute to it."
+  ]
+}

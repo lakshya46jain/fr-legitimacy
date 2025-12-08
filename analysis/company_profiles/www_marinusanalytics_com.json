@@ -1,0 +1,21 @@
+{
+  "company": "www.marinusanalytics.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "On AI and Facial Recognition We are very aware of the ethical issues surrounding the use of AI and facial recognition technology. We work with ethicists and are constantly on guard about potential misuses of technology, and the governance and regulation structure are an emerging focus and priority. We continue to learn and adapt along with leaders in law enforcement, technology infrastructure providers, elected and government officials, the overall tech community, and in academia. Facial recognition is an important tool for the identification of missing persons and in the investigation of crimes involving sexual exploitation. We are cautious about controlling the application for this intended purpose."
+  ]
+}

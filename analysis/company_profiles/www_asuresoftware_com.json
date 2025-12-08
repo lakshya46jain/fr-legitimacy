@@ -1,0 +1,21 @@
+{
+  "company": "www.asuresoftware.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Over 3,500 organizations worldwide rely on Asure workforce management software and services to operate more efficiently, increase worker productivity and reduce costs. Asures market-leading suite includes products that optimize workforce time and attendance tracking, benefits enrollment and tracking, pay stubs and W2 documentation, expense management, meeting and event management, and asset tracking. With its unique focus on empowering workers through simple, self-service Web-based applications, Asure enables organizations of any size to realize enterprise-class results via solutions that are easy to deploy, use and afford. iEmployee is a full suite of 100% web hosted On-Demand workforce management software that helps simplify the entire HR process. NetSimplicity software simplifies everyday office administration tasks by scheduling and managing meeting rooms, equipment, assets and resources. Copyright Asure Software"
+  ]
+}

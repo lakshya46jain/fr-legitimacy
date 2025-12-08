@@ -1,0 +1,19 @@
+{
+  "company": "www.keepersecurity.com",
+  "dominant_topics": [
+    -1
+  ],
+  "topic_counts": {
+    "-1": 1
+  },
+  "topic_descriptions": {},
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 1
+    }
+  },
+  "sample_docs": [
+    "Send a new code Keeper seamlessly and securely syncs your information on all devices and stores it for you in the Cloud Security Vault. Please Choose a Master Password This is an important security update for your Keeper account which will increase your encryption level from 128-bit AES to 256-bit AES. This update is free, takes a few seconds and is required for ALL of your Keeper devices. When the update is finished, you will automatically be logged out of Keeper. You can then log back in for normal use. Folders List New Record New Record Owner Add People Shared Folder Title Login Password Login URL Custom Fields Notes Two-Factor Authentication provides an extra layer of protection against unauthorized access by requiring a second passcode verification upon login. The Web App is designed to sync your records automatically. Every time you login, edit, add or delete a record, your information is synced seamlessly across all devices. For the full Keeper experience, download the Browser Extension for Chrome, Safari and Firefox web browsers. Cloud Backup & Restore Select the Backup File you wish to restore Two-Factor Authentication 2-Step Verification Send a new code 2-Step Verification Send a new code 2-Step Verification 2-Step Verification 2-Step Verification English (US) • English (UK) • Português (BR) • Deutsch • Español • Français • ελληνικά • Italiano • 日本語 한국어 • Polski • Português (PT) • Pусский • 中文 (简体) • 中文 (香港) • 中文 (台灣)"
+  ]
+}

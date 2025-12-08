@@ -1,0 +1,22 @@
+{
+  "company": "www.jcdecaux.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 2
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 2
+    }
+  },
+  "sample_docs": [
+    "The Fundamental Ethical Rules, providing a framework for relations with the public services, shareholders, the financial markets and Group employees. A Group Ethics Committee, comprised of the Chairman of the Audit Committee, the Director of the Corporate Legal Department and the Director of the Internal Audit Department, is responsible for ensuring compliance with these rules of vital importance to the continued existence and promotion of the Group. A Code of Good Conduct covering relationships with suppliers and customers, as well as relationships between employees within the Group. The rules laid down in this document must be implemented in each subsidiary within the Group in accordance with national regulations currently in force. Responsibility for ensuring compliance with these rules falls to the Groups senior management team both in France and overseas.",
+    "Yoplait's on a mission to eradicate hanger from the busy streets of Sydney Commuters are encouraged to \"Fix their Hanger\" simply by looking at a digital panel To promote the launch of its yoghurt smoothie range, Yoplait worked with JCDecaux to implement a smart facial recognition campaign in Sydney. A witty and interactive execution was implemented around Yoplait's \"Fix your Hanger\" creative campaign. When a face was detected in proximity to the advertising panel, a message appeared asking passers-by to \"Smile or frown for a free smoothie\". A vinyl sticker on the floor indicated where they had to stand to participate. The digital panel fed image data from a camera to a machine-learning algorithm that was trained to detect facial orientation and whether the participants were smiling or frowning at the screen. A voucher was dispensed with either 'Keep Smiling' or 'Fix your Hanger' for the partaker to redeem a free smoothie. With 1,220 interactions and 564 vouchers dispensed, Yoplait created excitement around its new product and used the latest technology to fix cravings for a sweet, healthy treat."
+  ]
+}

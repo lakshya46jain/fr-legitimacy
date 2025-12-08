@@ -1,0 +1,28 @@
+{
+  "company": "www.face-id.co.za",
+  "dominant_topics": [
+    0,
+    -1
+  ],
+  "topic_counts": {
+    "0": 9,
+    "-1": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 1,
+      "0": 9
+    }
+  },
+  "sample_docs": [
+    "Face Recognition Systems in South Africa Face-ID, the leading face recognition technology in South Africa designed for both Access Control and Time Attendance. Supplied and Supported within Southern Africa by a team who collectively have over 200 years of experience in the industry. FA100 Excellent for Small Enterprises F910 Excellent for Large Enterprises F710X Excellent for Medium Enterprises FT200 Excellent for Small-Medium Enterprises MB2000 Excellent for Medium-Large Enterprises FA600 Excellent for Medium-Large Enterprises Download Brochure Face Recognition Systems in South Africa Excellent for Small Enterprises Excellent for Large Enterprises Excellent for Medium Enterprises Excellent for Small-Medium Enterprises Excellent for Medium-Large Enterprises Excellent for Medium-Large Enterprises",
+    "MB2000 FACE RECOGNITION SOLUTION Excellent for Medium-Large Enterprises The first Embedded Facial Recognition system in the world Excellent for Medium-Large Enterprises The first Embedded Facial Recognition system in the world MB2000 SPECIFICATIONS (Coming soon) User Capacity 2000 Biometric Users(Face, Fingerprint, Fingerprint+Face) 10000 card Record capacity 200,000 Records Security photo 150,000 Images Lighting 20,000 LUX Verification Face, ID+Face, Card+Face, Card/Face, Card, Finger+Face Speed Less than 1 Second Sensor Specialized Dual Sensor RFID Optional Mifare Communication TCP/IP, USB Host Attendance Scheduled bell, Work Status, Workcode, Daylight saving Security Built-in relay, contact door lock, Door sensor and exit button input LCD 3.5 inch TFT Color Screen Keypad 4*4 Touch Keypad Power 12V DC Scan distance 30cm-80cm Working temp 0°C-40°C Working humidity 20%-80% Certification CE, FCC, Class A ROHS Product Enquiry MB2000 SPECIFICATIONS (Coming soon)",
+    "F710 FACE RECOGNITION SOLUTION Excellent for Medium Enterprises The first Embedded Facial Recognition system in the world Excellent for Medium Enterprises The first Embedded Facial Recognition system in the world F710 SPECIFICATIONS User Capacity 1000 Face Users, 1000 card Record capacity 150,000 Records Security photo 150,000 Images Lighting 10,000 LUX Verification Face, ID+Face, Card+Face, Card/Face, Card, Card+Photo Speed Less than 1 Second Sensor Specialized Dual Sensor RFID EM / Mifare Communication TCP/IP, USB Host, Weigand Output, Push to server Attendance Photo ID, Scheduled bell, Work Status, Workcode, Daylight saving Security Relay output LCD 3.5 inch TFT Color Screen Keypad 4*4 Touch Keypad Power 12V DC Scan distance 30cm-80cm Working temp 0°C-40°C Working humidity 20%-80% Certification CE, FCC, Class A ROHS SYSTEM CONFIGURATION Product Enquiry",
+    "F910 FACE RECOGNITION SOLUTION Excellent for Large Enterprises The first Embedded Facial Recognition system in the world Excellent for Large Enterprises The first Embedded Facial Recognition system in the world F910 SPECIFICATIONS User Capacity 2000 Face Users, 2000 card Record capacity 200,000 Records Security photo 200,000 images Lighting 20,000 LUX Verification Face, ID+Face, Card+Face, Card/Face, Card, Card+Photo Speed Less than 1 Second Sensor Specialized Dual Sensor RFID EM / Mifare Communication TCP/IP, USB Host, Weigand Output, Push to server, Optional Wiegand Input, Wifi Attendance Photo ID, Scheduled bell, Work Status, Workcode, Daylight saving Security Built-in relay, contact door lock, Door sensor and exit button input LCD 3.5 inch TFT Color Screen Keypad 4*4 Touch Keypad Power 12V DC Scan distance 30cm-80cm Working temp 0°C-40°C Working humidity 20%-80% Certification CE, FCC, Class A ROHS Product Enquiry",
+    "FA600 FACE RECOGNITION SOLUTION Excellent for Medium-Large Enterprises The first Embedded Facial Recognition system in the world Excellent for Medium-Large Enterprises The first Embedded Facial Recognition system in the world FA600 SPECIFICATIONS (Coming Soon) User Capacity 1000 Face Users, 1000 card Record capacity 150,000 Records Security photo 150,000 Images Lighting 5000 LUX Verification Face, ID+Face, Card+Face, Card/Face, Card, Card+Photo Speed Less than 1 Second Sensor Specialized Dual Sensor RFID Optional Mifare Communication TCP/IP, USB Host Attendance Photo ID, Scheduled bell, Work Status, Workcode, Daylight saving Security Built-in relay contact door lock, door sensor and exit button input, Time Zone, Access Group LCD 2.8 inch TFT Color Screen Keypad 4*4 Touch Keypad Power 12V DC Scan distance 30cm-80cm Working temp 0°C-40°C Working humidity 20%-80% Certification CE, FCC, Class A ROHS Product Enquiry FA600 SPECIFICATIONS (Coming Soon)"
+  ]
+}

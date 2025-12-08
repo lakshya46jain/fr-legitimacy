@@ -1,0 +1,21 @@
+{
+  "company": "www.finnovant.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Say-Tec combines voice and face biometrics into a seamless solution that reduces fraud and protects customers. It can provide a 'step-up' Authentication to improve security for companies that have existing solutions. The Phēnix X is a blockchain phone built to safeguard your information. It goes beyond security, offering exclusive rewards, educational content, and seamless connections with leading providers. PhēnixLoc is secured by Say-Tec, Finnovant's biometric authentication solution. PhēnixLoc is available on the App store or as an APK. Krptic Wallet securely stores many cryptocurrencies such as Bitcoin, Ethereum, Heco, Binance, Bitcoin Cash, and others with the following standards – ERC20, HRC20 and BEP20. BioFi Token and Ecosystem – Biometric Finance BioFi's Use Cases are practically limitless, covering the basic elements of authentication for s, password resets, Payments, and much more. Please contact us for general assistance by filling out the form or sending an email to our support team."
+  ]
+}

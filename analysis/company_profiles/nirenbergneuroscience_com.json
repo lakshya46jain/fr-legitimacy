@@ -1,0 +1,19 @@
+{
+  "company": "nirenbergneuroscience.com",
+  "dominant_topics": [
+    -1
+  ],
+  "topic_counts": {
+    "-1": 1
+  },
+  "topic_descriptions": {},
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 1
+    }
+  },
+  "sample_docs": [
+    "NEW FRONTIERS IN MACHINE VISION Nirenberg Neuroscience LLC is a new (2015) artificial intelligence company with proprietary software that allows us to develop powerful new machine vision technology. Our emphasis is on autonomous mobility, navigation, and object/face recognition in all fields. Nirenberg Neuroscience (NN) develops machine vision on a principle that allows easy generalization – that is, it allows machine vision tasks such as navigation, collision avoidance, object recognition, and face recognition, to be performed in a broad range of conditions (lighting conditions, environments). NN's method has a low footprint: the learning algorithms are shallow compared to deep learning networks, using many, many fewer operations to achieve very high performance (e.g., 1000-fold fewer for several applications such as face feature detection, pedestrian detection, and navigation). NN's talented technical team of engineers and programmers are building up an array of platforms for a variety of machine vision applications across multiple fields of use. Ford Motor Company has already licensed a first round of platforms for one field of use, to \"bring human-like intelligence to the machine learning modules of [their] autonomous vehicle virtual driver system.†See Ford press release . NN was founded by Sheila Nirenberg, a professor at Cornell, who is also the founder of a company that develops new kinds of prosthetic devices (Bionic Sight LLC). Dr. Nirenberg has won numerous awards for her innovations, including a MacArthur \"genius†Award. Her work on cracking the neural code has been featured in a TED talk, a BBC documentary, \"The Genius Behind…â€, a Bloomberg News documentary, the Washington Post's \"Transformersâ€, among many others. For peer-reviewed scientific publications, see Nirenberg lab website . Check back for updates and a new TED talk (on our technology and its implications). Thanks! \"Meet the Four Startups Helping Ford Develop a Robo-Taxi by 2021 \" Forbes Magazine, August 18, 2016 \"Ford targets fully autonomous vehicle for ride sharing in 2021\" Ford Motor Company Press Release, August 16, 2016 \"Ford and Dr. Sheila Nirenberg\" Ford Interview, December 2016 \"This neuroscientist says knowing how to talk to the brain could help the blind see\" The Washington Post Transformers Event, May 20, 2016 \"This Bionic Eye Could Cure Blindness† Bloomberg Documentary, April 5, 2016 \"The Genius Behind Series: The code that may treat blindness†BBC Documentary, November 11, 2016 \"Interview with the Dean: A Vision to Cure Blindness\" Weill Cornell Professor wins MacArthur \"genius\" Award, July 17. 2014 \"Can we speak the language of the brain?\" Sheila Nirenberg's talk on TED.com, October, 2011 \"What if robots could process visual information the way humans do?\" Sheila Nirenberg's talk on TEDMED.com, December, 2016 \"Amy Poehler's Smart Girls\""
+  ]
+}

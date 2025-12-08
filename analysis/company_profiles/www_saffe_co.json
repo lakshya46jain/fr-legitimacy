@@ -1,0 +1,21 @@
+{
+  "company": "www.saffe.co",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "What if you could pay with just a selfie? Saffe is a mobile payment app that leverages world-class facial recognition technology to make your life easier and more secure. If you are a merchant, we enable you to receive payments at the point-of-sale directly with your smartphone. No need to pay for a dedicated POS or any extra equipment. If you are a consumer, we enable you to pay for your stuff without your wallet, your smartphone... without nothing! This is mobile payments the way it should be. The whole payment process takes a few seconds and consists of three steps. First, the merchant enters the payment amount in his smartphone, taps next , and hands it to the consumer. After that, the consumer informs a code that he previously chose, taps next and then takes a selfie by tapping pay! This selfie picture is quickly compared in our servers and if there is a match, there is payment. Saffe transactions are instantaneously made available for consumers, even though their devices are not needed at the point of sale. These transactions contain not only all information of a regular payment, but also the selfie associated to each one. Because faces happen to be the way humans recognize each other, Saffe consumers can naturally attest the legitimacy of their payments. How cool is that? About Us Saffe is being built out of passion and purpose of its founders André Coelho and Giovani Chiachia. André has over seven years of experience in the financial market and has held positions such as broker and advisor of investments and M&ampA operations. He believes that life can be much easier with the use of technology and found in Saffe the ideal financial service to pursue such belief. Giovani is an experienced computer scientist with a background ranging from IT management to top-notch computer vision research. Through his MsC and PhD, he has been researching automatic face recognition over the past eight years. Lately he has crafted such technology for an unprecedented experience in mobile payments with the very same purpose of improving people's lives in daily tasks. Saffe is being built out of passion and purpose of its founders André Coelho and Giovani Chiachia. André has over seven years of experience in the financial market and has held positions such as broker and advisor of investments and M&ampA operations. He believes that life can be much easier with the use of technology and found in Saffe the ideal financial service to pursue such belief. Giovani is an experienced computer scientist with a background ranging from IT management to top-notch computer vision research. Through his MsC and PhD, he has been researching automatic face recognition over the past eight years. Lately he has crafted such technology for an unprecedented experience in mobile payments with the very same purpose of improving people's lives in daily tasks."
+  ]
+}

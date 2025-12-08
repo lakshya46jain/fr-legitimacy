@@ -1,0 +1,21 @@
+{
+  "company": "www.wicketsoft.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "The Facial Authentication Platform Enabling sensational event experiences for fans, guests, and employees with facial authentication touchpoints that delight users and strengthen security. Cutting-edge, proprietary technology built to eliminate friction while keeping people secure and accounted for. Fans can link their tickets to their face, enabling expedited entry to stadiums and venues Guests can link their preferred payment method to their face, simplifying payments Eliminate the risk of lost and misused credentials by replacing IDs with selfies Increase accountability and ensure only those with creds can enter sensitive areas Privacy is Our First Priority At Wicket, we are committed to privacy. We make it our responsibility to weave privacy into all our products and protect the data you trust us with. Users opt-in to using Wicket and can opt-out at any time for any reason All end-user data and PII is encrypted at rest and in transit Customers and their users own their data; we do not sell or give data to third parties Mathematical representations of faces increase platform security Wicket News & Press WFLA News Channel 8 Game Day Security Magazine Let's Transform Your Guest Experience"
+  ]
+}

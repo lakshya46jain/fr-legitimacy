@@ -1,0 +1,19 @@
+{
+  "company": "identyum.com",
+  "dominant_topics": [
+    -1
+  ],
+  "topic_counts": {
+    "-1": 1
+  },
+  "topic_descriptions": {},
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 1
+    }
+  },
+  "sample_docs": [
+    "Today's fast-paced world demands fast and reliable package delivery. Yet the trends show an emerging problem of forging signatures by the delivery personnel. According to Business Insider , an estimated 15% of all online shopping deliveries fail to reach their final destination due to theft or logistics issues. This causes frustration for recipients who never receive their packages, but the main concern arises – is this identity theft? Can we ensure the integrity of delivery? Signature forgery in deliveries Although the logistics industry's advancement is undeniable, the issue of forged signatures remains a big issue. Are the delivery personnel under pressure to meet their daily tight schedules, or are they thieves of the packages? We will probably never know their true motives, but the packages still need to be delivered, and the signatures of recipients are forged. This unethical practice can result in significant losses for the logistics company, a low reputation, and an increased risk of disputes. On the other hand, their customers experience dissatisfaction and mistrust. Until recently, a signature on a delivery note was sufficient. But as we see, this method proved to be vulnerable. It is very simple to forge a signature without any identity verification system. Not using reliable verification methods by logistics companies leaves room for potential identity theft and fraud. eSignatures and identity verification eSignatures have introduced a new era of reliability and security in the logistics industry. They can help logistics to digitize and simplify document management. The global electronic signature market was valued at around 3.9 billion U.S. dollars in 2022, and is projected to grow to 43.14 billion by 2030. Unlike traditional signatures, specific electronic signatures like AES (Advanced Electronic Signature) are linked to an individual's identity. This kind of signature has to meet the requirements of Article 26 of eIDAS Regulation, which states that the signature has to be uniquely linked to the signer, capable of identifying the signatory, it has to be created using electronic signature creation data that the signatory can, with a high level of confidence, use under his sole control and has to be linked to the data signed therewith in such a way that any subsequent change in the data is detectable. Using eSignatures offers higher security and can streamline the delivery process, as it becomes a transparent and traceable method for confirming receipt of packages. In that case, no delivery personnel could forge a recipient's signature. When choosing the right eSigning solution for an organization, the functional coverage and integration capabilities are important elements to consider. So being able to identify and authenticate the user is necessary before providing an electronic signature. Digital identity providers, like Identyum , provide these services with different solutions from eSigning to customer onboarding or user authentication. In response to the above mentioned challenges, Identyum's Sign and Identify services can make a difference. Sign service integrates eSignature technology with identity verification – Identify, ensuring that the eSignature is indisputably linked to the recipient's verified identity, quickly eliminating the risk of signature forgery. This method protects against identity theft and reinforces trust between businesses and customers, ensuring that deliveries are secure and efficient. Adopting these advanced methods, logistics companies can significantly reduce the risk of forged signatures and lost packages, fostering a secure and trustworthy delivery environment."
+  ]
+}

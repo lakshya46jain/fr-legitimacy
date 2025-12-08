@@ -1,0 +1,22 @@
+{
+  "company": "stereovisioninc.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 2
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 2
+    }
+  },
+  "sample_docs": [
+    "Enhancing Facial Recognition with 3D Technology for Safety and for Security StereoVision Imaging, Inc. (SVI), a leading developer of facial recognition technology, sees 3D real world data as a rich stream of naturally encoded statistics that can quickly resolve a face in the crowd in complex conditions and situations. Our patented technology captures imagery in 3D space through specialized binocular optics or commercial off-the-shelf fixed camera systems and extracts faces in 2D for real time comparison. Utilizing face matching algorithms traceable to NIST government evaluation, SVI's enhancement technology, co-developed and already in use by U.S. military and local/state law enforcement allows for facial recognition technology to now operate at extended ranges, indoors and/or outdoors under uncontrolled environmental conditions.",
+    "Products Product Info 3D VuCAM™ 2D/3D Passive Displays 2D/3D Active Displays Customer Support Manuals Warranties RMA Procedure RMA Form Customer Interest Survey StereoVision Imaging, Inc. develops and commercializes advanced 3D imaging technology. StereoVision's patented products and technology can be used for a variety of applications including 3D image capturing of outdoor and sporting events to 3D security and surveillance, 3D content acquisition for integration into 3D software applications, to object and facial recognition. StereoVision Imaging awarded contract with United States Special Operations Command to develop stereoscopic imaging technology for facial recognition. More>>"
+  ]
+}

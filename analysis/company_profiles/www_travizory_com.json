@@ -1,0 +1,21 @@
+{
+  "company": "www.travizory.com",
+  "dominant_topics": [
+    0
+  ],
+  "topic_counts": {
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Travizory is the leading provider of digital border solutions Our AI-powered risk engine automates traveler risk-assessment to enhance security and facilitate seamless border crossings Biometric and biographic travel and identity documents verified by AI annually Employees worldwide with extensive security and tech experience Airlines and cruise lines connected to API-PNR Targeting System Smart Visitor Management within an integrated platform The modular Visitor Management Platformâ\"¢ is a fully integrated border security platform. It addresses pain points across the travel journey, and enhances security and efficiency beyond border crossings Biometric Travel Authorization System Identify and risk-assess all visa-waiver nationals and digitize landing/departure forms Prevent known threats from reaching your border, and target potential persons of interest Digitalize Visa application, issuance and management Integrated Border Management System Elevate security and control at each border crossing site Latest news from the border Travizory celebrates landmark FaceLaneâ\"¢ deployments Digital Government Africa 2025 Digitalize your borders with Travizory Our BorderTech solutions empower governments to maximize security and minimize friction to receive the latest news and updates from Travizory"
+  ]
+}

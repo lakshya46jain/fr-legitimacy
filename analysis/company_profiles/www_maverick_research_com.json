@@ -1,0 +1,25 @@
+{
+  "company": "www.maverick-research.com",
+  "dominant_topics": [
+    -1,
+    0
+  ],
+  "topic_counts": {
+    "-1": 1,
+    "0": 1
+  },
+  "topic_descriptions": {
+    "0": "access, security, data, time, use"
+  },
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 1,
+      "0": 1
+    }
+  },
+  "sample_docs": [
+    "Compliance Made Easy Receive real-time reports on paid spots in radio, TV and print to ensure your brand's market presence. Receive real-time reports on paid spots in radio, TV and print to ensure your brand's market presence. Risk Mitigation Save money and stay ahead of the curve by identifying the gaps in your media strategy with our insightful brand, station and audience analysis. Save money and stay ahead of the curve by identifying the gaps in your media strategy with our insightful brand, station and audience analysis. Strategy Evaluation Are you reaching your consumers or are you being drowned out by competition? Are you advertising in the right places and at the right times? Enhance your media strategy through our bird's-eye view of the media space. Are you reaching your consumers or are you being drowned out by competition? Are you advertising in the right places and at the right times? Enhance your media strategy through our bird's-eye view of the media space.",
+    "Check Out Ato on Global Head, Data Science Check Out Anna on Group Managing Partner, Media Monitoring Check Out Shamsudeen on Senior Manager, CS & Growth Initiatives Check Out Roger on Check Out Yussif on Senior Associate, Consumer Insights Check Out Ewuradwoa on Head, Procurement and Compliance Check Out Ayisha on"
+  ]
+}

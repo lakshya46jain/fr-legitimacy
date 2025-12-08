@@ -1,0 +1,19 @@
+{
+  "company": "allevate.com",
+  "dominant_topics": [
+    -1
+  ],
+  "topic_counts": {
+    "-1": 1
+  },
+  "topic_descriptions": {},
+  "framing_scores": null,
+  "topic_timeline": {
+    "20": {
+      "-1": 1
+    }
+  },
+  "sample_docs": [
+    "Border & Access Control Solutions Integration of Biometric Technologies Automated Fingerprint Identification (AFIS) Allevate provides consultancy services, specialist business development and sales expertise for identity infrastructure projects. We assist organisations by leveraging our extensive network of contacts and knowledge of strategic trends in large scale identification projects, adding significant value to the sales and bid process. Additionally, Allevate provides critical consistency from pre-sales through to implementation by augmenting your own project team with key roles and responsibilities, such as bid management, project management and technical design architects. For end-users, Allevate provides best-practice consultancy on the use of biometrics and related technologies to assist with the definition of your requirements. Home | Contact Us | Clients Identity and Biometrics"
+  ]
+}
