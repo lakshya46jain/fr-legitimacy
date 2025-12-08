@@ -9,10 +9,6 @@ data/wayback/snapshots/
 
 # Large Files
 snapshot_texts*
-bertopic_model
-topic_over_time.csv
-topics.csv
-topics_per_decade.csv
 
 # Others
 __pycache__/
