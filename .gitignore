@@ -7,8 +7,5 @@ Icon?
 # Website Snapshots
 data/wayback/snapshots/
 
-# Large Files
-snapshot_texts*
-
 # Others
 __pycache__/
