@@ -1,0 +1,9 @@
+topic_id,top_words,top_companies,framing_ethical,framing_surveillance,framing_market
+0,"access, security, data, time, use, information, services, management, wp, solutions",www.soloinsight.com (256); www.prioxis.com (222); www.smartfeigete.com (204); www.smartsearch.com (199); www.miteksystems.com (174); www.fobi.ai (172); www.skntechnology.in (167); www.gbgplc.com (148); www.transunion.com (138); www.deputy.com (124),0.46064738063660476,0.10331357758620689,0.43603904177718833
+1,"module, students, year, level, grade, course, english, hons, bsc, international",www.surrey.ac.uk (129); english.siat.cas.cn (6); en.sjtu.edu.cn (4); www.stengg.com (1); www.transunion.com (1),0.9215229215229215,0.07459207459207459,0.003885003885003885
+2,"identity card, pixlab, api, card, driver license, driver, license, image, identity, endpoint",pixlab.io (37),0.23148148148148148,0.0,0.7685185185185185
+3,"deck, attacked, zombie, turn, trap, activated, set, nhl, drew, dragon",www.konami.com (31); cortica.com (1),0.0,0.0,1.0
+4,"uv, printer, printers, printing, transparency, film, transparency film, roll, ink, print",www.3m.com (27); www.hzailysm.com (4),0.9714285714285714,0.0,0.02857142857142857
+5,"item, fobi, child, menu item, menu, statements, looking statements, forward looking statements, forward looking, forward",www.fobi.ai (29),0.41916167664670656,0.008982035928143712,0.5718562874251497
+6,"precheck, tsa, clear, tsa precheck, birth, clear lane, citizenship, clear plus, lane, card",www.clearme.com (27),0.0,0.0,0.0
+7,"hero, school, students, student, behavior, positive, teachers, principal, middle school, schools",www.herok12.com (23),0.5915492957746479,0.08450704225352113,0.323943661971831
