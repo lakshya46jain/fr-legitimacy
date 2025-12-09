@@ -2,7 +2,7 @@
 topic_interpretation.py
 -----------------------
 Produce human-readable summaries of each BERTopic topic for the
-CS 4994 facial recognition legitimacy project.
+SOC 4994 facial recognition legitimacy project.
 
 This script:
     1. Loads the trained BERTopic model and topics.csv

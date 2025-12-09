@@ -1,9 +1,56 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+snapshot_info.py
+----------------
+Query the Internet Archive (Wayback Machine) to compute snapshot
+history for each vendor in the facial recognition dataset.
+
+This script is designed to run AFTER:
+    • website_cleaner.py  → produces clean_link
+and BEFORE:
+    • snapshot_downloader_yearly.py
+    • snapshot_downloader_decade.py
+
+Goal
+----
+For every vendor row:
+    • Use clean_link (if valid and not flagged) to fetch:
+          - snapshot_count
+          - first_snapshot (YYYY-MM-DD)
+          - last_snapshot  (YYYY-MM-DD)
+    • Leave unprocessed rows untouched
+    • Save all fields into `fr_vendors_snapshot_info.csv`
+
+Features
+--------
+• Rate-limit handling with exponential backoff  
+• Processes *all rows* but only queries rows eligible for processing  
+• Saves progress every 20 rows  
+• Safe URL normalization  
+• Robust timestamp parsing  
+
+Usage
+-----
+    python3 snapshot_info.py
+
+Output
+------
+    fr_vendors_snapshot_info.csv  (merged with original vendor metadata)
+
+"""
+
 import pandas as pd
 import random
 import requests
 import time
 from datetime import datetime
 
+
+# -------------------------------------------------------
+# CONFIGURATION
+# -------------------------------------------------------
 DATASET_PATH = "../vendors/facial_recognition_vendors.csv"
 URL_COLUMN = "clean_link"
 NOTES_COLUMN = "link_clean_notes"
@@ -12,21 +59,39 @@ OUTPUT_CSV = "./fr_vendors_snapshot_info.csv"
 print("Loading dataset...")
 df = pd.read_csv(DATASET_PATH)
 
-# Keep ALL rows
+# Always keep ALL rows — we enrich, not replace
 all_rows = df.copy()
 
 print(f"Total rows loaded: {len(all_rows)}\n")
 
+
+# -------------------------------------------------------
+# URL & TIMESTAMP HELPERS
+# -------------------------------------------------------
 def clean_url(url):
-    """Ensure URL starts with https://"""
+    """
+    Ensure URL begins with http/https and strip whitespace.
+
+    Convert:
+        "example.com" → "https://example.com"
+        " http://abc.com " → "http://abc.com"
+    """
     if not isinstance(url, str) or not url.strip():
         return None
     if not url.startswith("http"):
         url = "https://" + url
     return url.strip()
 
+
 def format_date(ts):
-    """Convert Wayback timestamp YYYYMMDDhhmmss → YYYY-MM-DD."""
+    """
+    Convert Wayback timestamp → YYYY-MM-DD.
+
+    Input:
+        "20191226084331"
+    Output:
+        "2019-12-26"
+    """
     if ts is None:
         return None
     try:
@@ -34,15 +99,34 @@ def format_date(ts):
     except:
         return None
 
+
+# -------------------------------------------------------
+# WAYBACK SNAPSHOT QUERY
+# -------------------------------------------------------
 def get_snapshot_info(url, retries=5):
-    """Fetch snapshot info from the Wayback Machine with retry/backoff."""
+    """
+    Query Wayback Machine CDX API to fetch snapshot history.
+
+    Returns:
+        (snapshot_count, first_snapshot, last_snapshot)
+
+    Error handling:
+        - Retries on network errors
+        - Handles rate limiting (HTTP 429)
+        - Returns zeros on repeated failure
+    """
     base = "https://web.archive.org/cdx/search/cdx"
-    params = {"url": url, "output": "json", "filter": "statuscode:200"}
+    params = {
+        "url": url,
+        "output": "json",
+        "filter": "statuscode:200"
+    }
 
     for attempt in range(retries):
         try:
             r = requests.get(base, params=params, timeout=20)
 
+            # Rate limited → exponential backoff
             if r.status_code == 429:
                 wait = (2 ** attempt) + random.uniform(0, 2)
                 print(f"Rate limit hit. Waiting {wait:.1f}s before retry...")
@@ -52,9 +136,11 @@ def get_snapshot_info(url, retries=5):
             r.raise_for_status()
             data = r.json()
 
+            # No snapshot rows found
             if len(data) <= 1:
                 return 0, None, None
 
+            # Row format: [urlkey, timestamp, original, mimetype, status]
             timestamps = [row[1] for row in data[1:]]
 
             first_ts = format_date(min(timestamps))
@@ -70,23 +156,27 @@ def get_snapshot_info(url, retries=5):
     return 0, None, None
 
 
-# === PROCESSING ON ALL ROWS ===
+# -------------------------------------------------------
+# MAIN PROCESSING LOOP
+# -------------------------------------------------------
 results = []
 start_time = time.time()
 
 for idx, row in all_rows.iterrows():
-    base_record = row.to_dict()
 
-    raw_clean_link = base_record.get("clean_link", None)
-    link_notes = base_record.get("link_clean_notes", "")
+    # Preserve original row
+    record = row.to_dict()
 
-    # Default new fields
-    base_record["processed_link"] = None
-    base_record["snapshot_count"] = None
-    base_record["first_snapshot"] = None
-    base_record["last_snapshot"] = None
+    raw_clean_link = record.get(URL_COLUMN, None)
+    link_notes = record.get(NOTES_COLUMN, "")
 
-    # Determine if row should be processed
+    # Initialize new fields
+    record["processed_link"] = None
+    record["snapshot_count"] = None
+    record["first_snapshot"] = None
+    record["last_snapshot"] = None
+
+    # Determine whether record is eligible for processing
     should_process = (
         (pd.isna(link_notes) or str(link_notes).strip() == "") and
         (isinstance(raw_clean_link, str) and raw_clean_link.strip() != "")
@@ -95,37 +185,39 @@ for idx, row in all_rows.iterrows():
     if should_process:
         cleaned = clean_url(raw_clean_link)
 
-        print(f"[{idx+1}] {base_record.get('company', '')}: checking {cleaned}")
+        company_name = record.get("company", "")
+        print(f"[{idx+1}] {company_name}: checking {cleaned}")
 
         if cleaned:
             count, first, last = get_snapshot_info(cleaned)
-            base_record["processed_link"] = cleaned
-            base_record["snapshot_count"] = count
-            base_record["first_snapshot"] = first
-            base_record["last_snapshot"] = last
+            record["processed_link"] = cleaned
+            record["snapshot_count"] = count
+            record["first_snapshot"] = first
+            record["last_snapshot"] = last
         else:
-            base_record["processed_link"] = None
+            record["processed_link"] = None
 
+    # Append processed row to results
+    results.append(record)
+
+    # Logging status for visibility
+    if record["snapshot_count"] is None:
+        print(f"✓ [{idx+1}] {record.get('company', '')}: no info (skipped or no clean link)")
     else:
-        pass  # Not processed — leave processed_link as None
+        print(f"✓ [{idx+1}] {record.get('company', '')}: snapshots = {record['snapshot_count']}")
 
-    results.append(base_record)
-
-    # Print a status message for each row
-    if base_record["snapshot_count"] is None:
-        print(f"✓ [{idx+1}] {base_record.get('company', '')}: no info (skipped or no clean link)")
-    else:
-        print(f"✓ [{idx+1}] {base_record.get('company', '')}: snapshots = {base_record['snapshot_count']}")
-
-    # Save progress every 20 rows
+    # Save progress every 20 rows to avoid data loss
     if (len(results) % 20) == 0:
         pd.DataFrame(results).to_csv(OUTPUT_CSV, index=False)
         print(f"Progress saved ({len(results)} processed so far)")
 
-    # Safe randomized delay between requests
+    # Randomized delay to avoid overwhelming Wayback servers
     time.sleep(random.uniform(1.0, 2.2))
 
-# === Final save ===
+
+# -------------------------------------------------------
+# FINAL SAVE
+# -------------------------------------------------------
 out_df = pd.DataFrame(results)
 out_df.to_csv(OUTPUT_CSV, index=False)
 

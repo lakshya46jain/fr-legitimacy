@@ -1,7 +1,7 @@
 """
 topic_visualizations.py
 ------------------------
-Generate advanced BERTopic visualizations for the CS 4994
+Generate advanced BERTopic visualizations for the SOC 4994
 Facial Recognition Legitimacy Research Pipeline.
 
 This module:
@@ -14,7 +14,7 @@ This script is intended to be run AFTER the main BERTopic pipeline:
 
     python -m src.nlp.topic_visualizations
 
-The visual outputs directly support CS 4994 learning outcomes:
+The visual outputs directly support SOC 4994 learning outcomes:
     • Analyze corporate language + ethical framing over time
     • Build interpretable, interactive NLP visualizations
     • Support final report + dashboard requirements
@@ -98,7 +98,7 @@ def generate_visuals(model: BERTopic, df: pd.DataFrame):
         • Term-rank (word distributions across topics)
         • Topics-over-time (if year metadata exists)
 
-    This supports CS 4994 requirements for interactive visualization
+    This supports SOC 4994 requirements for interactive visualization
     and interpretability of thematic analysis.
 
     Parameters

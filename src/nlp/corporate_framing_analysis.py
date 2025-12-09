@@ -1,7 +1,7 @@
 """
 corporate_framing_analysis.py
 -----------------------------
-Compute company-level framing scores for the CS 4994 project:
+Compute company-level framing scores for the SOC 4994 project:
 
 For each company, we estimate:
     - ethical framing intensity

@@ -10,7 +10,7 @@ Generate per-company profiles that combine:
 
 These profiles can be used directly in:
     - an interactive dashboard
-    - the final CS 4994 report (case studies)
+    - the final SOC 4994 report (case studies)
     - qualitative comparison of companies
 
 Run from the project root:
