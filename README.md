@@ -40,7 +40,7 @@ facial_recognition_research/
 │   ├── interpretations/              # Topic summaries
 │   └── visuals/                      # HTML visualizations
 │
-└── notebooks/                        # Optional exploration notebooks
+└── notebooks/                        # Exploration notebooks
 ```
 
 ---
