@@ -1,7 +1,8 @@
 # Facial Recognition Research
 
 **SOC 4994 — Undergraduate Research, Virginia Tech**
-**Instructor: Prof. Zhuofan Li**
+
+**Instructor: Dr. Zhuofan Li**
 
 This repository contains a full end-to-end research pipeline that **identifies**, **tracks**, and **analyzes** how global facial-recognition (FR) companies present, frame, and legitimize their technologies over time.
 
@@ -297,63 +298,63 @@ Standardized logging across all modules with timestamps & multi-handler support.
 ### 1. Scrape NIST Vendors
 
 ```bash
-python data/nist/nist_frvendors_scraper.py
+python3 data/nist/nist_frvendors_scraper.py
 ```
 
 ### 2. Clean Homepages
 
 ```bash
-python data/vendors/website_cleaner.py
+python3 data/vendors/website_cleaner.py
 ```
 
 ### 3. Collect Snapshot Metadata
 
 ```bash
-python data/wayback/snapshot_info.py
+python3 data/wayback/snapshot_info.py
 ```
 
 ### 4. Download Snapshots (Decade or Year Mode)
 
 ```bash
-python data/wayback/snapshot_downloader_decade.py --input ... --output ... --out-dir ...
+python3 data/wayback/snapshot_downloader_decade.py --input ... --output ... --out-dir ...
 # or
-python data/wayback/snapshot_downloader_yearly.py --input ... --output ... --out-dir ...
+python3 data/wayback/snapshot_downloader_yearly.py --input ... --output ... --out-dir ...
 ```
 
 ### 5. Extract Cleaned Text
 
 ```bash
-python src/extraction/text_extractor.py
+python3 src/extraction/text_extractor.py
 ```
 
 ### 6. Topic Modeling
 
 ```bash
-python -m src.nlp.bertopic_pipeline
+python3 -m src.nlp.bertopic_pipeline
 ```
 
 ### 7. Corporate Framing Analysis
 
 ```bash
-python -m src.nlp.corporate_framing_analysis
+python3 -m src.nlp.corporate_framing_analysis
 ```
 
 ### 8. Topic Interpretation
 
 ```bash
-python -m src.nlp.topic_interpretation
+python3 -m src.nlp.topic_interpretation
 ```
 
 ### 9. Company Profile Generation
 
 ```bash
-python -m src.nlp.company_profiles
+python3 -m src.nlp.company_profiles
 ```
 
 ### 10. Visualization Generation
 
 ```bash
-python -m src.nlp.topic_visualizations
+python3 -m src.nlp.topic_visualizations
 ```
 
 ---
