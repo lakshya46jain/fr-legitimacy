@@ -1,15 +1,24 @@
 {
   "company": "xjeralabs.com",
   "dominant_topics": [
-    0,
-    -1
+    2,
+    -1,
+    3,
+    7,
+    0
   ],
   "topic_counts": {
-    "0": 13,
-    "-1": 3
+    "2": 8,
+    "-1": 5,
+    "3": 1,
+    "7": 1,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "3": "vantage, development, document, ai, prioxis",
+    "7": "ramco, payroll, aviation, en, ramco systems",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +28,11 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 3,
-      "0": 13
+      "-1": 5,
+      "0": 1,
+      "2": 8,
+      "3": 1,
+      "7": 1
     }
   },
   "sample_docs": [

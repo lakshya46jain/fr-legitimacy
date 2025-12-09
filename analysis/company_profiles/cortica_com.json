@@ -1,18 +1,24 @@
 {
   "company": "cortica.com",
   "dominant_topics": [
-    0,
     -1,
-    3
+    3,
+    0,
+    2,
+    20
   ],
   "topic_counts": {
-    "0": 10,
     "-1": 7,
-    "3": 1
+    "3": 5,
+    "0": 3,
+    "2": 2,
+    "20": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information",
-    "3": "deck, attacked, zombie, turn, trap"
+    "3": "vantage, development, document, ai, prioxis",
+    "0": "access, information, security, data, piam",
+    "2": "demand, cctv, camera, ca, verkada",
+    "20": "deck, attacked, zombie, turn, trap"
   },
   "framing_scores": {
     "framing_ethical": 0.25,
@@ -23,8 +29,10 @@
   "topic_timeline": {
     "20": {
       "-1": 7,
-      "0": 10,
-      "3": 1
+      "0": 3,
+      "2": 2,
+      "3": 5,
+      "20": 1
     }
   },
   "sample_docs": [

@@ -2,14 +2,14 @@
   "company": "www.neosystemscorp.com",
   "dominant_topics": [
     -1,
-    0
+    7
   ],
   "topic_counts": {
     "-1": 1,
-    "0": 1
+    "7": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "7": "ramco, payroll, aviation, en, ramco systems"
   },
   "framing_scores": {
     "framing_ethical": 0.3,
@@ -20,7 +20,7 @@
   "topic_timeline": {
     "20": {
       "-1": 1,
-      "0": 1
+      "7": 1
     }
   },
   "sample_docs": [

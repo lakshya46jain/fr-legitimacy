@@ -1,12 +1,14 @@
 {
   "company": "verify365.app",
   "dominant_topics": [
-    -1
+    0
   ],
   "topic_counts": {
-    "-1": 3
+    "0": 3
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "0": "access, information, security, data, piam"
+  },
   "framing_scores": {
     "framing_ethical": 0.5517241379310345,
     "framing_surveillance": 0.0459770114942528,
@@ -15,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 3
+      "0": 3
     }
   },
   "sample_docs": [

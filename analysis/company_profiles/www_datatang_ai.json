@@ -1,23 +1,23 @@
 {
   "company": "www.datatang.ai",
   "dominant_topics": [
-    0
+    3
   ],
   "topic_counts": {
-    "0": 13
+    "3": 12
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "3": "vantage, development, document, ai, prioxis"
   },
   "framing_scores": {
-    "framing_ethical": 0.975609756097561,
-    "framing_surveillance": 0.024390243902439,
+    "framing_ethical": 0.972972972972973,
+    "framing_surveillance": 0.027027027027027,
     "framing_market": 0.0,
-    "num_docs": 13
+    "num_docs": 12
   },
   "topic_timeline": {
     "20": {
-      "0": 13
+      "3": 12
     }
   },
   "sample_docs": [

@@ -2,14 +2,17 @@
   "company": "www.octi.tv",
   "dominant_topics": [
     0,
+    2,
     -1
   ],
   "topic_counts": {
     "0": 4,
-    "-1": 2
+    "2": 1,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
     "framing_ethical": 0.7758620689655172,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 4
+      "-1": 1,
+      "0": 4,
+      "2": 1
     }
   },
   "sample_docs": [

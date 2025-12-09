@@ -1,26 +1,39 @@
 {
   "company": "withpersona.com",
   "dominant_topics": [
+    0,
     -1,
-    0
+    3,
+    1,
+    5
   ],
   "topic_counts": {
-    "-1": 45,
-    "0": 42
+    "0": 56,
+    "-1": 20,
+    "3": 4,
+    "1": 2,
+    "5": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "3": "vantage, development, document, ai, prioxis",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "5": "aml, smartsearch, money, laundering, money laundering"
   },
   "framing_scores": {
-    "framing_ethical": 0.4173553719008264,
-    "framing_surveillance": 0.0438016528925619,
-    "framing_market": 0.5388429752066116,
-    "num_docs": 87
+    "framing_ethical": 0.413477537437604,
+    "framing_surveillance": 0.0440931780366056,
+    "framing_market": 0.5424292845257903,
+    "num_docs": 84
   },
   "topic_timeline": {
     "20": {
-      "-1": 45,
-      "0": 42
+      "-1": 20,
+      "0": 56,
+      "1": 2,
+      "3": 4,
+      "5": 1,
+      "7": 1
     }
   },
   "sample_docs": [

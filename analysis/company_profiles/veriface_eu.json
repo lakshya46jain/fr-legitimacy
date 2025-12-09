@@ -2,14 +2,23 @@
   "company": "veriface.eu",
   "dominant_topics": [
     0,
+    5,
+    1,
+    7,
     -1
   ],
   "topic_counts": {
-    "0": 20,
+    "0": 15,
+    "5": 2,
+    "1": 2,
+    "7": 1,
     "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "5": "aml, smartsearch, money, laundering, money laundering",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "7": "ramco, payroll, aviation, en, ramco systems"
   },
   "framing_scores": {
     "framing_ethical": 0.431740614334471,
@@ -20,7 +29,10 @@
   "topic_timeline": {
     "20": {
       "-1": 1,
-      "0": 20
+      "0": 15,
+      "1": 2,
+      "5": 2,
+      "7": 1
     }
   },
   "sample_docs": [

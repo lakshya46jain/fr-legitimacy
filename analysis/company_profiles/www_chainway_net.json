@@ -1,13 +1,13 @@
 {
   "company": "www.chainway.net",
   "dominant_topics": [
-    0
+    4
   ],
   "topic_counts": {
-    "0": 3
+    "4": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader"
   },
   "framing_scores": {
     "framing_ethical": 1.0,
@@ -17,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 3
+      "4": 3
     }
   },
   "sample_docs": [

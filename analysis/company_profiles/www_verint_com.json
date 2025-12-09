@@ -1,26 +1,41 @@
 {
   "company": "www.verint.com",
   "dominant_topics": [
-    0,
-    -1
+    12,
+    3,
+    -1,
+    2,
+    7
   ],
   "topic_counts": {
-    "0": 60,
-    "-1": 2
+    "12": 25,
+    "3": 11,
+    "-1": 4,
+    "2": 3,
+    "7": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "12": "camera, lens, usb, video, 4k",
+    "3": "vantage, development, document, ai, prioxis",
+    "2": "demand, cctv, camera, ca, verkada",
+    "7": "ramco, payroll, aviation, en, ramco systems"
   },
   "framing_scores": {
-    "framing_ethical": 0.4033245844269466,
-    "framing_surveillance": 0.1181102362204724,
-    "framing_market": 0.4785651793525809,
-    "num_docs": 62
+    "framing_ethical": 0.3914728682170542,
+    "framing_surveillance": 0.1308139534883721,
+    "framing_market": 0.4777131782945736,
+    "num_docs": 49
   },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 60
+      "-1": 4,
+      "0": 1,
+      "2": 3,
+      "3": 11,
+      "6": 1,
+      "7": 3,
+      "10": 1,
+      "12": 25
     }
   },
   "sample_docs": [

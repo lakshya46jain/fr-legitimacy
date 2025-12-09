@@ -1,26 +1,34 @@
 {
   "company": "www.crucialtrak.com",
   "dominant_topics": [
-    0,
-    -1
+    1,
+    31,
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 40,
-    "-1": 26
+    "1": 35,
+    "31": 17,
+    "-1": 7,
+    "0": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "31": "bacs, modes, bacs readers, readers, enrollment",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.514018691588785,
-    "framing_surveillance": 0.0373831775700934,
-    "framing_market": 0.4485981308411215,
-    "num_docs": 66
+    "framing_ethical": 0.5339805825242718,
+    "framing_surveillance": 0.0388349514563106,
+    "framing_market": 0.4271844660194174,
+    "num_docs": 62
   },
   "topic_timeline": {
     "20": {
-      "-1": 26,
-      "0": 40
+      "-1": 7,
+      "0": 3,
+      "1": 35,
+      "31": 17
     }
   },
   "sample_docs": [

@@ -1,26 +1,38 @@
 {
   "company": "www.skntechnology.in",
   "dominant_topics": [
-    0,
-    -1
+    2,
+    1,
+    -1,
+    4,
+    9
   ],
   "topic_counts": {
-    "0": 154,
-    "-1": 32
+    "2": 148,
+    "1": 18,
+    "-1": 16,
+    "4": 2,
+    "9": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader",
+    "9": "gsm, gprs, wireless, cdma, rf"
   },
   "framing_scores": {
-    "framing_ethical": 0.0287569573283859,
-    "framing_surveillance": 0.1178107606679035,
-    "framing_market": 0.8534322820037106,
-    "num_docs": 186
+    "framing_ethical": 0.0242311276794035,
+    "framing_surveillance": 0.1183597390493942,
+    "framing_market": 0.8574091332712023,
+    "num_docs": 185
   },
   "topic_timeline": {
     "20": {
-      "-1": 32,
-      "0": 154
+      "-1": 16,
+      "1": 18,
+      "2": 148,
+      "4": 2,
+      "9": 1
     }
   },
   "sample_docs": [

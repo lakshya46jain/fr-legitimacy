@@ -1,15 +1,16 @@
 {
   "company": "fortress-identity.com",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    1
   ],
   "topic_counts": {
-    "-1": 8,
-    "0": 3
+    "0": 9,
+    "1": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.4215686274509804,
@@ -19,8 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 8,
-      "0": 3
+      "0": 9,
+      "1": 2
     }
   },
   "sample_docs": [

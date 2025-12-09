@@ -1,15 +1,18 @@
 {
   "company": "pillohealth.com",
   "dominant_topics": [
-    -1,
-    0
+    6,
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 7,
-    "0": 2
+    "6": 5,
+    "0": 3,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "6": "stripe, payments, think, really, payment",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.6237623762376238,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 7,
-      "0": 2
+      "-1": 1,
+      "0": 3,
+      "6": 5
     }
   },
   "sample_docs": [

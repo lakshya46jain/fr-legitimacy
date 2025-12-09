@@ -3,28 +3,37 @@
   "dominant_topics": [
     0,
     -1,
-    6
+    18,
+    7,
+    3
   ],
   "topic_counts": {
-    "0": 123,
-    "-1": 29,
-    "6": 1
+    "0": 95,
+    "-1": 26,
+    "18": 15,
+    "7": 2,
+    "3": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information",
-    "6": "hero, school, students, student, behavior"
+    "0": "access, information, security, data, piam",
+    "18": "evidence, digital evidence, data, case, attorneys",
+    "7": "ramco, payroll, aviation, en, ramco systems",
+    "3": "vantage, development, document, ai, prioxis"
   },
   "framing_scores": {
-    "framing_ethical": 0.3094425483503982,
-    "framing_surveillance": 0.5062571103526735,
-    "framing_market": 0.1843003412969283,
-    "num_docs": 153
+    "framing_ethical": 0.2855450236966824,
+    "framing_surveillance": 0.5225118483412322,
+    "framing_market": 0.1919431279620853,
+    "num_docs": 141
   },
   "topic_timeline": {
     "20": {
-      "-1": 29,
-      "0": 123,
-      "6": 1
+      "-1": 26,
+      "0": 95,
+      "2": 1,
+      "3": 2,
+      "7": 2,
+      "18": 15
     }
   },
   "sample_docs": [

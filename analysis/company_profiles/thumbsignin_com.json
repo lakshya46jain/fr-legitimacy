@@ -2,14 +2,20 @@
   "company": "thumbsignin.com",
   "dominant_topics": [
     0,
-    -1
+    18,
+    -1,
+    11
   ],
   "topic_counts": {
-    "0": 14,
-    "-1": 14
+    "0": 11,
+    "18": 9,
+    "-1": 7,
+    "11": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "18": "evidence, digital evidence, data, case, attorneys",
+    "11": "authentication, password, lastpass, factor, hanko"
   },
   "framing_scores": {
     "framing_ethical": 0.6129032258064516,
@@ -19,8 +25,10 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 14,
-      "0": 14
+      "-1": 7,
+      "0": 11,
+      "11": 1,
+      "18": 9
     }
   },
   "sample_docs": [

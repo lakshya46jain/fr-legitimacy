@@ -2,14 +2,20 @@
   "company": "www.trac-tech.co.za",
   "dominant_topics": [
     -1,
-    0
+    1,
+    0,
+    10
   ],
   "topic_counts": {
-    "-1": 9,
-    "0": 8
+    "-1": 8,
+    "1": 6,
+    "0": 2,
+    "10": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "10": "deputy, workforce, payroll, scheduling, employees"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +25,10 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 9,
-      "0": 8
+      "-1": 8,
+      "0": 2,
+      "1": 6,
+      "10": 1
     }
   },
   "sample_docs": [

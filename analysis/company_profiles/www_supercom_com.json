@@ -2,25 +2,39 @@
   "company": "www.supercom.com",
   "dominant_topics": [
     0,
-    -1
+    -1,
+    21,
+    2,
+    9
   ],
   "topic_counts": {
-    "0": 57,
-    "-1": 15
+    "0": 29,
+    "-1": 8,
+    "21": 4,
+    "2": 4,
+    "9": 4
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "21": "camera, camera module, joy, module, document camera",
+    "2": "demand, cctv, camera, ca, verkada",
+    "9": "gsm, gprs, wireless, cdma, rf"
   },
   "framing_scores": {
-    "framing_ethical": 0.6294046172539489,
-    "framing_surveillance": 0.2600243013365735,
-    "framing_market": 0.1105710814094775,
-    "num_docs": 72
+    "framing_ethical": 0.5689404934687954,
+    "framing_surveillance": 0.3047895500725689,
+    "framing_market": 0.1262699564586357,
+    "num_docs": 52
   },
   "topic_timeline": {
     "20": {
-      "-1": 15,
-      "0": 57
+      "-1": 8,
+      "0": 29,
+      "2": 4,
+      "5": 2,
+      "9": 4,
+      "21": 4,
+      "26": 1
     }
   },
   "sample_docs": [

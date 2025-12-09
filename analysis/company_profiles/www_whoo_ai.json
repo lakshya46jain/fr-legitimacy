@@ -1,15 +1,18 @@
 {
   "company": "www.whoo.ai",
   "dominant_topics": [
-    0,
-    -1
+    9,
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 24,
-    "-1": 1
+    "9": 23,
+    "-1": 1,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "9": "gsm, gprs, wireless, cdma, rf",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -20,7 +23,8 @@
   "topic_timeline": {
     "20": {
       "-1": 1,
-      "0": 24
+      "0": 1,
+      "9": 23
     }
   },
   "sample_docs": [

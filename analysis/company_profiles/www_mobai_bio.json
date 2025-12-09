@@ -1,12 +1,17 @@
 {
   "company": "www.mobai.bio",
   "dominant_topics": [
-    -1
+    0,
+    10
   ],
   "topic_counts": {
-    "-1": 13
+    "0": 12,
+    "10": 1
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "0": "access, information, security, data, piam",
+    "10": "deputy, workforce, payroll, scheduling, employees"
+  },
   "framing_scores": {
     "framing_ethical": 0.3969072164948453,
     "framing_surveillance": 0.0,
@@ -15,7 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 13
+      "0": 12,
+      "10": 1
     }
   },
   "sample_docs": [

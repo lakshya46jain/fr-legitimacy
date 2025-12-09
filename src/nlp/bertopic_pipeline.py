@@ -1,13 +1,13 @@
 """
 bertopic_pipeline.py
---------------------
-End-to-end BERTopic pipeline for analyzing how companies working
-on facial recognition and adjacent technologies frame and legitimize
-their products over time.
+--------------------------------------
+End-to-end BERTopic pipeline with improved topic granularity.
 
-Compatible with Python 3.13 and all BERTopic versions.
-Evaluation module removed (not available in many versions).
-A safe diversity proxy is used instead.
+This updated pipeline:
+    - Produces more topics (instead of collapsing into Topic 0 & 1)
+    - Distributes documents more evenly across clusters
+    - Improves UMAP and HDBSCAN sensitivity
+    - Uses a fixed nr_topics target (40) for clearer interpretability
 
 Run:
     python -m src.nlp.bertopic_pipeline
@@ -20,7 +20,6 @@ from bertopic import BERTopic
 from bertopic.representation import (
     MaximalMarginalRelevance,
     KeyBERTInspired,
-    PartOfSpeech,
 )
 from umap import UMAP
 from hdbscan import HDBSCAN
@@ -49,7 +48,7 @@ logger = get_logger("BERTopicPipeline")
 
 
 # -------------------------------------------------------
-# FACIAL RECOGNITION KEYWORDS
+# FR KEYWORDS
 # -------------------------------------------------------
 FR_KEYWORDS = [
     "face recognition", "facial recognition", "face biometric",
@@ -67,21 +66,12 @@ FR_KEYWORDS = [
     "computer vision", "deep learning", "neural network",
     "vision ai", "image recognition", "pattern recognition",
     "object detection", "video analytics",
-    "ai-powered", "machine learning model", "analytics platform",
 
-    "access control", "entry management", "smart access",
-    "contactless access", "touchless", "visitor management",
-    "credentials", "credentialing", "door controller",
-    "physical security", "biometric access",
-    "time and attendance", "workforce management",
+    "access control", "visitor management", "workforce management",
 
-    "video surveillance", "cctv", "public safety",
-    "real-time monitoring", "tracking system",
-    "watchlist", "forensic", "crime prevention",
+    "cctv", "public safety", "video surveillance",
 
-    "gdpr", "privacy", "responsible ai", "ai ethics",
-    "fairness", "transparency", "bias mitigation",
-    "compliance", "regulation", "ethical ai",
+    "gdpr", "privacy", "responsible ai", "ai ethics"
 ]
 
 
@@ -95,17 +85,30 @@ def contains_fr_keywords(text: str) -> bool:
 # LOAD & CLEAN DATA
 # -------------------------------------------------------
 def load_data() -> pd.DataFrame:
-    """Load, filter, and dedupe FR-related documents."""
+    """
+    Load, filter, and dedupe cleaned FR-related documents.
+
+    NOTE: Additional optional cleaning is provided below
+    (commented out) for cases where too many irrelevant
+    pages create large noisy topics.
+    """
     logger.info(f"Loading cleaned text from {INPUT_FILE}")
     df = pd.read_csv(INPUT_FILE)
 
+    # drop missing text
     df = df.dropna(subset=["text"])
+
+    # remove extremely short documents
     df = df[df["text"].str.split().str.len() >= 40]
+
+    # keep only FR-relevant docs
     df = df[df["text"].apply(contains_fr_keywords)]
 
+    # limit to English (if available)
     if "lang" in df.columns:
         df = df[df["lang"] == "en"]
 
+    # remove duplicates across company+decade+text
     df = df.drop_duplicates(subset=["company", "decade", "text"]).reset_index(drop=True)
 
     logger.info(f"Loaded {len(df)} documents after filtering.")
@@ -113,47 +116,56 @@ def load_data() -> pd.DataFrame:
 
 
 def add_year_column(df: pd.DataFrame) -> pd.DataFrame:
-    """Infer year from `path` column."""
+    """Infer year from path field."""
     logger.info("Extracting year from path...")
 
     if "path" not in df.columns:
-        logger.warning("No 'path' column found; setting year=None")
         df["year"] = None
         return df
 
-    df["year"] = (
-        df["path"].astype(str).str.extract(r"(19|20)\d{2}")
-    ).astype(float)
-
+    df["year"] = df["path"].astype(str).str.extract(r"(19|20)\d{2}").astype(float)
     logger.info(f"Extracted year for {df['year'].notna().sum()} documents.")
     return df
 
 
 # -------------------------------------------------------
-# MODEL COMPONENTS
+# IMPROVED MODEL COMPONENTS (for more granular topics)
 # -------------------------------------------------------
 def build_low_memory_models():
-    """Construct UMAP, HDBSCAN, CountVectorizer."""
+    """
+    Build new UMAP + HDBSCAN + Vectorizer models
+    that produce *more topics* and reduce Topic 0/1 dominance.
+    """
+
+    # ----------------------------
+    # UMAP: smaller neighborhoods = more fine-grained clusters
+    # ----------------------------
     umap_model = UMAP(
-        n_neighbors=15,
+        n_neighbors=8,         # ↓ from 15
         n_components=5,
-        min_dist=0.0,
+        min_dist=0.05,         # slightly spread topics
         metric="cosine",
         low_memory=True,
         verbose=True,
     )
 
+    # ----------------------------
+    # HDBSCAN: more sensitive clustering
+    # ----------------------------
     hdbscan_model = HDBSCAN(
-        min_cluster_size=20,
-        min_samples=10,
+        min_cluster_size=10,   # ↓ from 20
+        min_samples=3,         # ↓ from 10
         metric="euclidean",
         cluster_selection_method="eom",
         prediction_data=False,
     )
 
+    # ----------------------------
+    # Vectorizer: reduce noise, improve separation
+    # ----------------------------
     vectorizer_model = CountVectorizer(
         stop_words="english",
-        ngram_range=(1, 3),
+        ngram_range=(1, 2),    # narrowed to avoid massive trigrams
         min_df=3,
         max_features=30000,
     )
@@ -162,21 +174,21 @@ def build_low_memory_models():
 
 
 def build_representation_model():
-    """Combine diverse representation models for interpretability."""
+    """Representation for improving topic labels."""
     mmr = MaximalMarginalRelevance(diversity=0.3)
     keybert = KeyBERTInspired()
-
     return {"MMR": mmr, "KeyBERT": keybert}
 
 
 # -------------------------------------------------------
-# RUN BERTOPIC
+# RUN BERTOPIC WITH IMPROVED GRANULARITY
 # -------------------------------------------------------
 def run_bertopic(docs, timestamps):
     """
-    Fit BERTopic, reduce topics, compute topics-over-time,
-    and compute a diversity metric.
+    Fit BERTopic with new, more fine-grained clustering settings.
+    Distribute docs across ~40 topics rather than collapsing.
     """
+
     logger.info("Initializing BERTopic...")
 
     umap_model, hdbscan_model, vectorizer_model = build_low_memory_models()
@@ -189,58 +201,40 @@ def run_bertopic(docs, timestamps):
         vectorizer_model=vectorizer_model,
         representation_model=representation_model,
         calculate_probabilities=False,
-        nr_topics="auto",
+
+        # IMPORTANT: force more topics
+        nr_topics=40,
+
         verbose=True,
     )
 
-    logger.info("Fitting model...")
+    logger.info("Fitting model with improved settings...")
     topics, _ = topic_model.fit_transform(docs)
 
     # ----------------------
-    # Reduce topics
-    # ----------------------
-    try:
-        logger.info("Reducing to ~25 macro-topics...")
-        topic_model, topics = topic_model.reduce_topics(
-            docs, topics, nr_topics=25
-        )
-    except Exception as e:
-        logger.warning(f"Topic reduction failed: {e}")
-
-    # ----------------------
-    # Topics-over-time
+    # Topics-over-time (if possible)
     # ----------------------
     topics_over_time = None
     if timestamps and any(t is not None for t in timestamps):
         try:
-            logger.info("Computing topics-over-time...")
-            topics_over_time = topic_model.topics_over_time(
-                docs, timestamps=timestamps
-            )
+            topics_over_time = topic_model.topics_over_time(docs, timestamps=timestamps)
         except Exception as e:
             logger.warning(f"topics_over_time failed: {e}")
 
     # ----------------------
-    # Diversity Proxy
+    # Diversity (optional)
     # ----------------------
-    eval_scores = {"coherence": None, "diversity": None}
+    eval_scores = {"diversity": None}
 
     try:
-        logger.info("Computing diversity proxy score...")
-        unique_words = set()
-        for topic_id, word_scores in topic_model.get_topics().items():
-            if topic_id == -1:
-                continue
-            for w, _ in word_scores:
-                unique_words.add(w)
-
-        diversity_score = len(unique_words)
-        eval_scores["diversity"] = diversity_score
-
-        logger.info(f"Diversity score: {diversity_score}")
-
-    except Exception as e:
-        logger.warning(f"Diversity proxy failed: {e}")
+        unique_words = {
+            w for tid, words in topic_model.get_topics().items()
+            if tid != -1
+            for (w, _) in words
+        }
+        eval_scores["diversity"] = len(unique_words)
+    except Exception:
+        pass
 
     return topic_model, topics, topics_over_time, eval_scores
 
@@ -249,7 +243,6 @@ def run_bertopic(docs, timestamps):
 # SAVE OUTPUTS
 # -------------------------------------------------------
 def save_topic_outputs(df, topics, topics_over_time):
-    """Save topics.csv and topic_over_time.csv."""
     df = df.copy()
     df["topic"] = topics
 
@@ -264,24 +257,20 @@ def save_topic_outputs(df, topics, topics_over_time):
 
 
 def save_topics_per_decade(topic_model, df):
-    """Optional: topic distribution by decade."""
     if "decade" not in df.columns:
         return
 
     try:
-        logger.info("Computing topics-per-decade...")
         topics_per_decade = topic_model.topics_per_class(
             df["text"].tolist(),
-            classes=df["decade"].tolist(),
+            classes=df["decade"].tolist()
         )
         topics_per_decade.to_csv(TOPIC_PER_DECADE_CSV, index=False)
-        logger.info(f"Saved → {TOPIC_PER_DECADE_CSV}")
     except Exception as e:
         logger.warning(f"topics_per_class failed: {e}")
 
 
 def save_model_and_visuals(topic_model, topics_over_time):
-    """Save BERTopic model + HTML visualizations."""
     topic_model.save(MODEL_DIR)
     logger.info(f"Saved model → {MODEL_DIR}")
 
@@ -312,7 +301,7 @@ def save_model_and_visuals(topic_model, topics_over_time):
 # MAIN
 # -------------------------------------------------------
 if __name__ == "__main__":
-    logger.info("Starting BERTopic pipeline...")
+    logger.info("Starting BERTopic Pipeline...")
 
     df = load_data()
     df = add_year_column(df)

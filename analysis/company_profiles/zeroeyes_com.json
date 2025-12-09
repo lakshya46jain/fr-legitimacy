@@ -1,26 +1,30 @@
 {
   "company": "zeroeyes.com",
   "dominant_topics": [
+    2,
     0,
     -1
   ],
   "topic_counts": {
-    "0": 29,
+    "2": 26,
+    "0": 2,
     "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.0410958904109589,
-    "framing_surveillance": 0.9269406392694064,
-    "framing_market": 0.0319634703196347,
-    "num_docs": 30
+    "framing_ethical": 0.0422535211267605,
+    "framing_surveillance": 0.9248826291079812,
+    "framing_market": 0.0328638497652582,
+    "num_docs": 29
   },
   "topic_timeline": {
     "20": {
       "-1": 1,
-      "0": 29
+      "0": 2,
+      "2": 26
     }
   },
   "sample_docs": [

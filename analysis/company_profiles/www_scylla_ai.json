@@ -1,15 +1,24 @@
 {
   "company": "www.scylla.ai",
   "dominant_topics": [
+    2,
+    -1,
+    3,
     0,
-    -1
+    1
   ],
   "topic_counts": {
-    "0": 90,
-    "-1": 45
+    "2": 100,
+    "-1": 25,
+    "3": 6,
+    "0": 3,
+    "1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "3": "vantage, development, document, ai, prioxis",
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.2109533468559837,
@@ -19,8 +28,11 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 45,
-      "0": 90
+      "-1": 25,
+      "0": 3,
+      "1": 1,
+      "2": 100,
+      "3": 6
     }
   },
   "sample_docs": [

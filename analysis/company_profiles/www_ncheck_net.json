@@ -1,15 +1,16 @@
 {
   "company": "www.ncheck.net",
   "dominant_topics": [
-    -1,
+    1,
     0
   ],
   "topic_counts": {
-    "-1": 14,
+    "1": 14,
     "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.1578947368421052,
@@ -19,8 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 14,
-      "0": 1
+      "0": 1,
+      "1": 14
     }
   },
   "sample_docs": [

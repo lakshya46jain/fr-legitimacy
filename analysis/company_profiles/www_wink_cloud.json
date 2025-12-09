@@ -1,21 +1,26 @@
 {
   "company": "www.wink.cloud",
   "dominant_topics": [
+    0,
     -1
   ],
   "topic_counts": {
-    "-1": 13
+    "0": 11,
+    "-1": 1
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "0": "access, information, security, data, piam"
+  },
   "framing_scores": {
-    "framing_ethical": 0.4331550802139037,
+    "framing_ethical": 0.4111111111111111,
     "framing_surveillance": 0.0,
-    "framing_market": 0.5668449197860963,
-    "num_docs": 13
+    "framing_market": 0.5888888888888889,
+    "num_docs": 12
   },
   "topic_timeline": {
     "20": {
-      "-1": 13
+      "-1": 1,
+      "0": 11
     }
   },
   "sample_docs": [

@@ -1,12 +1,14 @@
 {
   "company": "infocert.digital",
   "dominant_topics": [
-    -1
+    0
   ],
   "topic_counts": {
-    "-1": 2
+    "0": 2
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "0": "access, information, security, data, piam"
+  },
   "framing_scores": {
     "framing_ethical": 0.4054054054054054,
     "framing_surveillance": 0.0,
@@ -15,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 2
+      "0": 2
     }
   },
   "sample_docs": [

@@ -1,26 +1,38 @@
 {
   "company": "www.e-consystems.com",
   "dominant_topics": [
+    12,
+    2,
+    37,
     0,
     -1
   ],
   "topic_counts": {
-    "0": 99,
-    "-1": 6
+    "12": 45,
+    "2": 17,
+    "37": 4,
+    "0": 2,
+    "-1": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "12": "camera, lens, usb, video, 4k",
+    "2": "demand, cctv, camera, ca, verkada",
+    "37": "client, client client, windows, embedded, boot",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.8088235294117647,
+    "framing_ethical": 0.5894736842105263,
     "framing_surveillance": 0.0,
-    "framing_market": 0.1911764705882352,
-    "num_docs": 105
+    "framing_market": 0.4105263157894737,
+    "num_docs": 70
   },
   "topic_timeline": {
     "20": {
-      "-1": 6,
-      "0": 99
+      "-1": 2,
+      "0": 2,
+      "2": 17,
+      "12": 45,
+      "37": 4
     }
   },
   "sample_docs": [

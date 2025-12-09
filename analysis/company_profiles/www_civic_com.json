@@ -1,15 +1,18 @@
 {
   "company": "www.civic.com",
   "dominant_topics": [
-    -1,
-    0
+    24,
+    11,
+    -1
   ],
   "topic_counts": {
-    "-1": 2,
-    "0": 1
+    "24": 1,
+    "11": 1,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "24": "signature, electronic, sign, signatures, contract",
+    "11": "authentication, password, lastpass, factor, hanko"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,10 +22,11 @@
   },
   "topic_timeline": {
     "19": {
-      "0": 1
+      "24": 1
     },
     "20": {
-      "-1": 2
+      "-1": 1,
+      "11": 1
     }
   },
   "sample_docs": [

@@ -1,26 +1,40 @@
 {
   "company": "www.deputy.com",
   "dominant_topics": [
+    10,
     0,
-    -1
+    -1,
+    7,
+    6
   ],
   "topic_counts": {
-    "0": 123,
-    "-1": 4
+    "10": 94,
+    "0": 8,
+    "-1": 5,
+    "7": 2,
+    "6": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "10": "deputy, workforce, payroll, scheduling, employees",
+    "0": "access, information, security, data, piam",
+    "7": "ramco, payroll, aviation, en, ramco systems",
+    "6": "stripe, payments, think, really, payment"
   },
   "framing_scores": {
-    "framing_ethical": 0.4994934143870314,
-    "framing_surveillance": 0.0121580547112462,
-    "framing_market": 0.4883485309017223,
-    "num_docs": 127
+    "framing_ethical": 0.4622124863088718,
+    "framing_surveillance": 0.013143483023001,
+    "framing_market": 0.524644030668127,
+    "num_docs": 114
   },
   "topic_timeline": {
     "20": {
-      "-1": 4,
-      "0": 123
+      "-1": 5,
+      "0": 8,
+      "3": 2,
+      "6": 2,
+      "7": 2,
+      "10": 94,
+      "26": 1
     }
   },
   "sample_docs": [

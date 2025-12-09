@@ -1,13 +1,16 @@
 {
   "company": "www.addistechsolution.com",
   "dominant_topics": [
-    0
+    2,
+    4
   ],
   "topic_counts": {
-    "0": 22
+    "2": 21,
+    "4": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader"
   },
   "framing_scores": {
     "framing_ethical": 0.0144927536231884,
@@ -17,7 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 22
+      "2": 21,
+      "4": 1
     }
   },
   "sample_docs": [

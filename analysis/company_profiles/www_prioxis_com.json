@@ -1,26 +1,41 @@
 {
   "company": "www.prioxis.com",
   "dominant_topics": [
+    3,
+    -1,
     0,
-    -1
+    1,
+    6
   ],
   "topic_counts": {
-    "0": 233,
-    "-1": 44
+    "3": 197,
+    "-1": 61,
+    "0": 7,
+    "1": 4,
+    "6": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "3": "vantage, development, document, ai, prioxis",
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "6": "stripe, payments, think, really, payment"
   },
   "framing_scores": {
-    "framing_ethical": 0.2341931065966674,
-    "framing_surveillance": 0.0162063455832001,
-    "framing_market": 0.7496005478201324,
-    "num_docs": 277
+    "framing_ethical": 0.2268849435093382,
+    "framing_surveillance": 0.0163707632003689,
+    "framing_market": 0.7567442932902928,
+    "num_docs": 275
   },
   "topic_timeline": {
     "20": {
-      "-1": 44,
-      "0": 233
+      "-1": 61,
+      "0": 7,
+      "1": 4,
+      "3": 197,
+      "5": 1,
+      "6": 3,
+      "10": 1,
+      "19": 1
     }
   },
   "sample_docs": [

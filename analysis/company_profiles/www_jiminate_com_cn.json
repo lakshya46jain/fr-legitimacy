@@ -1,15 +1,24 @@
 {
   "company": "www.jiminate.com.cn",
   "dominant_topics": [
-    0,
-    -1
+    1,
+    29,
+    -1,
+    4,
+    15
   ],
   "topic_counts": {
-    "0": 42,
-    "-1": 11
+    "1": 34,
+    "29": 9,
+    "-1": 5,
+    "4": 4,
+    "15": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "29": "door, temperature, lock, thermometer, inch",
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader",
+    "15": "melissa, data, data quality, address, zip"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +28,11 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 11,
-      "0": 42
+      "-1": 5,
+      "1": 34,
+      "4": 4,
+      "15": 1,
+      "29": 9
     }
   },
   "sample_docs": [

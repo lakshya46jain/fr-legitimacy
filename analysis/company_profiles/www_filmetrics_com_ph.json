@@ -1,26 +1,39 @@
 {
   "company": "www.filmetrics.com.ph",
   "dominant_topics": [
+    1,
     0,
-    -1
+    -1,
+    10,
+    7
   ],
   "topic_counts": {
-    "0": 18,
-    "-1": 15
+    "1": 12,
+    "0": 8,
+    "-1": 7,
+    "10": 3,
+    "7": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "10": "deputy, workforce, payroll, scheduling, employees",
+    "7": "ramco, payroll, aviation, en, ramco systems"
   },
   "framing_scores": {
     "framing_ethical": 0.2962962962962963,
     "framing_surveillance": 0.0814814814814814,
     "framing_market": 0.6222222222222222,
-    "num_docs": 33
+    "num_docs": 32
   },
   "topic_timeline": {
     "20": {
-      "-1": 15,
-      "0": 18
+      "-1": 7,
+      "0": 8,
+      "1": 12,
+      "2": 1,
+      "7": 1,
+      "10": 3
     }
   },
   "sample_docs": [

@@ -1,26 +1,30 @@
 {
   "company": "icomm.vn",
   "dominant_topics": [
-    0,
-    -1
+    3,
+    -1,
+    2
   ],
   "topic_counts": {
-    "0": 12,
-    "-1": 2
+    "3": 6,
+    "-1": 5,
+    "2": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "3": "vantage, development, document, ai, prioxis",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
-    "framing_ethical": 0.3191489361702128,
-    "framing_surveillance": 0.1063829787234042,
-    "framing_market": 0.574468085106383,
-    "num_docs": 14
+    "framing_ethical": 0.2105263157894736,
+    "framing_surveillance": 0.131578947368421,
+    "framing_market": 0.6578947368421053,
+    "num_docs": 12
   },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 12
+      "-1": 5,
+      "2": 1,
+      "3": 6
     }
   },
   "sample_docs": [

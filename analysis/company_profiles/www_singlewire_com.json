@@ -1,26 +1,27 @@
 {
   "company": "www.singlewire.com",
   "dominant_topics": [
-    0,
-    -1
+    9,
+    0
   ],
   "topic_counts": {
-    "0": 16,
-    "-1": 1
+    "9": 11,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "9": "gsm, gprs, wireless, cdma, rf",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.5,
-    "framing_surveillance": 0.05,
-    "framing_market": 0.45,
-    "num_docs": 17
+    "framing_ethical": 0.0,
+    "framing_surveillance": 0.1,
+    "framing_market": 0.9,
+    "num_docs": 12
   },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 16
+      "0": 1,
+      "9": 11
     }
   },
   "sample_docs": [

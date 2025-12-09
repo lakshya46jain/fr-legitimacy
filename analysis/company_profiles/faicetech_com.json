@@ -1,26 +1,30 @@
 {
   "company": "faicetech.com",
   "dominant_topics": [
-    0,
-    -1
+    1,
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 17,
-    "-1": 1
+    "1": 10,
+    "-1": 5,
+    "0": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.6434599156118144,
-    "framing_surveillance": 0.2721518987341772,
-    "framing_market": 0.0843881856540084,
-    "num_docs": 18
+    "framing_ethical": 0.6448202959830867,
+    "framing_surveillance": 0.2706131078224101,
+    "framing_market": 0.0845665961945031,
+    "num_docs": 17
   },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 17
+      "-1": 5,
+      "0": 2,
+      "1": 10
     }
   },
   "sample_docs": [

@@ -1,13 +1,13 @@
 {
   "company": "ailabs.tw",
   "dominant_topics": [
-    0
+    3
   ],
   "topic_counts": {
-    "0": 5
+    "3": 5
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "3": "vantage, development, document, ai, prioxis"
   },
   "framing_scores": {
     "framing_ethical": 1.0,
@@ -17,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 5
+      "3": 5
     }
   },
   "sample_docs": [

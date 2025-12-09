@@ -1,26 +1,41 @@
 {
   "company": "www.chetu.com",
   "dominant_topics": [
-    0,
-    -1
+    19,
+    3,
+    2,
+    -1,
+    7
   ],
   "topic_counts": {
-    "0": 72,
-    "-1": 15
+    "19": 26,
+    "3": 18,
+    "2": 9,
+    "-1": 5,
+    "7": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "19": "energy, software, water, management, grid",
+    "3": "vantage, development, document, ai, prioxis",
+    "2": "demand, cctv, camera, ca, verkada",
+    "7": "ramco, payroll, aviation, en, ramco systems"
   },
   "framing_scores": {
-    "framing_ethical": 0.467680608365019,
-    "framing_surveillance": 0.0513307984790874,
-    "framing_market": 0.4809885931558935,
-    "num_docs": 87
+    "framing_ethical": 0.432258064516129,
+    "framing_surveillance": 0.0494623655913978,
+    "framing_market": 0.5182795698924731,
+    "num_docs": 65
   },
   "topic_timeline": {
     "20": {
-      "-1": 15,
-      "0": 72
+      "-1": 5,
+      "0": 2,
+      "1": 1,
+      "2": 9,
+      "3": 18,
+      "7": 3,
+      "18": 1,
+      "19": 26
     }
   },
   "sample_docs": [

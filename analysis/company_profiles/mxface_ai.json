@@ -1,15 +1,21 @@
 {
   "company": "mxface.ai",
   "dominant_topics": [
-    0,
-    -1
+    1,
+    -1,
+    2,
+    11
   ],
   "topic_counts": {
-    "0": 63,
-    "-1": 12
+    "1": 52,
+    "-1": 18,
+    "2": 4,
+    "11": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "2": "demand, cctv, camera, ca, verkada",
+    "11": "authentication, password, lastpass, factor, hanko"
   },
   "framing_scores": {
     "framing_ethical": 0.1858407079646017,
@@ -19,8 +25,10 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 12,
-      "0": 63
+      "-1": 18,
+      "1": 52,
+      "2": 4,
+      "11": 1
     }
   },
   "sample_docs": [

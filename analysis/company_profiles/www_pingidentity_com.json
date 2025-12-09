@@ -2,14 +2,15 @@
   "company": "www.pingidentity.com",
   "dominant_topics": [
     0,
-    -1
+    6
   ],
   "topic_counts": {
-    "0": 92,
-    "-1": 2
+    "0": 93,
+    "6": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "6": "stripe, payments, think, really, payment"
   },
   "framing_scores": {
     "framing_ethical": 0.0222717149220489,
@@ -19,8 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 92
+      "0": 93,
+      "6": 1
     }
   },
   "sample_docs": [

@@ -1,13 +1,15 @@
 {
   "company": "kloudspot.ai",
   "dominant_topics": [
-    0
+    2,
+    -1
   ],
   "topic_counts": {
-    "0": 92
+    "2": 91,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
     "framing_ethical": 0.3293650793650793,
@@ -17,7 +19,8 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 92
+      "-1": 1,
+      "2": 91
     }
   },
   "sample_docs": [

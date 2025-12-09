@@ -1,13 +1,13 @@
 {
   "company": "www.videonetics.com",
   "dominant_topics": [
-    0
+    2
   ],
   "topic_counts": {
-    "0": 3
+    "2": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
     "framing_ethical": 0.3,
@@ -17,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 3
+      "2": 3
     }
   },
   "sample_docs": [

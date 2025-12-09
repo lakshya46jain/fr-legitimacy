@@ -1,26 +1,27 @@
 {
   "company": "www.abouttimetech.com",
   "dominant_topics": [
-    -1,
-    0
+    1,
+    10
   ],
   "topic_counts": {
-    "-1": 27,
-    "0": 7
+    "1": 17,
+    "10": 13
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "10": "deputy, workforce, payroll, scheduling, employees"
   },
   "framing_scores": {
     "framing_ethical": 0.0686274509803921,
     "framing_surveillance": 0.0,
     "framing_market": 0.931372549019608,
-    "num_docs": 34
+    "num_docs": 30
   },
   "topic_timeline": {
     "20": {
-      "-1": 27,
-      "0": 7
+      "1": 17,
+      "10": 13
     }
   },
   "sample_docs": [

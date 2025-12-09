@@ -2,14 +2,23 @@
   "company": "identance.com",
   "dominant_topics": [
     0,
-    -1
+    -1,
+    5,
+    1,
+    6
   ],
   "topic_counts": {
-    "0": 16,
-    "-1": 7
+    "0": 12,
+    "-1": 5,
+    "5": 3,
+    "1": 2,
+    "6": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "5": "aml, smartsearch, money, laundering, money laundering",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "6": "stripe, payments, think, really, payment"
   },
   "framing_scores": {
     "framing_ethical": 0.3754963131026659,
@@ -19,8 +28,11 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 7,
-      "0": 16
+      "-1": 5,
+      "0": 12,
+      "1": 2,
+      "5": 3,
+      "6": 1
     }
   },
   "sample_docs": [

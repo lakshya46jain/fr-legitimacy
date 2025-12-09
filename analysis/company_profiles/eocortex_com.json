@@ -1,15 +1,24 @@
 {
   "company": "eocortex.com",
   "dominant_topics": [
+    2,
+    -1,
+    1,
     0,
-    -1
+    4
   ],
   "topic_counts": {
-    "0": 64,
-    "-1": 12
+    "2": 67,
+    "-1": 5,
+    "1": 2,
+    "0": 1,
+    "4": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader"
   },
   "framing_scores": {
     "framing_ethical": 0.75,
@@ -19,8 +28,11 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 12,
-      "0": 64
+      "-1": 5,
+      "0": 1,
+      "1": 2,
+      "2": 67,
+      "4": 1
     }
   },
   "sample_docs": [

@@ -1,15 +1,21 @@
 {
   "company": "www.gentex.com",
   "dominant_topics": [
+    23,
     0,
+    4,
     -1
   ],
   "topic_counts": {
-    "0": 32,
-    "-1": 3
+    "23": 31,
+    "0": 2,
+    "4": 1,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "23": "gentex, glass, dimmable, dimmable glass, mirror",
+    "0": "access, information, security, data, piam",
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader"
   },
   "framing_scores": {
     "framing_ethical": 0.6451612903225806,
@@ -19,8 +25,10 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 3,
-      "0": 32
+      "-1": 1,
+      "0": 2,
+      "4": 1,
+      "23": 31
     }
   },
   "sample_docs": [

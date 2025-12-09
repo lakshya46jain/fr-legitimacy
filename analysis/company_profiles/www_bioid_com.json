@@ -1,15 +1,18 @@
 {
   "company": "www.bioid.com",
   "dominant_topics": [
+    1,
     -1,
-    0
+    11
   ],
   "topic_counts": {
-    "-1": 14,
-    "0": 7
+    "1": 17,
+    "-1": 3,
+    "11": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "11": "authentication, password, lastpass, factor, hanko"
   },
   "framing_scores": {
     "framing_ethical": 0.4042553191489361,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 14,
-      "0": 7
+      "-1": 3,
+      "1": 17,
+      "11": 1
     }
   },
   "sample_docs": [

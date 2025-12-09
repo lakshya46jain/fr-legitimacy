@@ -1,12 +1,14 @@
 {
   "company": "www.jumio.com",
   "dominant_topics": [
-    -1
+    0
   ],
   "topic_counts": {
-    "-1": 1
+    "0": 1
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "0": "access, information, security, data, piam"
+  },
   "framing_scores": {
     "framing_ethical": 0.2244897959183673,
     "framing_surveillance": 0.0,
@@ -15,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 1
+      "0": 1
     }
   },
   "sample_docs": [

@@ -1,26 +1,38 @@
 {
   "company": "www.sekureid.com",
   "dominant_topics": [
-    0,
-    -1
+    -1,
+    4,
+    1,
+    3,
+    0
   ],
   "topic_counts": {
-    "0": 37,
-    "-1": 29
+    "-1": 22,
+    "4": 20,
+    "1": 14,
+    "3": 6,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "3": "vantage, development, document, ai, prioxis",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.196078431372549,
-    "framing_surveillance": 0.1176470588235294,
-    "framing_market": 0.6862745098039216,
-    "num_docs": 66
+    "framing_ethical": 0.1632653061224489,
+    "framing_surveillance": 0.1224489795918367,
+    "framing_market": 0.7142857142857143,
+    "num_docs": 63
   },
   "topic_timeline": {
     "20": {
-      "-1": 29,
-      "0": 37
+      "-1": 22,
+      "0": 1,
+      "1": 14,
+      "3": 6,
+      "4": 20
     }
   },
   "sample_docs": [

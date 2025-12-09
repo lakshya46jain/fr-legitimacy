@@ -1,15 +1,18 @@
 {
   "company": "www.tensormark.com",
   "dominant_topics": [
+    2,
     -1,
     0
   ],
   "topic_counts": {
-    "-1": 15,
-    "0": 3
+    "2": 8,
+    "-1": 8,
+    "0": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.6379310344827587,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 15,
-      "0": 3
+      "-1": 8,
+      "0": 2,
+      "2": 8
     }
   },
   "sample_docs": [

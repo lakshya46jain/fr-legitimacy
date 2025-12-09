@@ -1,13 +1,16 @@
 {
   "company": "seamfix.com",
   "dominant_topics": [
-    0
+    0,
+    1
   ],
   "topic_counts": {
-    "0": 2
+    "0": 1,
+    "1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.2162162162162162,
@@ -17,7 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 2
+      "0": 1,
+      "1": 1
     }
   },
   "sample_docs": [

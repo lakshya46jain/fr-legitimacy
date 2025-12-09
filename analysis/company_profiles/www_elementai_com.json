@@ -1,26 +1,34 @@
 {
   "company": "www.elementai.com",
   "dominant_topics": [
+    3,
     0,
-    -1
+    -1,
+    2
   ],
   "topic_counts": {
-    "0": 72,
-    "-1": 6
+    "3": 38,
+    "0": 8,
+    "-1": 5,
+    "2": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "3": "vantage, development, document, ai, prioxis",
+    "0": "access, information, security, data, piam",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
-    "framing_ethical": 0.7897271268057785,
-    "framing_surveillance": 0.0256821829855537,
-    "framing_market": 0.1845906902086677,
-    "num_docs": 78
+    "framing_ethical": 0.764378478664193,
+    "framing_surveillance": 0.0296846011131725,
+    "framing_market": 0.2059369202226345,
+    "num_docs": 53
   },
   "topic_timeline": {
     "20": {
-      "-1": 6,
-      "0": 72
+      "-1": 5,
+      "0": 8,
+      "2": 2,
+      "3": 38
     }
   },
   "sample_docs": [

@@ -1,26 +1,34 @@
 {
   "company": "www.hidglobal.com",
   "dominant_topics": [
-    0,
-    -1
+    4,
+    17,
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 94,
-    "-1": 3
+    "4": 51,
+    "17": 32,
+    "-1": 8,
+    "0": 4
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader",
+    "17": "hid, think, like, know, really",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.1599281221922731,
-    "framing_surveillance": 0.0323450134770889,
-    "framing_market": 0.8077268643306379,
-    "num_docs": 97
+    "framing_ethical": 0.1538461538461538,
+    "framing_surveillance": 0.0325791855203619,
+    "framing_market": 0.8135746606334842,
+    "num_docs": 95
   },
   "topic_timeline": {
     "20": {
-      "-1": 3,
-      "0": 94
+      "-1": 8,
+      "0": 4,
+      "4": 51,
+      "17": 32
     }
   },
   "sample_docs": [

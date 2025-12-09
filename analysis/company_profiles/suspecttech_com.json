@@ -1,15 +1,16 @@
 {
   "company": "suspecttech.com",
   "dominant_topics": [
-    0,
-    -1
+    1,
+    2
   ],
   "topic_counts": {
-    "0": 3,
-    "-1": 1
+    "1": 3,
+    "2": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 3
+      "1": 3,
+      "2": 1
     }
   },
   "sample_docs": [

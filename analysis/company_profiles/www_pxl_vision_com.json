@@ -1,15 +1,18 @@
 {
   "company": "www.pxl-vision.com",
   "dominant_topics": [
-    0,
-    -1
+    -1,
+    2,
+    0
   ],
   "topic_counts": {
-    "0": 3,
-    "-1": 1
+    "-1": 2,
+    "2": 1,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.3684210526315789,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 3
+      "-1": 2,
+      "0": 1,
+      "2": 1
     }
   },
   "sample_docs": [

@@ -1,13 +1,13 @@
 {
   "company": "www.embross.com",
   "dominant_topics": [
-    0
+    7
   ],
   "topic_counts": {
-    "0": 2
+    "7": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "7": "ramco, payroll, aviation, en, ramco systems"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -17,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 2
+      "7": 2
     }
   },
   "sample_docs": [

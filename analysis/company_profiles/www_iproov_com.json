@@ -1,15 +1,18 @@
 {
   "company": "www.iproov.com",
   "dominant_topics": [
+    1,
     -1,
     0
   ],
   "topic_counts": {
-    "-1": 14,
-    "0": 1
+    "1": 8,
+    "-1": 5,
+    "0": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.125,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 14,
-      "0": 1
+      "-1": 5,
+      "0": 2,
+      "1": 8
     }
   },
   "sample_docs": [

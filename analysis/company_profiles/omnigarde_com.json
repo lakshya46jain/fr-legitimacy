@@ -1,12 +1,16 @@
 {
   "company": "omnigarde.com",
   "dominant_topics": [
+    1,
     -1
   ],
   "topic_counts": {
-    "-1": 11
+    "1": 9,
+    "-1": 2
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "1": "face, recognition, biometric, attendance, fingerprint"
+  },
   "framing_scores": {
     "framing_ethical": 0.6956521739130435,
     "framing_surveillance": 0.3043478260869565,
@@ -15,7 +19,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 11
+      "-1": 2,
+      "1": 9
     }
   },
   "sample_docs": [

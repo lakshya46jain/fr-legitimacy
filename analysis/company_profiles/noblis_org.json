@@ -2,14 +2,15 @@
   "company": "noblis.org",
   "dominant_topics": [
     0,
-    -1
+    1
   ],
   "topic_counts": {
     "0": 4,
-    "-1": 1
+    "1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.6918238993710691,
@@ -19,8 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 4
+      "0": 4,
+      "1": 1
     }
   },
   "sample_docs": [

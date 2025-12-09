@@ -1,26 +1,39 @@
 {
   "company": "en.minivision.cn",
   "dominant_topics": [
+    14,
+    -1,
+    1,
     0,
-    -1
+    3
   ],
   "topic_counts": {
-    "0": 47,
-    "-1": 13
+    "14": 24,
+    "-1": 18,
+    "1": 9,
+    "0": 3,
+    "3": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "14": "authored, minivision, minivision technology, panasonic, singapore",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "3": "vantage, development, document, ai, prioxis"
   },
   "framing_scores": {
-    "framing_ethical": 0.5923076923076923,
-    "framing_surveillance": 0.2769230769230769,
-    "framing_market": 0.1307692307692307,
-    "num_docs": 60
+    "framing_ethical": 0.5887096774193549,
+    "framing_surveillance": 0.2741935483870967,
+    "framing_market": 0.1370967741935483,
+    "num_docs": 56
   },
   "topic_timeline": {
     "20": {
-      "-1": 13,
-      "0": 47
+      "-1": 18,
+      "0": 3,
+      "1": 9,
+      "2": 1,
+      "3": 1,
+      "14": 24
     }
   },
   "sample_docs": [

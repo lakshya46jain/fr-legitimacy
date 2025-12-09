@@ -1,13 +1,15 @@
 {
   "company": "www.whoyou.co.za",
   "dominant_topics": [
+    -1,
     0
   ],
   "topic_counts": {
-    "0": 2
+    "-1": 1,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.6052631578947368,
@@ -17,7 +19,8 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 2
+      "-1": 1,
+      "0": 1
     }
   },
   "sample_docs": [

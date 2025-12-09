@@ -1,13 +1,13 @@
 {
   "company": "www.hzailysm.com",
   "dominant_topics": [
-    2
+    38
   ],
   "topic_counts": {
-    "2": 4
+    "38": 4
   },
   "topic_descriptions": {
-    "2": "uv, printer, transparency, printers, printing"
+    "38": "uv, printer, printing, roll, print"
   },
   "framing_scores": {
     "framing_ethical": 0.25,
@@ -17,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "2": 4
+      "38": 4
     }
   },
   "sample_docs": [

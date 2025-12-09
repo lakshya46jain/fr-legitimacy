@@ -1,15 +1,18 @@
 {
   "company": "frp.ai",
   "dominant_topics": [
-    0,
-    -1
+    1,
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 24,
-    "-1": 8
+    "1": 15,
+    "-1": 10,
+    "0": 7
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.4387755102040816,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 8,
-      "0": 24
+      "-1": 10,
+      "0": 7,
+      "1": 15
     }
   },
   "sample_docs": [

@@ -1,15 +1,21 @@
 {
   "company": "www.luxand.com",
   "dominant_topics": [
+    1,
     0,
+    3,
     -1
   ],
   "topic_counts": {
-    "0": 14,
+    "1": 11,
+    "0": 2,
+    "3": 1,
     "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "3": "vantage, development, document, ai, prioxis"
   },
   "framing_scores": {
     "framing_ethical": 0.5588235294117647,
@@ -20,7 +26,9 @@
   "topic_timeline": {
     "20": {
       "-1": 1,
-      "0": 14
+      "0": 2,
+      "1": 11,
+      "3": 1
     }
   },
   "sample_docs": [

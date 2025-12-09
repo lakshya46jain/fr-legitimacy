@@ -1,15 +1,18 @@
 {
   "company": "www.smartfeigete.com",
   "dominant_topics": [
-    0,
-    -1
+    4,
+    -1,
+    1
   ],
   "topic_counts": {
-    "0": 182,
-    "-1": 45
+    "4": 207,
+    "-1": 10,
+    "1": 10
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.1,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 45,
-      "0": 182
+      "-1": 10,
+      "1": 10,
+      "4": 207
     }
   },
   "sample_docs": [

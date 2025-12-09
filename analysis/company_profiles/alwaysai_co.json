@@ -1,15 +1,18 @@
 {
   "company": "alwaysai.co",
   "dominant_topics": [
-    0,
-    -1
+    2,
+    -1,
+    28
   ],
   "topic_counts": {
-    "0": 25,
-    "-1": 11
+    "2": 14,
+    "-1": 13,
+    "28": 9
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "28": "dgworld, autonomous, engineer, senior, robot"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 11,
-      "0": 25
+      "-1": 13,
+      "2": 14,
+      "28": 9
     }
   },
   "sample_docs": [

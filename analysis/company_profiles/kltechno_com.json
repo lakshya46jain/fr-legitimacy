@@ -1,15 +1,24 @@
 {
   "company": "kltechno.com",
   "dominant_topics": [
+    1,
     0,
+    10,
+    2,
     -1
   ],
   "topic_counts": {
-    "0": 12,
-    "-1": 8
+    "1": 14,
+    "0": 3,
+    "10": 1,
+    "2": 1,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "10": "deputy, workforce, payroll, scheduling, employees",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
     "framing_ethical": 0.3076923076923077,
@@ -19,8 +28,11 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 8,
-      "0": 12
+      "-1": 1,
+      "0": 3,
+      "1": 14,
+      "2": 1,
+      "10": 1
     }
   },
   "sample_docs": [

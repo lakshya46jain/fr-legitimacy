@@ -1,15 +1,15 @@
 {
   "company": "en.sjtu.edu.cn",
   "dominant_topics": [
-    1,
+    7,
     -1
   ],
   "topic_counts": {
-    "1": 4,
-    "-1": 1
+    "7": 3,
+    "-1": 2
   },
   "topic_descriptions": {
-    "1": "module, students, year, level, grade"
+    "7": "ramco, payroll, aviation, en, ramco systems"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +19,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "1": 4
+      "-1": 2,
+      "7": 3
     }
   },
   "sample_docs": [

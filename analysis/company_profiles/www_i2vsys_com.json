@@ -1,13 +1,15 @@
 {
   "company": "www.i2vsys.com",
   "dominant_topics": [
-    0
+    2,
+    -1
   ],
   "topic_counts": {
-    "0": 51
+    "2": 49,
+    "-1": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
     "framing_ethical": 0.3333333333333333,
@@ -17,7 +19,8 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 51
+      "-1": 2,
+      "2": 49
     }
   },
   "sample_docs": [

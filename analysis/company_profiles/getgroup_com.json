@@ -1,15 +1,13 @@
 {
   "company": "getgroup.com",
   "dominant_topics": [
-    -1,
     0
   ],
   "topic_counts": {
-    "-1": 5,
-    "0": 1
+    "0": 6
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.1111111111111111,
@@ -19,8 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 5,
-      "0": 1
+      "0": 6
     }
   },
   "sample_docs": [

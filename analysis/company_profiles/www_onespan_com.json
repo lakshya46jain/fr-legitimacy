@@ -2,25 +2,39 @@
   "company": "www.onespan.com",
   "dominant_topics": [
     0,
+    24,
+    11,
+    1,
     -1
   ],
   "topic_counts": {
-    "0": 100,
-    "-1": 26
+    "0": 50,
+    "24": 27,
+    "11": 23,
+    "1": 10,
+    "-1": 6
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "24": "signature, electronic, sign, signatures, contract",
+    "11": "authentication, password, lastpass, factor, hanko",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
-    "framing_ethical": 0.5345195729537366,
-    "framing_surveillance": 0.0284697508896797,
-    "framing_market": 0.4370106761565836,
-    "num_docs": 126
+    "framing_ethical": 0.5329428989751098,
+    "framing_surveillance": 0.0292825768667642,
+    "framing_market": 0.4377745241581259,
+    "num_docs": 120
   },
   "topic_timeline": {
     "20": {
-      "-1": 26,
-      "0": 100
+      "-1": 6,
+      "0": 50,
+      "1": 10,
+      "3": 3,
+      "6": 1,
+      "11": 23,
+      "24": 27
     }
   },
   "sample_docs": [

@@ -1,12 +1,14 @@
 {
   "company": "www.veritone.com",
   "dominant_topics": [
-    -1
+    3
   ],
   "topic_counts": {
-    "-1": 2
+    "3": 2
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "3": "vantage, development, document, ai, prioxis"
+  },
   "framing_scores": {
     "framing_ethical": 0.0425531914893617,
     "framing_surveillance": 0.7021276595744681,
@@ -15,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 2
+      "3": 2
     }
   },
   "sample_docs": [

@@ -1,26 +1,34 @@
 {
   "company": "www.sita.aero",
   "dominant_topics": [
+    7,
     0,
+    3,
     -1
   ],
   "topic_counts": {
-    "0": 50,
-    "-1": 2
+    "7": 31,
+    "0": 7,
+    "3": 2,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "7": "ramco, payroll, aviation, en, ramco systems",
+    "0": "access, information, security, data, piam",
+    "3": "vantage, development, document, ai, prioxis"
   },
   "framing_scores": {
-    "framing_ethical": 0.2521489971346705,
-    "framing_surveillance": 0.1031518624641833,
-    "framing_market": 0.6446991404011462,
-    "num_docs": 52
+    "framing_ethical": 0.1714285714285714,
+    "framing_surveillance": 0.1142857142857142,
+    "framing_market": 0.7142857142857143,
+    "num_docs": 41
   },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 50
+      "-1": 1,
+      "0": 7,
+      "3": 2,
+      "7": 31
     }
   },
   "sample_docs": [

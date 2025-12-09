@@ -2,14 +2,23 @@
   "company": "www.trueface.ai",
   "dominant_topics": [
     -1,
-    0
+    2,
+    1,
+    0,
+    12
   ],
   "topic_counts": {
-    "-1": 17,
-    "0": 5
+    "-1": 11,
+    "2": 6,
+    "1": 3,
+    "0": 1,
+    "12": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "12": "camera, lens, usb, video, 4k"
   },
   "framing_scores": {
     "framing_ethical": 0.8095238095238095,
@@ -19,8 +28,11 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 17,
-      "0": 5
+      "-1": 11,
+      "0": 1,
+      "1": 3,
+      "2": 6,
+      "12": 1
     }
   },
   "sample_docs": [

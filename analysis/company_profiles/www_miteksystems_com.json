@@ -1,26 +1,38 @@
 {
   "company": "www.miteksystems.com",
   "dominant_topics": [
+    8,
+    -1,
     0,
-    -1
+    1,
+    5
   ],
   "topic_counts": {
-    "0": 204,
-    "-1": 29
+    "8": 146,
+    "-1": 40,
+    "0": 38,
+    "1": 6,
+    "5": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "8": "mitek, miteksystems, gaap, mobile, company",
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "5": "aml, smartsearch, money, laundering, money laundering"
   },
   "framing_scores": {
-    "framing_ethical": 0.3497840838988278,
-    "framing_surveillance": 0.0308451573103022,
-    "framing_market": 0.6193707587908698,
-    "num_docs": 233
+    "framing_ethical": 0.3486068111455108,
+    "framing_surveillance": 0.0297213622291021,
+    "framing_market": 0.621671826625387,
+    "num_docs": 231
   },
   "topic_timeline": {
     "20": {
-      "-1": 29,
-      "0": 204
+      "-1": 40,
+      "0": 38,
+      "1": 6,
+      "5": 1,
+      "8": 146
     }
   },
   "sample_docs": [

@@ -1,14 +1,12 @@
 {
   "company": "www.datavisor.com",
   "dominant_topics": [
-    0
+    -1
   ],
   "topic_counts": {
-    "0": 2
+    "-1": 2
   },
-  "topic_descriptions": {
-    "0": "access, data, security, time, information"
-  },
+  "topic_descriptions": {},
   "framing_scores": {
     "framing_ethical": 0.1851851851851851,
     "framing_surveillance": 0.0,
@@ -17,7 +15,7 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 2
+      "-1": 2
     }
   },
   "sample_docs": [

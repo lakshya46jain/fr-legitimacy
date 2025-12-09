@@ -1,15 +1,15 @@
 {
   "company": "www.faceplusplus.com",
   "dominant_topics": [
-    -1,
-    0
+    1,
+    -1
   ],
   "topic_counts": {
-    "-1": 4,
-    "0": 2
+    "1": 5,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +19,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 4,
-      "0": 2
+      "-1": 1,
+      "1": 5
     }
   },
   "sample_docs": [

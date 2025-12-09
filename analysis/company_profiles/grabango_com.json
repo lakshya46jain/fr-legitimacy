@@ -1,15 +1,18 @@
 {
   "company": "grabango.com",
   "dominant_topics": [
+    6,
     0,
     -1
   ],
   "topic_counts": {
-    "0": 9,
+    "6": 8,
+    "0": 1,
     "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "6": "stripe, payments, think, really, payment",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.4285714285714285,
@@ -20,7 +23,8 @@
   "topic_timeline": {
     "20": {
       "-1": 1,
-      "0": 9
+      "0": 1,
+      "6": 8
     }
   },
   "sample_docs": [

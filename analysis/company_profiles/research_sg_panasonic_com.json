@@ -1,26 +1,39 @@
 {
   "company": "research.sg.panasonic.com",
   "dominant_topics": [
+    14,
+    1,
+    -1,
     0,
-    -1
+    2
   ],
   "topic_counts": {
-    "0": 57,
-    "-1": 15
+    "14": 30,
+    "1": 23,
+    "-1": 10,
+    "0": 3,
+    "2": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "14": "authored, minivision, minivision technology, panasonic, singapore",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
-    "framing_ethical": 0.3137254901960784,
-    "framing_surveillance": 0.4705882352941176,
-    "framing_market": 0.2156862745098039,
-    "num_docs": 72
+    "framing_ethical": 0.3061224489795918,
+    "framing_surveillance": 0.4693877551020408,
+    "framing_market": 0.2244897959183673,
+    "num_docs": 70
   },
   "topic_timeline": {
     "20": {
-      "-1": 15,
-      "0": 57
+      "-1": 10,
+      "0": 3,
+      "1": 23,
+      "2": 2,
+      "3": 2,
+      "14": 30
     }
   },
   "sample_docs": [

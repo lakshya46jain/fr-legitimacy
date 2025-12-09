@@ -1,16 +1,12 @@
 {
   "company": "privateid.com",
   "dominant_topics": [
-    -1,
-    0
+    -1
   ],
   "topic_counts": {
-    "-1": 1,
-    "0": 1
+    "-1": 2
   },
-  "topic_descriptions": {
-    "0": "access, data, security, time, information"
-  },
+  "topic_descriptions": {},
   "framing_scores": {
     "framing_ethical": 0.3114754098360656,
     "framing_surveillance": 0.0983606557377049,
@@ -19,8 +15,7 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 1
+      "-1": 2
     }
   },
   "sample_docs": [

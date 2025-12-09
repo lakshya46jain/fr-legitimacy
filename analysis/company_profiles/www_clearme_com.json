@@ -1,30 +1,26 @@
 {
   "company": "www.clearme.com",
   "dominant_topics": [
-    5,
     0,
     -1
   ],
   "topic_counts": {
-    "5": 27,
     "0": 8,
-    "-1": 5
+    "-1": 7
   },
   "topic_descriptions": {
-    "5": "precheck, tsa, clear, tsa precheck, birth",
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.3125,
     "framing_surveillance": 0.125,
     "framing_market": 0.5625,
-    "num_docs": 40
+    "num_docs": 15
   },
   "topic_timeline": {
     "20": {
-      "-1": 5,
-      "0": 8,
-      "5": 27
+      "-1": 7,
+      "0": 8
     }
   },
   "sample_docs": [

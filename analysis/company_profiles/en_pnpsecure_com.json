@@ -1,26 +1,27 @@
 {
   "company": "en.pnpsecure.com",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    1
   ],
   "topic_counts": {
-    "-1": 12,
-    "0": 2
+    "0": 12,
+    "1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
-    "framing_ethical": 0.8240740740740741,
-    "framing_surveillance": 0.1018518518518518,
-    "framing_market": 0.074074074074074,
-    "num_docs": 14
+    "framing_ethical": 0.7888888888888889,
+    "framing_surveillance": 0.1222222222222222,
+    "framing_market": 0.0888888888888888,
+    "num_docs": 13
   },
   "topic_timeline": {
     "20": {
-      "-1": 12,
-      "0": 2
+      "0": 12,
+      "1": 1
     }
   },
   "sample_docs": [

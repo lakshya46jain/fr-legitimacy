@@ -1,15 +1,19 @@
 {
   "company": "en.cudo.co.kr",
   "dominant_topics": [
-    -1,
+    14,
+    7,
     0
   ],
   "topic_counts": {
-    "-1": 13,
+    "14": 12,
+    "7": 1,
     "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "14": "authored, minivision, minivision technology, panasonic, singapore",
+    "7": "ramco, payroll, aviation, en, ramco systems",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +23,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 13,
-      "0": 1
+      "0": 1,
+      "7": 1,
+      "14": 12
     }
   },
   "sample_docs": [

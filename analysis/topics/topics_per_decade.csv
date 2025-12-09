@@ -1,22 +1,93 @@
 Topic,Words,Frequency,Class
--1,"training, video, security, support, solutions",93,2000s
-0,"000, software, systems, company, check",292,2000s
-2,"transparency, film, transparency film, printers, uv",16,2000s
-3,"deck, attacked, zombie, turn, trap",31,2000s
--1,"security, data, access, wp, identity",2094,2020s
-0,"access, data, security, time, information",6519,2020s
-1,"module, students, year, level, grade",106,2020s
-2,"uv, printer, printing, roll, printers",4,2020s
-4,"item, fobi, child, menu item, menu",29,2020s
-5,"precheck, tsa, clear, tsa precheck, birth",27,2020s
-6,"hero, school, students, student, behavior",23,2020s
-7,"wang, zheng, lei, biomedical, liu",22,2020s
--1,"wp, https, com, li, strong",574,2010s
-0,"data, information, time, android, access",1530,2010s
-1,"surrey, women, students, university, module",32,2010s
-2,"widget, color, uv, custom, transparency",9,2010s
-3,"nhl, career, penalty, played, hockey",1,2010s
-6,"student, student id, hero, badging, management visitor management",1,2010s
--1,"lamp, control, projectors, multimedia, mouse",12,1990s
-0,"78, lamp, 3m, jack, mini",55,1990s
-2,"transparency, film, transparency film, printers, ink",11,1990s
+-1,"cisco, cisco com, export, com, wp",25,2000s
+0,"000, mitek, mitek systems, systems, company",38,2000s
+1,"fingerprint, registered, logon, user, daon",93,2000s
+2,"mpeg, video, yes, streaming, live",6,2000s
+3,"outsourcing, business process, bpo, offshore, process",3,2000s
+4,"hid, salto, fingerprint, card, reader",30,2000s
+5,"engines, search, search engines, www, employment screening",2,2000s
+6,"cybercore, cybercore technologies, technologies, payment, stripe",2,2000s
+7,"sita, air, airlines, management, helps",1,2000s
+9,"course, utstarcom, cdma, components, configuration",50,2000s
+10,"workforce, workforce management, tracking, software, management software",1,2000s
+12,"nextiva, video, wireless, ghz, camera",25,2000s
+18,"evidence, property, inmate, item, vault",3,2000s
+20,"deck, attacked, zombie, turn, trap",31,2000s
+22,"cisco, linksys, appliance, manager, wireless",15,2000s
+24,"ministry, korean, signature, signatures, japanese",1,2000s
+28,"city, tax, cultural, area, dgworld",1,2000s
+34,"st, dragon, aruba, vincent, hungary",1,2000s
+35,"training, utstarcom, hotel, careers investors, training company",14,2000s
+-1,"provide fast, image database, fast efficient, uses advanced, casinos",1,1990s
+12,"3m, cables, cable, video, microphone",1,1990s
+24,"weigh, signature, cons, gov, pros",1,1990s
+-1,"wp, access, security, recognition, data",1288,2020s
+0,"access, information, security, data, piam",1957,2020s
+1,"face, recognition, biometric, attendance, fingerprint",1241,2020s
+2,"demand, cctv, camera, ca, verkada",871,2020s
+3,"vantage, document, development, prioxis, ai",573,2020s
+4,"fingerprint, android, bluetooth, rfid, reader",194,2020s
+5,"aml, smartsearch, money, laundering, money laundering",213,2020s
+6,"stripe, payments, think, really, payment",164,2020s
+7,"ramco, payroll, aviation, en, ramco systems",152,2020s
+8,"mitek, miteksystems, gaap, mobile, company",147,2020s
+9,"gsm, gprs, wireless, cdma, rf",53,2020s
+10,"deputy, workforce, payroll, workforce management, employees",65,2020s
+11,"authentication, factor, hanko, password, mfa",116,2020s
+12,"camera, lens, usb, 4k, video",98,2020s
+13,"loop, statements, forward looking, forward, looking statements",130,2020s
+14,"minivision, minivision technology, panasonic, singapore, technology",88,2020s
+15,"melissa, address, zip, data, append",15,2020s
+16,"university, surrey, data, personal data, prize",21,2020s
+17,"hid, think, like, know, really",40,2020s
+18,"evidence, digital evidence, data, case, attorneys",40,2020s
+19,"energy, software, water, management, grid",25,2020s
+20,"faceware, character, su, performances, says",1,2020s
+21,"camera, camera module, joy, module, document camera",31,2020s
+22,"cisco, software, warranty, equipment, hardware",2,2020s
+23,"gentex, glass, dimmable, dimmable glass, mirror",32,2020s
+24,"signature, electronic, sign, contract, signatures",27,2020s
+25,"identity card, pixlab, driver license, card, api",31,2020s
+26,"applicant, verification, form, reference, accounting",26,2020s
+27,"item, fobi, child, menu item, menu",28,2020s
+28,"dgworld, autonomous, engineer, senior, robot",24,2020s
+29,"temperature, door, thermometer, lock, inch",14,2020s
+30,"xydus, create identity, today tomorrow, needs today, evolves",17,2020s
+31,"bacs, modes, bacs readers, readers, enrollment",17,2020s
+32,"glory, 2015, 2017, kb, tinkoff",10,2020s
+33,"hero, school, students, student, principal",14,2020s
+34,"english, dragon, español, saint, nuance",3,2020s
+36,"gbg, personal, information, personal information, data",11,2020s
+37,"client, client client, embedded, windows, boot",5,2020s
+38,"uv, printer, printing, roll, print",8,2020s
+-1,"wp, https, href, com wp, v2",239,2010s
+0,"information, identity, use, access, data",431,2010s
+1,"face, attendance, biometric, recognition, fingerprint",294,2010s
+2,"video, camera, demand, cameras, cctv",170,2010s
+3,"ai, data, development, business, learning",98,2010s
+4,"fingerprint, android, bluetooth, biometric fingerprint, barcode",229,2010s
+5,"http, org, xbrl, publisher, 2003",10,2010s
+6,"hubino, stripe, payment, payments, think",42,2010s
+7,"ramco, payroll, management, erp, aviation",39,2010s
+8,"mitek, education, matt, account manager, prior",1,2010s
+9,"wireless, gsm, gprs, cisco, cdma",38,2010s
+10,"deputy, payroll, scheduling, workforce, read",75,2010s
+11,"lastpass, password, authentication, passwords, factor",21,2010s
+12,"sdi, hdmi, yuan, mapillary, video",10,2010s
+14,"authored, omar, waves, fluid, elastic",4,2010s
+15,"melissa, data, data quality, address, quality",46,2010s
+16,"surrey, university, women, university surrey, professor",25,2010s
+17,"guardforce, site, hid, personal data, personal",4,2010s
+19,"energy, smart, software, tuya, grid",16,2010s
+20,"nhl, career, penalty, deck, attacked",6,2010s
+21,"camera, xbrl, camera module, joy, module",4,2010s
+22,"cisco, small business, series, wireless, small",18,2010s
+23,"gentex, fast, vehicle, agencies, work",1,2010s
+24,"onespan, signature, rts, electronic, sign",3,2010s
+26,"reference, accounting, http, org, xbrl",2,2010s
+29,"door, lock, electric, glass, bracket",5,2010s
+32,"glory, 2015, 2017, kb, release",7,2010s
+33,"student, hero, student behavior, badging, management visitor",1,2010s
+34,"dragon, nuance, pdf, contact center, solutions",11,2010s
+37,"client, windows, client client, embedded, nec",5,2010s
+38,"uv, printer, printing, biometrics, pradesh",2,2010s

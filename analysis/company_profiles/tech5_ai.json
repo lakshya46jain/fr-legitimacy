@@ -1,12 +1,16 @@
 {
   "company": "tech5.ai",
   "dominant_topics": [
+    1,
     -1
   ],
   "topic_counts": {
-    "-1": 5
+    "1": 4,
+    "-1": 1
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "1": "face, recognition, biometric, attendance, fingerprint"
+  },
   "framing_scores": {
     "framing_ethical": 0.1111111111111111,
     "framing_surveillance": 0.4444444444444444,
@@ -15,7 +19,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 5
+      "-1": 1,
+      "1": 4
     }
   },
   "sample_docs": [

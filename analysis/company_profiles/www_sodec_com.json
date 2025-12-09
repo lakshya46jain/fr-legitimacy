@@ -2,14 +2,17 @@
   "company": "www.sodec.com",
   "dominant_topics": [
     -1,
-    0
+    0,
+    1
   ],
   "topic_counts": {
     "-1": 15,
-    "0": 6
+    "0": 3,
+    "1": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.1695652173913043,
@@ -20,7 +23,8 @@
   "topic_timeline": {
     "20": {
       "-1": 15,
-      "0": 6
+      "0": 3,
+      "1": 3
     }
   },
   "sample_docs": [

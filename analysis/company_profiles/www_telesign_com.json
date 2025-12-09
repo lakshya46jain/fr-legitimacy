@@ -2,25 +2,33 @@
   "company": "www.telesign.com",
   "dominant_topics": [
     0,
-    -1
+    -1,
+    2,
+    13
   ],
   "topic_counts": {
-    "0": 37,
-    "-1": 2
+    "0": 34,
+    "-1": 2,
+    "2": 1,
+    "13": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "2": "demand, cctv, camera, ca, verkada",
+    "13": "loop, statements, forward looking, forward, looking statements"
   },
   "framing_scores": {
     "framing_ethical": 0.2631578947368421,
     "framing_surveillance": 0.0,
     "framing_market": 0.7368421052631579,
-    "num_docs": 39
+    "num_docs": 38
   },
   "topic_timeline": {
     "20": {
       "-1": 2,
-      "0": 37
+      "0": 34,
+      "2": 1,
+      "13": 1
     }
   },
   "sample_docs": [

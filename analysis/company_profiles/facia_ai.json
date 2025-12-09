@@ -1,13 +1,13 @@
 {
   "company": "facia.ai",
   "dominant_topics": [
-    0
+    1
   ],
   "topic_counts": {
-    "0": 1
+    "1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.52,
@@ -17,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 1
+      "1": 1
     }
   },
   "sample_docs": [

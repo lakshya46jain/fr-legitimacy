@@ -1,15 +1,18 @@
 {
   "company": "www.facenote.me",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    1,
+    -1
   ],
   "topic_counts": {
-    "-1": 12,
-    "0": 6
+    "0": 12,
+    "1": 4,
+    "-1": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint"
   },
   "framing_scores": {
     "framing_ethical": 0.392156862745098,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 12,
-      "0": 6
+      "-1": 2,
+      "0": 12,
+      "1": 4
     }
   },
   "sample_docs": [

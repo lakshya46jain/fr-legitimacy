@@ -1,26 +1,26 @@
 {
   "company": "www.a3bc.io",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    -1
   ],
   "topic_counts": {
-    "-1": 11,
-    "0": 10
+    "0": 17,
+    "-1": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.7311827956989247,
-    "framing_surveillance": 0.086021505376344,
-    "framing_market": 0.1827956989247312,
-    "num_docs": 21
+    "framing_ethical": 0.7816091954022989,
+    "framing_surveillance": 0.0229885057471264,
+    "framing_market": 0.1954022988505747,
+    "num_docs": 19
   },
   "topic_timeline": {
     "20": {
-      "-1": 11,
-      "0": 10
+      "-1": 2,
+      "0": 17
     }
   },
   "sample_docs": [

@@ -1,15 +1,18 @@
 {
   "company": "biometricvision.com",
   "dominant_topics": [
-    0,
-    -1
+    1,
+    -1,
+    0
   ],
   "topic_counts": {
-    "0": 10,
-    "-1": 2
+    "1": 5,
+    "-1": 5,
+    "0": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.7213114754098361,
@@ -19,8 +22,9 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 2,
-      "0": 10
+      "-1": 5,
+      "0": 2,
+      "1": 5
     }
   },
   "sample_docs": [

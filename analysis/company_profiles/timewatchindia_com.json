@@ -1,15 +1,21 @@
 {
   "company": "timewatchindia.com",
   "dominant_topics": [
+    1,
+    4,
     -1,
     0
   ],
   "topic_counts": {
-    "-1": 7,
-    "0": 2
+    "1": 4,
+    "4": 3,
+    "-1": 1,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "4": "fingerprint, android, bluetooth, biometric fingerprint, reader",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.0,
@@ -19,8 +25,10 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 7,
-      "0": 2
+      "-1": 1,
+      "0": 1,
+      "1": 4,
+      "4": 3
     }
   },
   "sample_docs": [

@@ -1,42 +1,26 @@
 {
   "company": "www.3m.com",
   "dominant_topics": [
-    0,
-    2,
-    -1
+    12
   ],
   "topic_counts": {
-    "0": 55,
-    "2": 27,
-    "-1": 11
+    "12": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information",
-    "2": "uv, printer, transparency, printers, printing"
+    "12": "camera, lens, usb, video, 4k"
   },
   "framing_scores": {
     "framing_ethical": 1.0,
     "framing_surveillance": 0.0,
     "framing_market": 0.0,
-    "num_docs": 93
+    "num_docs": 1
   },
   "topic_timeline": {
     "19": {
-      "-1": 10,
-      "0": 53,
-      "2": 11
-    },
-    "20": {
-      "-1": 1,
-      "0": 2,
-      "2": 16
+      "12": 1
     }
   },
   "sample_docs": [
-    "Durability. That sums up 3M cardboard mounting frames for transparency film. Your visuals are better protected and look more professional when placed in our durable cardboard mounting frames. Our cardboard mounting frames also come in a convenient and protective box for filing and storage. 3M™ Cardboard Frames RS7120 — 50-sheet box. Organizer Strips | Flip Frames | Transparency Sleeves | Cardboard Frames Request Information Transparency Film | Transparency Protectors & Frames Professional Quality Transparency Film Multimedia Projectors | Overhead Projectors Transparency Film & Related Products Tech Support | Where to Buy Copyright 3M 2001 | Legal information | | Warranty Information",
-    "Whatever your presentation needs, we can help you become more productive in your next meeting with high-quality transparencies. Most importantly, we offer a complete line of transparency film, so you'll find the exact type to use with your specific printer and copier. Try our new Professional Quality Transparency Films designed to make the most of today's high-quality printers. For a polished, professional look, protect your transparencies in a 3M™ Flip-Frame™ Transparency Protector . Transparency Film | Transparency Protectors & Frames Professional Quality Transparency Film Multimedia Projectors | Overhead Projectors Transparency Film & Related Products Tech Support | Where to Buy Copyright 3M 2001 | Legal information | | Warranty Information",
-    "Multipurpose | Ink Jet Printers | Color Laser Printers & Copiers | Monochrome Laser Printers & Copiers and more | Film Compatibility Guide | Recycling Program | Free Samples Transparency Film | Transparency Protectors & Frames Multimedia Projectors | Overhead Projectors | Transparency Film & Related Products Tech Support | Where to Buy Copyright 3M 2000 Legal information",
-    "Make a lasting impression on audiences with 3M Professional Quality Transparency Film CG3490. This NEW deluxe film, made from the highest quality materials, is designed to work with today's faster color inkjet printers. It dries quickly to prevent sticking. It handles easily, stays flat, and stacks reliably during long print jobs, freeing end users for more important tasks. Stacks to free end users for more important tasks Creates clearer, richer color images Produces crisper black-and-white text Works with today's faster color inkjet printers Impress audiences with 3M Professional Quality Transparency Film CG3720. This NEW top-of-the-line film creates bright, vivid color images and sharp black-and-white text for the latest generation of color laser printers. Because the film has an enhanced color laser coating, color overheads always appear vibrant against all types of backgrounds. Works with the latest generation of color laser printers Uses enhanced color laser coating for spectacular colors Creates bright vibrant color images against all backgrounds Makes black-and-white text appear sharp and crisp Performs under all environmental conditions Works with todays high-end inkjet printers plus older models. Clear, 50 sheets per box. For high end color laser printers. Clear transparency film, 50 sheets per box. Multipurpose | Ink Jet Printers | Color Laser Printers & Copiers | Monochrome Laser Printers & Copiers and more | Film Compatibility Guide | Recycling Program | Request Information Transparency Film | Transparency Protectors & Frames Professional Quality Transparency Film Multimedia Projectors | Overhead Projectors Transparency Film & Related Products Tech Support | Where to Buy Copyright 3M 2001 | Legal information | | Warranty Information",
-    "Multipurpose Transparency Film for Most Printers and Copiers - NEW! Transparency Film for Color Laser Printers and Copiers Transparency Film for Ink Jet Printers Transparency Film for Black & White Copiers and Printers, Thermal Transfer Printers and more Transparency Film Compatibility Guide Transparency Film for Color Laser Printers and Copiers Transparency Film for Ink Jet Printers Transparency Film for Black & White Copiers and Printers, Thermal Transfer Printers and more Transparency Film Compatibility Guide Transparency Film for Ink Jet Printers Transparency Film for Black & White Copiers and Printers, Thermal Transfer Printers and more Transparency Film Compatibility Guide Transparency Film for Black & White Copiers and Printers, Thermal Transfer Printers and more Transparency Film Compatibility Guide Transparency Film Compatibility Guide Multipurpose | Ink Jet Printers | Color Laser Printers & Copiers | Black & White Laser Printers & Copiers and more | Film Compatibility Guide | Recycling Program | Free Samples Transparency Film | Transparency Protectors & Frames Multimedia Projectors | Overhead Projectors | Transparency Film & Related Products Tech Support | Where to Buy Copyright 3M 2000 Legal information"
+    "Clearer, crisper video at 15 frames per second with H.263+ support Enhanced automatic voice tracking for precise positioning and hands-free camera control Full-sounding, low bandwidth audio for 128 Kbps conferences Send and receive slide presentations using a PC and a standard web browser Built-in POTS speakerphone allows you to include team members who can't make the videoconference Dual microphone support for large room coverage Share documents, files and applications with Microsoft® NetMeeting® Automatically configures for single or dual-monitor set-up Automatic back-light compensation provides maximum visibility of everyone regardless of room lighting conditions Disable far end camera control for added privacy Remote system management tools for system set-up, software upgrades and diagnostic testing Upgrade system software over ISDN lines by simply dialing a phone number Automatic ISDN set-up so all you have to know is the phone number H.323 ready for videoconferencing over computer networks Standards compliant to work with existing H.320 videoconferencing systems 3M VCS3100 provides the following extra features: Fluid, 30 frames per second video Call Recovery System (CRS) ensures that calls continue uninterrupted, even when an ISDN line fails 3M VCS3100 V.35 provide the following extra feature: Connect to T1/G1,VSAT, Frame relay, ATM and Switched 56 networks Connect at speeds up to 768 kbps Fluid, 30 frames per second video 3M VCS3100 MP provide the following extra feature: Conduct 3- and 4-way multipoint calls anytime, anywhere Choose voice-activated switching or continuous presence (split screen) to easily view everyone in the conference Call Recovery System (CRS) ensures that calls continue uninterrupted, even when an ISDN line fails 3M Videoconferencing Systems include: Base Unit (without monitor) Remote control Microphone pod Color coded cables: LAN-to-computer cable LAN-to-wall cable Microphone pod cable Audio and video cables Second monitor cables VCS cable Power Cables (Europe, UK, USA) ISDN Cable (VCS3000 and VCS3100 only) V35 module (VCS3100 V.35 only) Optional Accessories Base Unit (without monitor) Audio and video cables Power Cables (Europe, UK, USA) ISDN Cable (VCS3000 and VCS3100 only) V35 module (VCS3100 V.35 only) Explore Key Features | Technical Specs | Download Software 3M Videoconferencing | 3M Dataconferencing | 3M Audioconferencing | 3M Ideaboard Advanced Meeting Solutions | Multimedia Projectors | LCD projection panels Overhead Projectors | Transparency Film & Related Products Tech Support | Where to Buy"
   ]
 }

@@ -1,12 +1,14 @@
 {
   "company": "videmo.de",
   "dominant_topics": [
-    -1
+    1
   ],
   "topic_counts": {
-    "-1": 14
+    "1": 14
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "1": "face, recognition, biometric, attendance, fingerprint"
+  },
   "framing_scores": {
     "framing_ethical": 0.1777777777777777,
     "framing_surveillance": 0.5555555555555556,
@@ -15,7 +17,7 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 14
+      "1": 14
     }
   },
   "sample_docs": [

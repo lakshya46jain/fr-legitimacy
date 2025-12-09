@@ -1,12 +1,17 @@
 {
   "company": "en.deepblueai.com",
   "dominant_topics": [
-    -1
+    3,
+    1
   ],
   "topic_counts": {
-    "-1": 29
+    "3": 28,
+    "1": 1
   },
-  "topic_descriptions": {},
+  "topic_descriptions": {
+    "3": "vantage, development, document, ai, prioxis",
+    "1": "face, recognition, biometric, attendance, fingerprint"
+  },
   "framing_scores": {
     "framing_ethical": 0.1333333333333333,
     "framing_surveillance": 0.4666666666666667,
@@ -15,7 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 29
+      "1": 1,
+      "3": 28
     }
   },
   "sample_docs": [

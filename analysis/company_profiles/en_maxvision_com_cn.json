@@ -1,15 +1,21 @@
 {
   "company": "en.maxvision.com.cn",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    1,
+    14,
+    -1
   ],
   "topic_counts": {
-    "-1": 10,
-    "0": 1
+    "0": 8,
+    "1": 1,
+    "14": 1,
+    "-1": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "14": "authored, minivision, minivision technology, panasonic, singapore"
   },
   "framing_scores": {
     "framing_ethical": 0.2727272727272727,
@@ -19,8 +25,10 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 10,
-      "0": 1
+      "-1": 1,
+      "0": 8,
+      "1": 1,
+      "14": 1
     }
   },
   "sample_docs": [

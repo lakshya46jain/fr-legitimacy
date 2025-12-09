@@ -1,15 +1,22 @@
 {
   "company": "www.genvis.co",
   "dominant_topics": [
+    2,
     0,
-    -1
+    3,
+    23
   ],
   "topic_counts": {
-    "0": 10,
-    "-1": 1
+    "2": 4,
+    "0": 4,
+    "3": 2,
+    "23": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "2": "demand, cctv, camera, ca, verkada",
+    "0": "access, information, security, data, piam",
+    "3": "vantage, development, document, ai, prioxis",
+    "23": "gentex, glass, dimmable, dimmable glass, mirror"
   },
   "framing_scores": {
     "framing_ethical": 0.64,
@@ -19,8 +26,10 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 1,
-      "0": 10
+      "0": 4,
+      "2": 4,
+      "3": 2,
+      "23": 1
     }
   },
   "sample_docs": [

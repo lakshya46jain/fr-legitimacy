@@ -1,15 +1,21 @@
 {
   "company": "www.meerkat.com.br",
   "dominant_topics": [
+    1,
+    -1,
     0,
-    -1
+    2
   ],
   "topic_counts": {
-    "0": 8,
-    "-1": 8
+    "1": 5,
+    "-1": 4,
+    "0": 4,
+    "2": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
     "framing_ethical": 0.7272727272727273,
@@ -19,8 +25,10 @@
   },
   "topic_timeline": {
     "20": {
-      "-1": 8,
-      "0": 8
+      "-1": 4,
+      "0": 4,
+      "1": 5,
+      "2": 3
     }
   },
   "sample_docs": [

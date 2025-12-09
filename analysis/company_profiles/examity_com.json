@@ -1,13 +1,16 @@
 {
   "company": "examity.com",
   "dominant_topics": [
+    8,
     0
   ],
   "topic_counts": {
-    "0": 2
+    "8": 1,
+    "0": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "8": "mitek, miteksystems, gaap, mobile, company",
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
     "framing_ethical": 0.75,
@@ -17,7 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 2
+      "0": 1,
+      "8": 1
     }
   },
   "sample_docs": [

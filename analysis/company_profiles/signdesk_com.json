@@ -1,26 +1,27 @@
 {
   "company": "signdesk.com",
   "dominant_topics": [
-    -1,
-    0
+    0,
+    24
   ],
   "topic_counts": {
-    "-1": 11,
-    "0": 4
+    "0": 12,
+    "24": 1
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "24": "signature, electronic, sign, signatures, contract"
   },
   "framing_scores": {
-    "framing_ethical": 0.3608490566037736,
-    "framing_surveillance": 0.0165094339622641,
-    "framing_market": 0.6226415094339622,
-    "num_docs": 15
+    "framing_ethical": 0.3547619047619048,
+    "framing_surveillance": 0.0166666666666666,
+    "framing_market": 0.6285714285714286,
+    "num_docs": 13
   },
   "topic_timeline": {
     "20": {
-      "-1": 11,
-      "0": 4
+      "0": 12,
+      "24": 1
     }
   },
   "sample_docs": [

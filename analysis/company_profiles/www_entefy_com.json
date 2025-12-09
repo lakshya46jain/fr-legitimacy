@@ -1,13 +1,16 @@
 {
   "company": "www.entefy.com",
   "dominant_topics": [
-    0
+    0,
+    2
   ],
   "topic_counts": {
-    "0": 4
+    "0": 2,
+    "2": 2
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
     "framing_ethical": 0.2285714285714285,
@@ -17,7 +20,8 @@
   },
   "topic_timeline": {
     "20": {
-      "0": 4
+      "0": 2,
+      "2": 2
     }
   },
   "sample_docs": [

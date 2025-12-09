@@ -1,26 +1,40 @@
 {
   "company": "www.mantratec.com",
   "dominant_topics": [
+    1,
     0,
-    -1
+    -1,
+    6,
+    2
   ],
   "topic_counts": {
-    "0": 67,
-    "-1": 22
+    "1": 46,
+    "0": 16,
+    "-1": 5,
+    "6": 4,
+    "2": 3
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "1": "face, recognition, biometric, attendance, fingerprint",
+    "0": "access, information, security, data, piam",
+    "6": "stripe, payments, think, really, payment",
+    "2": "demand, cctv, camera, ca, verkada"
   },
   "framing_scores": {
-    "framing_ethical": 0.268370607028754,
-    "framing_surveillance": 0.1693290734824281,
-    "framing_market": 0.5623003194888179,
-    "num_docs": 89
+    "framing_ethical": 0.2157534246575342,
+    "framing_surveillance": 0.1815068493150685,
+    "framing_market": 0.6027397260273972,
+    "num_docs": 76
   },
   "topic_timeline": {
     "20": {
-      "-1": 22,
-      "0": 67
+      "-1": 5,
+      "0": 16,
+      "1": 46,
+      "2": 3,
+      "4": 1,
+      "6": 4,
+      "37": 1
     }
   },
   "sample_docs": [

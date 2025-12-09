@@ -4,20 +4,20 @@
     0
   ],
   "topic_counts": {
-    "0": 40
+    "0": 39
   },
   "topic_descriptions": {
-    "0": "access, data, security, time, information"
+    "0": "access, information, security, data, piam"
   },
   "framing_scores": {
-    "framing_ethical": 0.2205882352941176,
-    "framing_surveillance": 0.0955882352941176,
-    "framing_market": 0.6838235294117647,
-    "num_docs": 40
+    "framing_ethical": 0.2213740458015267,
+    "framing_surveillance": 0.099236641221374,
+    "framing_market": 0.6793893129770993,
+    "num_docs": 39
   },
   "topic_timeline": {
     "20": {
-      "0": 40
+      "0": 39
     }
   },
   "sample_docs": [
