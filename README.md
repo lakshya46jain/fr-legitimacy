@@ -1,4 +1,4 @@
-# Facial Recognition Research
+# Legitimizing Facial Recognition
 
 **SOC 4994 — Undergraduate Research, Virginia Tech**
 
